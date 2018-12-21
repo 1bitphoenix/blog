@@ -1,0 +1,104 @@
+{
+  "assetsByChunkName": {
+    "path---dgplug-hogwarts": [
+      "path---dgplug-hogwarts-57806744390d10af8384.js",
+      "path---dgplug-hogwarts-57806744390d10af8384.js.map"
+    ],
+    "path---best-regards": [
+      "path---best-regards-3945e75bb2e0fb06956a.js",
+      "path---best-regards-3945e75bb2e0fb06956a.js.map"
+    ],
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-aa9570313651ef926b5a.js",
+      "component---src-pages-index-js-aa9570313651ef926b5a.js.map"
+    ],
+    "path---": [
+      "path----21d0dcb44f573e5ca689.js",
+      "path----21d0dcb44f573e5ca689.js.map"
+    ],
+    "component---src-pages-contact-js": [
+      "component---src-pages-contact-js-c216ff14f94225a1c827.js",
+      "component---src-pages-contact-js-c216ff14f94225a1c827.js.map"
+    ],
+    "path---project": [
+      "path---project-9cdf932e45376152fc4e.js",
+      "path---project-9cdf932e45376152fc4e.js.map"
+    ],
+    "component---node-modules-gatsby-plugin-offline-app-shell-js": [
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
+    ],
+    "path---arch-linux": [
+      "path---arch-linux-d54199519b38e6ab3f3a.js",
+      "path---arch-linux-d54199519b38e6ab3f3a.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-13971ffed62f6e450cf2.js",
+      "component---src-layouts-index-js-13971ffed62f6e450cf2.js.map"
+    ],
+    "path---index": [
+      "path---index-b5dd19a3d7caf9712289.js",
+      "path---index-b5dd19a3d7caf9712289.js.map"
+    ],
+    "component---src-pages-search-js": [
+      "component---src-pages-search-js-528928ab249cb36d7dd7.js",
+      "component---src-pages-search-js-528928ab249cb36d7dd7.js.map"
+    ],
+    "path---mix-os": [
+      "path---mix-os-daab2063bfb85078c624.js",
+      "path---mix-os-daab2063bfb85078c624.js.map"
+    ],
+    "commons": [
+      "commons-5ce0858c6d2286dc6454.js",
+      "build-js-styles.css",
+      "commons-5ce0858c6d2286dc6454.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---success": [
+      "path---success-bdeedb02f6f7a0798df4.js",
+      "path---success-bdeedb02f6f7a0798df4.js.map"
+    ],
+    "path---contact": [
+      "path---contact-a0e39f21c11f6a62c5ab.js",
+      "path---contact-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---blockchain-cont": [
+      "path---blockchain-cont-d1857de0f60649d60e6b.js",
+      "path---blockchain-cont-d1857de0f60649d60e6b.js.map"
+    ],
+    "component---src-templates-post-template-js": [
+      "component---src-templates-post-template-js-96151d8288b13884096c.js",
+      "component---src-templates-post-template-js-96151d8288b13884096c.js.map"
+    ],
+    "path---offline-plugin-app-shell-fallback": [
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---my-blockchain": [
+      "path---my-blockchain-c98e9f51434f0e60859b.js",
+      "path---my-blockchain-c98e9f51434f0e60859b.js.map"
+    ],
+    "app": [
+      "app-c6bd2bae9e8daabc1537.js",
+      "build-js-styles.css",
+      "app-c6bd2bae9e8daabc1537.js.map",
+      "build-js-styles.css.map"
+    ],
+    "component---src-templates-page-template-js": [
+      "component---src-templates-page-template-js-e0434750f574a9276ef2.js",
+      "component---src-templates-page-template-js-e0434750f574a9276ef2.js.map"
+    ],
+    "path---the-journey": [
+      "path---the-journey-e43b4826bda20814d292.js",
+      "path---the-journey-e43b4826bda20814d292.js.map"
+    ],
+    "path---search": [
+      "path---search-d8380b7a9a79105929ac.js",
+      "path---search-d8380b7a9a79105929ac.js.map"
+    ],
+    "path---about": [
+      "path---about-f4d69414e2fd542b3999.js",
+      "path---about-f4d69414e2fd542b3999.js.map"
+    ]
+  }
+}
