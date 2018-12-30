@@ -13,8 +13,8 @@
       "component---src-pages-index-js-aa9570313651ef926b5a.js.map"
     ],
     "path---": [
-      "path----9cf3c36744ac42348e83.js",
-      "path----9cf3c36744ac42348e83.js.map"
+      "path----514f72f4eb5b5a7beca8.js",
+      "path----514f72f4eb5b5a7beca8.js.map"
     ],
     "component---src-pages-contact-js": [
       "component---src-pages-contact-js-c216ff14f94225a1c827.js",
@@ -33,8 +33,8 @@
       "path---arch-linux-47e4d23526fdf9fdd497.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-3b103fbf070ed5ce2e17.js",
-      "component---src-layouts-index-js-3b103fbf070ed5ce2e17.js.map"
+      "component---src-layouts-index-js-3f63bde18bfb0b15def6.js",
+      "component---src-layouts-index-js-3f63bde18bfb0b15def6.js.map"
     ],
     "path---index": [
       "path---index-b5dd19a3d7caf9712289.js",
@@ -49,9 +49,9 @@
       "path---mix-os-c23ccb58f3a394bfbdb7.js.map"
     ],
     "commons": [
-      "commons-f73a3c3975ea57b10059.js",
+      "commons-37edef4755bbf642f2c7.js",
       "build-js-styles.css",
-      "commons-f73a3c3975ea57b10059.js.map",
+      "commons-37edef4755bbf642f2c7.js.map",
       "build-js-styles.css.map"
     ],
     "path---success": [
@@ -79,9 +79,9 @@
       "path---my-blockchain-9d3b4c2e465f4a6d6b8e.js.map"
     ],
     "app": [
-      "app-8381028e47f16fd48fde.js",
+      "app-56a68a8a49ae5534dd84.js",
       "build-js-styles.css",
-      "app-8381028e47f16fd48fde.js.map",
+      "app-56a68a8a49ae5534dd84.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-templates-page-template-js": [
