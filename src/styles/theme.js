@@ -22,7 +22,7 @@ const theme = createMuiTheme({
     },
     fonts: {
       unstyledFamily: `Arial`,
-      styledFamily: "Helvetica",
+      styledFamily: "Open Sans",
       styledFonts: "300,400,600"
     }
   },
