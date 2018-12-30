@@ -22,7 +22,7 @@ const theme = createMuiTheme({
     },
     fonts: {
       unstyledFamily: `Arial`,
-      styledFamily: "IBM Plex Serif",
+      styledFamily: "Helvetica",
       styledFonts: "300,400,600"
     }
   },
