@@ -3,7 +3,7 @@ const colors = require("../../src/styles/colors");
 module.exports = {
   siteTitle: "brute4s99.blog", // <title>
   shortSiteTitle: "brute4s99.blog", // <title> ending for posts and pages
-  siteDescription: "Read the latest posts by brute4s99 on his own blog!",
+  siteDescription: "Piyush writes here on his blog. Feel free to take a look.",
   siteUrl: "https://journal.piyush.tech",
   pathPrefix: "/",
   siteImage: "./preview.jpg",

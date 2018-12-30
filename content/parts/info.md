@@ -2,4 +2,6 @@
 title: info
 ---
 
-This blog shares all my technical experiences that are worth documenting. Feel free to take a look!
+<p align='center'> 
+This blog shares my stories. <br>
+<font size='5'>Feel free to take a look!</font></p>

@@ -1,7 +1,7 @@
 ---
 title: A real life Hogwarts
 subTitle: It came to me accidentally, to be honest!
-category: personal
+category: life
 cover: cover.jpg
 ---
 

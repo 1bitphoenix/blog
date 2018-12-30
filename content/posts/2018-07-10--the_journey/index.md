@@ -1,7 +1,7 @@
 ---
 title: It's a blog !
 subTitle: This is the default post that comes with the blog.
-category: "personal"
+category: "life"
 cover: front.png
 ---
 
