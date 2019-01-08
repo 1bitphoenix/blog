@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[brute4s99.blog]]></title><description><![CDATA[Piyush writes here on his blog. Feel free to take a look.]]></description><link>https://journal.piyush.tech</link><generator>RSS for Node</generator><lastBuildDate>Sun, 30 Dec 2018 19:58:30 GMT</lastBuildDate><item><title><![CDATA[A better blog]]></title><description><![CDATA[
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[brute4s99.blog]]></title><description><![CDATA[Piyush writes here on his blog. Feel free to take a look.]]></description><link>https://journal.piyush.tech</link><generator>RSS for Node</generator><lastBuildDate>Tue, 08 Jan 2019 17:34:56 GMT</lastBuildDate><item><title><![CDATA[A better blog]]></title><description><![CDATA[So today I had problems that caused KDE Plasma to  not acknowledge  my laptop as a laptop.
+In other words, my Arch was on the edge of…]]></description><link>https://journal.piyush.tech/arch_power/</link><guid isPermaLink="false">https://journal.piyush.tech/arch_power/</guid><content:encoded>&lt;p&gt;So today I had problems that caused KDE Plasma to &lt;em&gt;not acknowledge&lt;/em&gt; my laptop as a laptop.
+In other words, my Arch was on the edge of collapse.
+So, I reinstalled all the packages of my installation in one command, like so&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# pacman -Qenq | sudo pacman -S -&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;But as you can see the post hasn’t ended here, it didn’t pan out.&lt;/p&gt;
+&lt;p&gt;Next up, after hours of help at #archlinux and #kde-plasma, I found this Forum page that gave me just the right instructions!&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;First up, I removed all the orphaned/unused packages rotting away in my system.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# pacman -Rns $(pacman -Qtdq)&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;next, I &lt;strong&gt;force-reinstalled&lt;/strong&gt; all the packages I had in my installation.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo pacman -Qqen &amp;gt; pkglist.txt
+sudo pacman --force -S $(&amp;lt; pkglist.txt)&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now my installation is sweet as candy with no losses and everything perfect again! :)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[A better blog]]></title><description><![CDATA[
 Hi Greg! 
 I saw your Github profile had this starter for a personal blog, so I thought Why not!? After days of scouring the internet, I…]]></description><link>https://journal.piyush.tech/best_regards/</link><guid isPermaLink="false">https://journal.piyush.tech/best_regards/</guid><content:encoded>&lt;p&gt;
   &lt;a
