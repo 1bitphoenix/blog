@@ -1,11 +1,53 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[brute4s99.blog]]></title><description><![CDATA[Piyush writes here on his blog. Feel free to take a look.]]></description><link>https://journal.piyush.tech</link><generator>RSS for Node</generator><lastBuildDate>Tue, 08 Jan 2019 17:34:56 GMT</lastBuildDate><item><title><![CDATA[A better blog]]></title><description><![CDATA[So today I had problems that caused KDE Plasma to  not acknowledge  my laptop as a laptop.
-In other words, my Arch was on the edge of…]]></description><link>https://journal.piyush.tech/arch_power/</link><guid isPermaLink="false">https://journal.piyush.tech/arch_power/</guid><content:encoded>&lt;p&gt;So today I had problems that caused KDE Plasma to &lt;em&gt;not acknowledge&lt;/em&gt; my laptop as a laptop.
-In other words, my Arch was on the edge of collapse.
-So, I reinstalled all the packages of my installation in one command, like so&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[brute4s99.blog]]></title><description><![CDATA[Piyush writes here on his blog. Feel free to take a look.]]></description><link>https://journal.piyush.tech</link><generator>RSS for Node</generator><lastBuildDate>Wed, 09 Jan 2019 00:31:54 GMT</lastBuildDate><item><title><![CDATA[Recovering your Arch from hell]]></title><description><![CDATA[Not clear, but looks like misconfigured packages after multiple installations, uninstallations and re-installations of packages and Desktop…]]></description><link>https://journal.piyush.tech/arch_power/</link><guid isPermaLink="false">https://journal.piyush.tech/arch_power/</guid><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/arch-883766e41cd8922a799fde936a7a4e7d-aafac.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgAD/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAEaB5u0I//EABoQAQACAwEAAAAAAAAAAAAAAAEAAgMRIRL/2gAIAQEAAQUC9sL3AyROa5XEM//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABgQAQEBAQEAAAAAAAAAAAAAAAAhQQER/9oACAEBAAY/AkWI8zV6/8QAGhABAAMBAQEAAAAAAAAAAAAAAQARMSFBUf/aAAgBAQABPyF6/H17cxZGPXVjRYuPu/CDALbaYFajP//aAAwDAQACAAMAAAAQOD//xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAwEBPxCn/8QAFhEAAwAAAAAAAAAAAAAAAAAAARAR/9oACAECAQE/EIV//8QAGxABAQEBAAMBAAAAAAAAAAAAASERADFBgcH/2gAIAQEAAT8QMi02rl3iuxz7+PQddigj2aZOA1QOC1iKy+EPXJUJoG9//9k=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;Rebuilding an Arch&quot;
+        title=&quot;&quot;
+        src=&quot;/static/arch-883766e41cd8922a799fde936a7a4e7d-78f2b.jpg&quot;
+        srcset=&quot;/static/arch-883766e41cd8922a799fde936a7a4e7d-dce19.jpg 200w,
+/static/arch-883766e41cd8922a799fde936a7a4e7d-c1413.jpg 400w,
+/static/arch-883766e41cd8922a799fde936a7a4e7d-78f2b.jpg 800w,
+/static/arch-883766e41cd8922a799fde936a7a4e7d-ab4c4.jpg 1200w,
+/static/arch-883766e41cd8922a799fde936a7a4e7d-bc99b.jpg 1600w,
+/static/arch-883766e41cd8922a799fde936a7a4e7d-34a60.jpg 2400w,
+/static/arch-883766e41cd8922a799fde936a7a4e7d-aafac.jpg 4000w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p align=&apos;center&apos; &gt;&lt;font size=3&gt; Easier than it looks!&lt;/font&gt;&lt;/p&gt;
+## PROBLEM 
+&lt;p&gt;Not clear, but looks like misconfigured packages after multiple installations, uninstallations and re-installations of packages and Desktop Environments&lt;/p&gt;
+&lt;h2&gt;PROLOGUE&lt;/h2&gt;
+&lt;p&gt;So today I had problems that caused KDE Plasma to &lt;em&gt;not acknowledge&lt;/em&gt; my laptop as a laptop.
+In other words, my Arch was on the edge of collapse.&lt;/p&gt;
+&lt;h2&gt;BABY STEPS&lt;/h2&gt;
+&lt;p&gt;So, I reinstalled all the packages of my installation in one command, like so&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# pacman -Qenq | sudo pacman -S -&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;But as you can see the post hasn’t ended here, it didn’t pan out.&lt;/p&gt;
+&lt;h2&gt;SOLUTION&lt;/h2&gt;
 &lt;p&gt;Next up, after hours of help at #archlinux and #kde-plasma, I found this Forum page that gave me just the right instructions!&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -17,12 +59,13 @@ So, I reinstalled all the packages of my installation in one command, like so&lt
 &lt;li&gt;
 &lt;p&gt;next, I &lt;strong&gt;force-reinstalled&lt;/strong&gt; all the packages I had in my installation.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
-      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo pacman -Qqen &amp;gt; pkglist.txt
-sudo pacman --force -S $(&amp;lt; pkglist.txt)&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# pacman -Qqen &amp;gt; pkglist.txt
+# pacman --force -S $(&amp;lt; pkglist.txt)&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Now my installation is sweet as candy with no losses and everything perfect again! :)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[A better blog]]></title><description><![CDATA[
+&lt;h2&gt;EPILOGUE&lt;/h2&gt;
+&lt;p&gt;Now my installation is sweet as candy with no loss of any personal configs, and everything is perfect again! :happy:&lt;/p&gt;</content:encoded></item><item><title><![CDATA[A better blog]]></title><description><![CDATA[
 Hi Greg! 
 I saw your Github profile had this starter for a personal blog, so I thought Why not!? After days of scouring the internet, I…]]></description><link>https://journal.piyush.tech/best_regards/</link><guid isPermaLink="false">https://journal.piyush.tech/best_regards/</guid><content:encoded>&lt;p&gt;
   &lt;a
