@@ -19,7 +19,7 @@ Today, an idea struck my mind-
 
 > Developers can finally use Ubuntu through command line interface, great! If they could also use **GUI** apps fired from within the Ubuntu bash CLI, ah that would have been lovely.
 
-Ever since I [installed Arch Linux](https://brute4s99.gitlab.io/arch_zero_to_one/) on my system over days of research, I came to appreciate all the nit-bits and procedures involved in installing an OS and everything that a proprietary-software user believes *should* come with it.
+Ever since I [installed Arch Linux](https://notes.piyush.tech/arch_zero_to_one/) on my system over days of research, I came to appreciate all the nit-bits and procedures involved in installing an OS and everything that a proprietary-software user believes *should* come with it.
 
 Since now I possessed the knowledge I needed to pull this off, I fired up my home PC and I was ready to hack!
 # Baby Steps

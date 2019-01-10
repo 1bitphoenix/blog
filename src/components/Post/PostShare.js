@@ -50,14 +50,14 @@ class PostShare extends React.Component {
     const { post, classes, slug } = this.props;
     const { excerpt, frontmatter } = post;
     const { title } = frontmatter;
-    const url = config.siteUrl + config.pathPrefix + slug;
+    const url = config.siteUrl + slug;
 
     const iconSize = 36;
     const filter = count => (count > 0 ? count : "");
 
     return (
       <div className={classes.share}>
-        <span className={classes.label}>SHARE</span>
+        <span className={classes.label}><a href={url}>SHARE </a> </span>
         <div className={classes.links}>
           <TwitterShareButton url={url} title={title}>
             <TwitterIcon round size={iconSize} />
