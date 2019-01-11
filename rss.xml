@@ -1,4 +1,67 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[brute4s99.blog]]></title><description><![CDATA[Piyush writes here on his blog. Feel free to take a look.]]></description><link>https://journal.piyush.tech</link><generator>RSS for Node</generator><lastBuildDate>Thu, 10 Jan 2019 07:00:00 GMT</lastBuildDate><item><title><![CDATA[Recovering your Arch from hell]]></title><description><![CDATA[PROBLEM Not clear, but looks like misconfigured packages after multiple installations, uninstallations and re-installations of packages and…]]></description><link>https://journal.piyush.tech/recovering_your_arch_from_hell/</link><guid isPermaLink="false">https://journal.piyush.tech/recovering_your_arch_from_hell/</guid><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[brute4s99.blog]]></title><description><![CDATA[Piyush writes here on his blog. Feel free to take a look.]]></description><link>https://journal.piyush.tech</link><generator>RSS for Node</generator><lastBuildDate>Fri, 11 Jan 2019 08:29:35 GMT</lastBuildDate><item><title><![CDATA[ABCs of Unix]]></title><description><![CDATA[— THE ABC’S OF UNIX]]></description><link>https://journal.piyush.tech/abc_of_unix/</link><guid isPermaLink="false">https://journal.piyush.tech/abc_of_unix/</guid><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/Unix-e87325ae57d528519aca61d2a90898f8-c541b.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 62.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsSAAALEgHS3X78AAACnElEQVQoz1VSW2sTQRidndlLNpu9ZG/ZXJqku9kkTUma5mpza0tTY0qTtLG0RVqLpqDWKKIoigqWKogUrA9iffClL9InHxXB/+bsVgXhDMwM35nvfHMOAAgACgAPAF5A8AQUIfJDpEBShZSOMEjN2SMZQonABbgM0MBhQeDsCC8BBYLyI49G8yFWjvKaKQYSfiOpBNOykZJ1W5ImfVyEoXUKP42fIDxuS4IjkIgYheINVo2K0aSeyk5kC1ahmqzUpqqNTKWRKdRS6WI0Mq35TR8bopGKCIEALG4uQFoh+SAbiPutdChfsFv1fGex2u80NvtLW4P29nB5OFhod8qzdTs+E5Qt3hOioQKBD4uXERtglKgQSxq5GavdKl3tLuwOu+O97fHu5vP7oyd39h4f7O5sXWl3Srk5KzSt8jGW1BEQACAVxAU9ekxKZMK5rLnRW371bPzu6NHP72ffzj+dn538+vH188nhznp3tVcvNlPRXECc5CiDBOJf8oXmciW91qsdHR4cv334+sXB6YeXH98//XJ6ePzmwe1Rf2W1VqynYrmAcEGWsGwFeg1Gi4lx2yiW7X6/sjFoXhu2b2yt3Lreu3dzYzxavzta39/vLrWL2aoZdmVjC53O0A8ZjZLCXMhSEulIPms3yvmlWrnbmustNgft+bXLC6vLzfnW7Owl28wF1YTAhvGHQ8BjqwRIOn9GS2Ff0JStqdB0Nj6TtwqFZKmUxoOUqulCJTlViEczumoJXMRD6SQU3bRgn7FbpB/h/j7DI0/welwyTBkLCSfUsO0gaMuqKQoTXtagKZWEEsQswOCEMW4wfX+CSaqI1kicJAYj8A8kpSGcDTyjEw+vyyKBuyj3gBPDAcd6PIzwP3j3nnNrGLfezfZv1BBm1AAv0DwAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;UNIX&quot;
+        title=&quot;&quot;
+        src=&quot;/static/Unix-e87325ae57d528519aca61d2a90898f8-48538.png&quot;
+        srcset=&quot;/static/Unix-e87325ae57d528519aca61d2a90898f8-bed0f.png 200w,
+/static/Unix-e87325ae57d528519aca61d2a90898f8-5fd34.png 400w,
+/static/Unix-e87325ae57d528519aca61d2a90898f8-48538.png 800w,
+/static/Unix-e87325ae57d528519aca61d2a90898f8-b70ec.png 1200w,
+/static/Unix-e87325ae57d528519aca61d2a90898f8-c541b.png 1280w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;A is for awk, which runs like a snail, and
+B is for biff, which reads all your mail.
+C is for cc, as hackers recall, while
+D is for dd, the command that does all.
+E is for emacs, which rebinds your keys, and
+F is for fsck, which rebuilds your trees.
+G is for grep, a clever detective, while
+H is for halt, which may seem defective.
+I is for indent, which rarely amuses, and
+J is for join, which nobody uses.
+K is for kill, which makes you the boss, while
+L is for lex, which is missing from DOS.
+M is for more, from which less was begot, and
+N is for nice, which it really is not.
+O is for od, which prints out things nice, while
+P is for passwd, which reads in strings twice.
+Q is for quota, a Berkeley-type fable, and
+R is for ranlib, for sorting ar table.
+S is for spell, which attempts to belittle, while
+T is for true, which does very little.
+U is for uniq, which is used after sort, and
+V is for vi, which is hard to abort.
+W is for whoami, which tells you your name, while
+X is, well, X, of dubious fame.
+Y is for yes, which makes an impression, and
+Z is for zcat, which handles compression.&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;— THE ABC’S OF UNIX&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Recovering your Arch from hell]]></title><description><![CDATA[PROBLEM Not clear, but looks like misconfigured packages after multiple installations, uninstallations and re-installations of packages and…]]></description><link>https://journal.piyush.tech/recovering_your_arch_from_hell/</link><guid isPermaLink="false">https://journal.piyush.tech/recovering_your_arch_from_hell/</guid><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/arch-883766e41cd8922a799fde936a7a4e7d-aafac.jpg&quot;
