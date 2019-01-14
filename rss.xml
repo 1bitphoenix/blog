@@ -1,4 +1,169 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[brute4s99.blog]]></title><description><![CDATA[Piyush writes here on his blog. Feel free to take a look.]]></description><link>https://journal.piyush.tech</link><generator>RSS for Node</generator><lastBuildDate>Fri, 11 Jan 2019 17:49:49 GMT</lastBuildDate><item><title><![CDATA[ABCs of Unix]]></title><description><![CDATA[— THE ABCs OF UNIX]]></description><link>https://journal.piyush.tech/abc_of_unix/</link><guid isPermaLink="false">https://journal.piyush.tech/abc_of_unix/</guid><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[brute4s99.blog]]></title><description><![CDATA[Piyush writes here on his blog. Feel free to take a look.]]></description><link>https://journal.piyush.tech</link><generator>RSS for Node</generator><lastBuildDate>Mon, 14 Jan 2019 19:56:21 GMT</lastBuildDate><item><title><![CDATA[Arcanist]]></title><description><![CDATA[INTRODUCTION This post is dedicated to Arcanist, a command-line interface to Phabricator.
+Phabricator is a set of tools that help  KDE…]]></description><link>https://journal.piyush.tech/arcanist/</link><guid isPermaLink="false">https://journal.piyush.tech/arcanist/</guid><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/cover-51cb6cdfac9c7d4e8d7cc089838f10ce-89d2d.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAAByklEQVQ4y7WVzSuEURTG52NBsfGRjxHZyUIpZWdjwU42PspEhoX8A9gYO9kofwSrISRFloqtjQ0pylBK42OmGOb1nPHccbruO2Pj1q/73nPOfd5zz5z3TiDgGJ7nFeZcLidzkOTXOqbokCAlJgJhR0xYfHa8b1YykEXY8lUIDmF3tvoYJivM9bAvYz4Hb0SeV0AjY0K/RM0Da2XEBsG79z32QBwsImaXtk8w7JuplVmUm45AxFGaBrDPmGlb1CmGTA6UQA/WtUCEupV9h6IxI5ovndSBhgkGZOBoVRvPwBW4hf1E2ZvAk5Vp0NRv1PsZm3T2g2PwCrKs2zM4BL2M2VD7xs2bysC1cizR3g7S4BE0gw6uP5BAJ2MW1L4kqDSCN8oRV0d6APesczVIcd3CmHm17y4vSMeYciRo62PfZfjCJFtJTjPCmHW1LxbQhcQ8RUfaZED7Ke0v4BKUq/ZJ0TdT0LLaZtI0sxIcAF2gDbWLqq8rYYmF/HoxxkBp3jpHY9eAbcbMOhvbITok/c1NWyz+nNRX1Sxa8numqGn0CI61ivmCfZhlDdfUrxzSd4HvparvQa6rsEEI/un6+pcLtki2cpzCX0CprL4A57ZsuqR9MEgAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;Phabricator&quot;
+        title=&quot;&quot;
+        src=&quot;/static/cover-51cb6cdfac9c7d4e8d7cc089838f10ce-48538.png&quot;
+        srcset=&quot;/static/cover-51cb6cdfac9c7d4e8d7cc089838f10ce-bed0f.png 200w,
+/static/cover-51cb6cdfac9c7d4e8d7cc089838f10ce-5fd34.png 400w,
+/static/cover-51cb6cdfac9c7d4e8d7cc089838f10ce-48538.png 800w,
+/static/cover-51cb6cdfac9c7d4e8d7cc089838f10ce-89d2d.png 1024w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p align=&apos;center&apos;&gt;&lt;font size=2&gt; Arcanist by Phabricator&lt;/font&gt;&lt;/p&gt;
+&lt;h2&gt;INTRODUCTION&lt;/h2&gt;
+&lt;p&gt;This post is dedicated to Arcanist, a command-line interface to Phabricator.
+Phabricator is a set of tools that help &lt;a href=&quot;https://www.kde.org&quot;&gt;KDE&lt;/a&gt; build better software, faster.&lt;/p&gt;
+&lt;p&gt;Various command-line based solutions out there help developers to acheive good workflow across features and projects(Git, Mercurial &lt;em&gt;et al&lt;/em&gt;); Arcanist takes the same approach, but feels a lot more practical to me.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://secure.phabricator.com/book/phabricator/article/arcanist/&quot;&gt;Arcanist User Guide&lt;/a&gt; states thus:-&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Arcanist provides command-line access to many Phabricator tools (like Differential, Files, and Paste), integrates with static analysis (“lint”) and unit tests, and manages common workflows like getting changes into Differential for review.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Setting up Arcanist&lt;/h2&gt;
+&lt;p&gt;The two dependencies to Arcanist are - &lt;code class=&quot;language-text&quot;&gt;git&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;php&lt;/code&gt;. Install them using &lt;code class=&quot;language-text&quot;&gt;sudo pacman -S git php&lt;/code&gt; (or equivalent for your distro).&lt;/p&gt;
+&lt;p&gt;Then you can install Arcanist itself.
+It was as simple as &lt;code class=&quot;language-text&quot;&gt;yay -S arcanist&lt;/code&gt; for me.
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/arcanist_install-a24fcdbb78eee41962f66ecd5cc46fc0-4a64c.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 684px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 72.07602339181287%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB40lEQVQoz11SCZKbMBDkE+awBJLQhQ4OGwPreJ2tPCGvyffToNiVpEs1NBI9PTMic8Nj/Pmru3ZDH9dluc3zEKM1Rkmpleq6jlJaFkVVln/WC0VRZGwSJjDpfdN13DmB6D0VIqc01zpnTUlJ1baVlJVSVdP8I5bBdMH5GPtpitNknTPOlcacra2UqVq1r7qpCKko3ePf4s7E74/n8/Pz28d9W7dlWXzwORdnr5qR0VDT2FBHz7Qqi7L8v2zD1DzaMbRWKKPbtjVaW6lMp8Lmw+Lj6vWklVFCCJwiphS7WN9sG6Tp7XgfrLNSSiIEVYrAvGaEiTOpq6I8vwBZeWAXt9bOl8t8va23dRyGfhioc9QHzIwIjkQ1501TE0owdkJIXdcgKWb9rYdCHbciD+yVMcaPJTi3FkN02MMR59wYA6K1xk6morlcgRlYlnUcJ22M9x4aRMY5TJoDicDw/ZpBNx0YxxH+0CAxIgoJIYDABBwEnojpm8SzabrgEWPc3cyOdwtpQuQArMDzPC9eOJ1O2dePL9zt4/FY1xXx+Xw+DmzbhnRIlDpMbb/vOY09Yx3/OICeh2GAZ9/3SIda0BUc4JYuBl+nKpIem5kY2zv+rW2DM9LDBH8CCGMMBLbvLlLDwFv8G7FKdhY22rbVAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;arcanist_install&quot;
+        title=&quot;&quot;
+        src=&quot;/static/arcanist_install-a24fcdbb78eee41962f66ecd5cc46fc0-4a64c.png&quot;
+        srcset=&quot;/static/arcanist_install-a24fcdbb78eee41962f66ecd5cc46fc0-2b3cd.png 200w,
+/static/arcanist_install-a24fcdbb78eee41962f66ecd5cc46fc0-7d2d4.png 400w,
+/static/arcanist_install-a24fcdbb78eee41962f66ecd5cc46fc0-4a64c.png 684w&quot;
+        sizes=&quot;(max-width: 684px) 100vw, 684px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+Other distros’ users may want to look for &lt;strong&gt;Installing Arcanist&lt;/strong&gt; subsection in  &lt;a href=&quot;https://secure.phabricator.com/book/phabricator/article/arcanist_quick_start/&quot;&gt;Arcanist quick start&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Next up, get the source code of the project you wish to work on by &lt;a href=&quot;https://cgit.kde.org/&quot;&gt;cloning it from cgit&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Now then, let’s dive into development! 🤖&lt;/p&gt;
+&lt;h2&gt;Development with Arcanist&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;You may find an interesting &lt;a href=&quot;https://bugs.kde.org/describecomponents.cgi&quot;&gt;bug from KDE’s bug tracker&lt;/a&gt; or &lt;a href=&quot;https://phabricator.kde.org/&quot;&gt;task from your project’s Workboard&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Always create a feature branch/ bookmark&lt;/strong&gt; before touching any file in a clean clone. Use &lt;code class=&quot;language-text&quot;&gt;arc feature&lt;/code&gt; for it.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;arc feature name_of_feature_branch&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Poke around, play with the code, do your thing.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When ready to submit a patch, type in &lt;code class=&quot;language-text&quot;&gt;arc diff&lt;/code&gt;. This will also help you maintain your submitted patches. Complete the following forms, that look like:-
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/arc_diff-6d3b7c36f5401e5eeccf21c6cd9c9584-15296.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.22254758418741%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABY0lEQVQoz3VQ23KCMBDlgYvjaFWSzSYQFFGn4vUz2r60fUXtjKA47f//QDcCtp2phzPLctizm6x1uXwd81NZfhanMi/OlBfFOc/Pu91hv//Isn2WHY7HgsRKJ1INVZaXwgqDoN1ut7yW4zi2bbuO0/II7jV6rltFA881iWM7ru12Op1u98EaJ7MwGnEhARAMBFEIvBFRolQ1UQFIMMWCcW6x8VQ9zsV0wrXmOmSITCBH5A0AftP0pn7k9BmzBqFWkykmCcQxRBHoSAQhBgHeh5SyMfu+Uoq+jSyENKc0JEndB2PMmOkVmDnSXFQaR81/0fylyQO/MdNqfPC54ByhprxDpOXSncGYaSVkpqbVieUPq1HyKtbxdoDa3O/36Q4cOI31aZ8CGGfXaBSTI/yJ9KDo9Qa0LCtN0+FwmKYLHel5muooquJ6s3l6eX59fxuN49V6Tcpmux3F8XK1SibJYrkk9zcWEUycyF8PawAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;arc diff&quot;
+        title=&quot;&quot;
+        src=&quot;/static/arc_diff-6d3b7c36f5401e5eeccf21c6cd9c9584-48538.png&quot;
+        srcset=&quot;/static/arc_diff-6d3b7c36f5401e5eeccf21c6cd9c9584-bed0f.png 200w,
+/static/arc_diff-6d3b7c36f5401e5eeccf21c6cd9c9584-5fd34.png 400w,
+/static/arc_diff-6d3b7c36f5401e5eeccf21c6cd9c9584-48538.png 800w,
+/static/arc_diff-6d3b7c36f5401e5eeccf21c6cd9c9584-b70ec.png 1200w,
+/static/arc_diff-6d3b7c36f5401e5eeccf21c6cd9c9584-15296.png 1366w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;That’s it! Your patch is submitted for review! You also get a link to share with others and see how the submission looks on Phabricator!&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Continue hacking on another bug or Task, and wait for the review on the submiited patch! &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Remember to make a different feature branch beforehand!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Tips&lt;/h2&gt;
+&lt;p&gt;The world is not perfect, and many-a-times the reviewers will suggest changes to the patch before flashing the green light. Just revisit the branch, do the changes required, and hit &lt;code class=&quot;language-text&quot;&gt;arc diff&lt;/code&gt; again! &lt;/p&gt;
+&lt;p&gt;If you’re not sure about this, use &lt;code class=&quot;language-text&quot;&gt;arc diff --preview&lt;/code&gt;. I always use it before associating a diff with a submission! 😉&lt;/p&gt;
+&lt;h2&gt;Trying a patch&lt;/h2&gt;
+&lt;p&gt;You can always try out any submitted patch along with the latest &lt;code class=&quot;language-text&quot;&gt;master&lt;/code&gt; by using the &lt;code class=&quot;language-text&quot;&gt;arc patch&lt;/code&gt; command!&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;arc patch D18812&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;This command will do the following in definite order:-&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;create a new feature branch with name &lt;code class=&quot;language-text&quot;&gt;arcpatch-D18812&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;apply &lt;a href=&quot;https://phabricator.kde.org/D18812&quot;&gt;patch D18812&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;set local tracking to the local branch &lt;code class=&quot;language-text&quot;&gt;arcpatch-D18812&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;checkout &lt;code class=&quot;language-text&quot;&gt;arcpatch-D18812&lt;/code&gt; feature branch.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;&lt;code class=&quot;language-text&quot;&gt;arc feature&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Suppose you were at &lt;code class=&quot;language-text&quot;&gt;master&lt;/code&gt; in your clone, and you do &lt;code class=&quot;language-text&quot;&gt;arc feature some_name&lt;/code&gt;. Now, &lt;code class=&quot;language-text&quot;&gt;some_name&lt;/code&gt; branch will be set to track the local &lt;code class=&quot;language-text&quot;&gt;master&lt;/code&gt;, as in if you commit anything to &lt;em&gt;just&lt;/em&gt; the local copy of &lt;code class=&quot;language-text&quot;&gt;master&lt;/code&gt; that you have, and then &lt;code class=&quot;language-text&quot;&gt;git checkout some_name&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;git&lt;/code&gt; will ask you to &lt;code class=&quot;language-text&quot;&gt;perform &amp;quot;git pull&amp;quot; as your current branch is behind by some commits&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;TL;DR&lt;/h3&gt;
+&lt;p&gt;doing &lt;code class=&quot;language-text&quot;&gt;git pull&lt;/code&gt; in &lt;code class=&quot;language-text&quot;&gt;some_name&lt;/code&gt; will import the changes from the last branch you &lt;code class=&quot;language-text&quot;&gt;checkout&lt;/code&gt;ed, before &lt;code class=&quot;language-text&quot;&gt;arc feature some_name&lt;/code&gt;.&lt;/p&gt;
+&lt;p align=&apos;center&apos;&gt; &lt;font size=3&gt; This quickstart should be enough to get you started on KDE&apos;s Phabricator and setting sail on some binary adventures!&lt;/font&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ABCs of Unix]]></title><description><![CDATA[— THE ABCs OF UNIX]]></description><link>https://journal.piyush.tech/abc_of_unix/</link><guid isPermaLink="false">https://journal.piyush.tech/abc_of_unix/</guid><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/Unix-e87325ae57d528519aca61d2a90898f8-c541b.png&quot;
@@ -761,52 +926,7 @@ Consider the conventional case of a bank (a conventional central authority).&lt;
 &lt;p&gt;It’s MONEY!&lt;/p&gt;
 &lt;p&gt;There are nodes, there are traders, then there are MINERS.&lt;/p&gt;
 &lt;p&gt;Miners are a subset of nodes as all miners must be running a full node (ie they must have complete ledger with themselves) in order to mine (at least to mine properly). The nodes are what determine consensus as &lt;strong&gt;all nodes must agree to the same rules otherwise the nodes will fork off of the network.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://journal.piyush.tech/my_testimony_about_blockchain_p2&quot;&gt;&lt;p align=&apos;center&apos;&gt;Continue Reading&lt;/p&gt;&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[It's a blog !]]></title><description><![CDATA[This is the first post that comes with the blog by default. Let’s see. I made a blog. Let’s try our best to make it useful, yeah ? I don’t…]]></description><link>https://journal.piyush.tech/its_a_blog/</link><guid isPermaLink="false">https://journal.piyush.tech/its_a_blog/</guid><content:encoded>&lt;p&gt;
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/cover-4e94a5346ec7f21326424a00563b2222-e4aee.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 33.4375%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAByklEQVQozzWS308SYBSGP+SXgAgUIAwNDJQIYYQSCwHBhMx0CRnquNBmtShWSHaTrBlaW3Hhhblu2uquP/PpIHT7be9znnPeTym9BTXqQI15UY5plDuKJpBGHytjXdrFV31D7OAjubddSu/PKByekXz1icBOG8fKHsbkBiOhPGryLsq7gFIGK8rsQlmnUNdmUJ44I9MZDPFV7MU609st0s0u651zaqeXVD7/oHDUI7J/jPvhS0ypCtqZogDTkk32geMCnEDZ/Kjrt2RKAs0Q6CjUCe0ckm19pdL9SePyL/XeH0rHF8Sen+B51MCceoJ29v4AOJEQoNGGsngEGEA5IwK8Iytn0EfL2LLb+KtNUo0uq50Lat9+s/nlF/kP50T2OrgevMA03zdcHqzsjg8NLf8NwzJFHqfS6MJFzAuPcZefMbt7ROr1Kdl2j0zrO/GDE25U3mHP1THE1uREORGZR7miAtSPoUxOueGklBIcWiYGd7y9gjVdxV3ax7/ZJFhrc3PrEN96A0e+jimxgTa0hGYyJXZzkpcOlM6EMtoHln2oXZp2iqlXyum3HS5gTqwxLmD74lNs97YYE/PRuRK64CIaX/LqZ1zJSP4fY3ra0OAo3XcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
-        alt=&quot;his image&quot;
-        title=&quot;&quot;
-        src=&quot;/static/cover-4e94a5346ec7f21326424a00563b2222-48538.png&quot;
-        srcset=&quot;/static/cover-4e94a5346ec7f21326424a00563b2222-bed0f.png 200w,
-/static/cover-4e94a5346ec7f21326424a00563b2222-5fd34.png 400w,
-/static/cover-4e94a5346ec7f21326424a00563b2222-48538.png 800w,
-/static/cover-4e94a5346ec7f21326424a00563b2222-b70ec.png 1200w,
-/static/cover-4e94a5346ec7f21326424a00563b2222-d134a.png 1600w,
-/static/cover-4e94a5346ec7f21326424a00563b2222-f6ead.png 2400w,
-/static/cover-4e94a5346ec7f21326424a00563b2222-e4aee.png 2560w&quot;
-        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-      /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    &lt;/p&gt;
-&lt;p&gt;This is the first post that comes with the blog by default.&lt;/p&gt;
-&lt;p&gt;Let’s see.&lt;/p&gt;
-&lt;h3&gt;I made a blog.&lt;/h3&gt;
-&lt;p&gt;Let’s try our best to make it useful, yeah ?&lt;/p&gt;
-&lt;p&gt;I don’t wish you all to be watching ads with my blog, so just wait for a while!&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Good company in a journey makes the way seem shorter.&lt;br&gt;
-— Izaak Walton&lt;/p&gt;
-&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[A real life Hogwarts]]></title><description><![CDATA[Skimming through your seniors’ profile does some good at times! “The programmers of tomorrow are the wizards of the future !” – Gabe, Co…]]></description><link>https://journal.piyush.tech/a_real_life_hogwarts/</link><guid isPermaLink="false">https://journal.piyush.tech/a_real_life_hogwarts/</guid><content:encoded>&lt;p&gt;Skimming through your seniors’ profile does some good at times!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://journal.piyush.tech/my_testimony_about_blockchain_p2&quot;&gt;&lt;p align=&apos;center&apos;&gt;Continue Reading&lt;/p&gt;&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[A real life Hogwarts]]></title><description><![CDATA[Skimming through your seniors’ profile does some good at times! “The programmers of tomorrow are the wizards of the future !” – Gabe, Co…]]></description><link>https://journal.piyush.tech/a_real_life_hogwarts/</link><guid isPermaLink="false">https://journal.piyush.tech/a_real_life_hogwarts/</guid><content:encoded>&lt;p&gt;Skimming through your seniors’ profile does some good at times!&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;“The programmers of tomorrow are the wizards of the future !”&lt;br&gt;
 – Gabe, Co-founder-Valve&lt;/p&gt;
@@ -866,4 +986,49 @@ Consider the conventional case of a bank (a conventional central authority).&lt;
 &lt;p&gt;For me, it was like Hogwarts, a place which normal people don’t know, yet full of surprises, and new learning! It opened a whole new world for me!&lt;br&gt;
 -Avik Mukherjee&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;And frankly, that makes the two of us.&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;And frankly, that makes the two of us.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[It's a blog !]]></title><description><![CDATA[This is the first post that comes with the blog by default. Let’s see. I made a blog. Let’s try our best to make it useful, yeah ? I don’t…]]></description><link>https://journal.piyush.tech/its_a_blog/</link><guid isPermaLink="false">https://journal.piyush.tech/its_a_blog/</guid><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/cover-4e94a5346ec7f21326424a00563b2222-e4aee.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 33.4375%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAByklEQVQozzWS308SYBSGP+SXgAgUIAwNDJQIYYQSCwHBhMx0CRnquNBmtShWSHaTrBlaW3Hhhblu2uquP/PpIHT7be9znnPeTym9BTXqQI15UY5plDuKJpBGHytjXdrFV31D7OAjubddSu/PKByekXz1icBOG8fKHsbkBiOhPGryLsq7gFIGK8rsQlmnUNdmUJ44I9MZDPFV7MU609st0s0u651zaqeXVD7/oHDUI7J/jPvhS0ypCtqZogDTkk32geMCnEDZ/Kjrt2RKAs0Q6CjUCe0ckm19pdL9SePyL/XeH0rHF8Sen+B51MCceoJ29v4AOJEQoNGGsngEGEA5IwK8Iytn0EfL2LLb+KtNUo0uq50Lat9+s/nlF/kP50T2OrgevMA03zdcHqzsjg8NLf8NwzJFHqfS6MJFzAuPcZefMbt7ROr1Kdl2j0zrO/GDE25U3mHP1THE1uREORGZR7miAtSPoUxOueGklBIcWiYGd7y9gjVdxV3ax7/ZJFhrc3PrEN96A0e+jimxgTa0hGYyJXZzkpcOlM6EMtoHln2oXZp2iqlXyum3HS5gTqwxLmD74lNs97YYE/PRuRK64CIaX/LqZ1zJSP4fY3ra0OAo3XcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;his image&quot;
+        title=&quot;&quot;
+        src=&quot;/static/cover-4e94a5346ec7f21326424a00563b2222-48538.png&quot;
+        srcset=&quot;/static/cover-4e94a5346ec7f21326424a00563b2222-bed0f.png 200w,
+/static/cover-4e94a5346ec7f21326424a00563b2222-5fd34.png 400w,
+/static/cover-4e94a5346ec7f21326424a00563b2222-48538.png 800w,
+/static/cover-4e94a5346ec7f21326424a00563b2222-b70ec.png 1200w,
+/static/cover-4e94a5346ec7f21326424a00563b2222-d134a.png 1600w,
+/static/cover-4e94a5346ec7f21326424a00563b2222-f6ead.png 2400w,
+/static/cover-4e94a5346ec7f21326424a00563b2222-e4aee.png 2560w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;This is the first post that comes with the blog by default.&lt;/p&gt;
+&lt;p&gt;Let’s see.&lt;/p&gt;
+&lt;h3&gt;I made a blog.&lt;/h3&gt;
+&lt;p&gt;Let’s try our best to make it useful, yeah ?&lt;/p&gt;
+&lt;p&gt;I don’t wish you all to be watching ads with my blog, so just wait for a while!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Good company in a journey makes the way seem shorter.&lt;br&gt;
+— Izaak Walton&lt;/p&gt;
+&lt;/blockquote&gt;</content:encoded></item></channel></rss>

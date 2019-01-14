@@ -47,19 +47,19 @@ webpackJsonp([1],{
 
 	var _SocialIcons2 = _interopRequireDefault(_SocialIcons);
 
-	var _InfoMenu = __webpack_require__(502);
+	var _InfoMenu = __webpack_require__(504);
 
 	var _InfoMenu2 = _interopRequireDefault(_InfoMenu);
 
-	var _InfoHeader = __webpack_require__(503);
+	var _InfoHeader = __webpack_require__(505);
 
 	var _InfoHeader2 = _interopRequireDefault(_InfoHeader);
 
-	var _InfoText = __webpack_require__(505);
+	var _InfoText = __webpack_require__(507);
 
 	var _InfoText2 = _interopRequireDefault(_InfoText);
 
-	var _StackIcons = __webpack_require__(506);
+	var _StackIcons = __webpack_require__(508);
 
 	var _StackIcons2 = _interopRequireDefault(_StackIcons);
 
@@ -75,7 +75,7 @@ webpackJsonp([1],{
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	__webpack_require__(517);
+	__webpack_require__(519);
 
 	var styles = function styles(theme) {
 	  var _infoBox;
@@ -240,6 +240,14 @@ webpackJsonp([1],{
 
 	var _twitter2 = _interopRequireDefault(_twitter);
 
+	var _gitlab = __webpack_require__(502);
+
+	var _gitlab2 = _interopRequireDefault(_gitlab);
+
+	var _linkedin = __webpack_require__(503);
+
+	var _linkedin2 = _interopRequireDefault(_linkedin);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var styles = function styles(theme) {
@@ -272,7 +280,9 @@ webpackJsonp([1],{
 
 	  var items = _config2.default.authorSocialLinks;
 	  var icons = {
+	    gitlab: _gitlab2.default,
 	    twitter: _twitter2.default,
+	    linkedin: _linkedin2.default,
 	    facebook: _facebook2.default,
 	    github: _github2.default
 	  };
@@ -364,6 +374,42 @@ webpackJsonp([1],{
 /***/ 502:
 /***/ (function(module, exports, __webpack_require__) {
 
+	var React = __webpack_require__(1);
+
+	function GitlabIcon (props) {
+	    return React.createElement("svg",props,[React.createElement("title",{"key":0},"Group"),React.createElement("desc",{"key":1},"Created with Sketch."),React.createElement("defs",{"key":2}),React.createElement("g",{"id":"Page-1","stroke":"none","strokeWidth":"1","fill":"none","fillRule":"evenodd","sketchType":"MSPage","key":3},React.createElement("g",{"id":"Fill-1-+-Group-24","sketchType":"MSLayerGroup"},React.createElement("g",{"id":"Group-24","sketchType":"MSShapeGroup"},React.createElement("g",{"id":"Group"},[React.createElement("path",{"d":"M105.0614,193.655 L105.0614,193.655 L143.7014,74.734 L66.4214,74.734 L105.0614,193.655 L105.0614,193.655 Z","id":"Fill-4","fill":"#E24329","key":0}),React.createElement("path",{"id":"Fill-6","fill":"#FC6D26","key":1}),React.createElement("path",{"d":"M105.0614,193.6548 L66.4214,74.7338 L12.2684,74.7338 L105.0614,193.6548 Z","id":"Fill-8","fill":"#FC6D26","key":2}),React.createElement("path",{"id":"Fill-10","fill":"#FC6D26","key":3}),React.createElement("path",{"d":"M12.2685,74.7341 L12.2685,74.7341 L0.5265,110.8731 C-0.5445,114.1691 0.6285,117.7801 3.4325,119.8171 L105.0615,193.6551 L12.2685,74.7341 Z","id":"Fill-12","fill":"#FCA326","key":4}),React.createElement("path",{"id":"Fill-14","fill":"#FC6D26","key":5}),React.createElement("path",{"d":"M12.2685,74.7342 L66.4215,74.7342 L43.1485,3.1092 C41.9515,-0.5768 36.7375,-0.5758 35.5405,3.1092 L12.2685,74.7342 Z","id":"Fill-16","fill":"#E24329","key":6}),React.createElement("path",{"d":"M105.0614,193.6548 L143.7014,74.7338 L197.8544,74.7338 L105.0614,193.6548 Z","id":"Fill-18","fill":"#FC6D26","key":7}),React.createElement("path",{"d":"M197.8544,74.7341 L197.8544,74.7341 L209.5964,110.8731 C210.6674,114.1691 209.4944,117.7801 206.6904,119.8171 L105.0614,193.6551 L197.8544,74.7341 Z","id":"Fill-20","fill":"#FCA326","key":8}),React.createElement("path",{"d":"M197.8544,74.7342 L143.7014,74.7342 L166.9744,3.1092 C168.1714,-0.5768 173.3854,-0.5758 174.5824,3.1092 L197.8544,74.7342 Z","id":"Fill-22","fill":"#E24329","key":9})]))))]);
+	}
+
+	GitlabIcon.defaultProps = {"width":"210px","height":"194px","viewBox":"0 0 210 194","version":"1.1","xmlnsSketch":"http://www.bohemiancoding.com/sketch/ns"};
+
+	module.exports = GitlabIcon;
+
+	GitlabIcon.default = GitlabIcon;
+
+
+/***/ }),
+
+/***/ 503:
+/***/ (function(module, exports, __webpack_require__) {
+
+	var React = __webpack_require__(1);
+
+	function LinkedinIcon (props) {
+	    return React.createElement("svg",props,[React.createElement("defs",{"key":0},React.createElement("linearGradient",{"id":"linearGradient3003","y2":"425.4","gradientUnits":"userSpaceOnUse","x2":"-395.85","gradientTransform":"matrix(-0.50335197,0,0,0.50335205,-148.17928,-158.80197)","y1":"274.71","x1":"-344.15"},[React.createElement("stop",{"stopColor":"#FFF","offset":"0","key":0}),React.createElement("stop",{"stopColor":"#FFF","stopOpacity":"0","offset":"1","key":1})])),React.createElement("rect",{"transform":"scale(-1,1)","rx":"30.201","ry":"30.201","height":"199.98","width":"200","y":"0.011226","x":"-200","fill":"#069","key":1}),React.createElement("path",{"opacity":"0.7811159","d":"m147.16,8.5612-94.32,0c-24.967,0-45.066,20.263-45.066,45.433v92.02c0.80814,19.647,3.9167,7.2266,9.8337-14.531,6.8768-25.287,29.273-47.388,56.547-63.952,20.817-12.642,44.119-20.715,86.533-21.483,24.054-0.43553,21.931-31.218-13.527-37.487z","fill":"url(#linearGradient3003)","key":2}),React.createElement("path",{"d":"m63.992,167.85,0-90.884-30.208,0,0,90.884,30.208,0zm-15.1-103.3c10.534,0,17.091-6.9789,17.091-15.7-0.19632-8.9179-6.5566-15.703-16.891-15.703-10.333,0-17.09,6.7852-17.09,15.703,0,8.7216,6.5553,15.7,16.693,15.7h0.19633z","fill":"#FFF","key":3}),React.createElement("path",{"d":"m80.712,167.85,30.208,0,0-50.754c0-2.7163,0.19632-5.4298,0.99398-7.3715,2.1838-5.4271,7.1542-11.048,15.499-11.048,10.931,0,15.304,8.3343,15.304,20.552v48.621h30.206v-52.112c0-27.916-14.903-40.905-34.778-40.905-16.296,0-23.451,9.1089-27.426,15.313h0.2017v-13.181h-30.208c0.39641,8.528,0,90.884,0,90.884z","fill":"#FFF","key":4})]);
+	}
+
+	LinkedinIcon.defaultProps = {"height":"200","width":"200","version":"1.0"};
+
+	module.exports = LinkedinIcon;
+
+	LinkedinIcon.default = LinkedinIcon;
+
+
+/***/ }),
+
+/***/ 504:
+/***/ (function(module, exports, __webpack_require__) {
+
 	"use strict";
 
 	exports.__esModule = true;
@@ -453,7 +499,7 @@ webpackJsonp([1],{
 
 /***/ }),
 
-/***/ 503:
+/***/ 505:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -480,7 +526,7 @@ webpackJsonp([1],{
 
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 
-	var _ExpandMore = __webpack_require__(504);
+	var _ExpandMore = __webpack_require__(506);
 
 	var _ExpandMore2 = _interopRequireDefault(_ExpandMore);
 
@@ -640,7 +686,7 @@ webpackJsonp([1],{
 
 /***/ }),
 
-/***/ 504:
+/***/ 506:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -664,7 +710,7 @@ webpackJsonp([1],{
 
 /***/ }),
 
-/***/ 505:
+/***/ 507:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -723,7 +769,7 @@ webpackJsonp([1],{
 
 /***/ }),
 
-/***/ 506:
+/***/ 508:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -742,43 +788,43 @@ webpackJsonp([1],{
 
 	var _reactJss2 = _interopRequireDefault(_reactJss);
 
-	var _algolia = __webpack_require__(507);
+	var _algolia = __webpack_require__(509);
 
 	var _algolia2 = _interopRequireDefault(_algolia);
 
-	var _react3 = __webpack_require__(508);
+	var _react3 = __webpack_require__(510);
 
 	var _react4 = _interopRequireDefault(_react3);
 
-	var _graphql = __webpack_require__(509);
+	var _graphql = __webpack_require__(511);
 
 	var _graphql2 = _interopRequireDefault(_graphql);
 
-	var _jss = __webpack_require__(510);
+	var _jss = __webpack_require__(512);
 
 	var _jss2 = _interopRequireDefault(_jss);
 
-	var _materialUi = __webpack_require__(511);
+	var _materialUi = __webpack_require__(513);
 
 	var _materialUi2 = _interopRequireDefault(_materialUi);
 
-	var _redux = __webpack_require__(512);
+	var _redux = __webpack_require__(514);
 
 	var _redux2 = _interopRequireDefault(_redux);
 
-	var _gatsby = __webpack_require__(513);
+	var _gatsby = __webpack_require__(515);
 
 	var _gatsby2 = _interopRequireDefault(_gatsby);
 
-	var _webpack = __webpack_require__(514);
+	var _webpack = __webpack_require__(516);
 
 	var _webpack2 = _interopRequireDefault(_webpack);
 
-	var _babel = __webpack_require__(515);
+	var _babel = __webpack_require__(517);
 
 	var _babel2 = _interopRequireDefault(_babel);
 
-	var _netlify = __webpack_require__(516);
+	var _netlify = __webpack_require__(518);
 
 	var _netlify2 = _interopRequireDefault(_netlify);
 
@@ -867,7 +913,7 @@ webpackJsonp([1],{
 
 /***/ }),
 
-/***/ 507:
+/***/ 509:
 /***/ (function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);
@@ -885,7 +931,7 @@ webpackJsonp([1],{
 
 /***/ }),
 
-/***/ 508:
+/***/ 510:
 /***/ (function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);
@@ -903,7 +949,7 @@ webpackJsonp([1],{
 
 /***/ }),
 
-/***/ 509:
+/***/ 511:
 /***/ (function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);
@@ -921,7 +967,7 @@ webpackJsonp([1],{
 
 /***/ }),
 
-/***/ 510:
+/***/ 512:
 /***/ (function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);
@@ -939,7 +985,7 @@ webpackJsonp([1],{
 
 /***/ }),
 
-/***/ 511:
+/***/ 513:
 /***/ (function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);
@@ -957,7 +1003,7 @@ webpackJsonp([1],{
 
 /***/ }),
 
-/***/ 512:
+/***/ 514:
 /***/ (function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);
@@ -975,7 +1021,7 @@ webpackJsonp([1],{
 
 /***/ }),
 
-/***/ 513:
+/***/ 515:
 /***/ (function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);
@@ -993,7 +1039,7 @@ webpackJsonp([1],{
 
 /***/ }),
 
-/***/ 514:
+/***/ 516:
 /***/ (function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);
@@ -1011,7 +1057,7 @@ webpackJsonp([1],{
 
 /***/ }),
 
-/***/ 515:
+/***/ 517:
 /***/ (function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);
@@ -1029,7 +1075,7 @@ webpackJsonp([1],{
 
 /***/ }),
 
-/***/ 516:
+/***/ 518:
 /***/ (function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);
