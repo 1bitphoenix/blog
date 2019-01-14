@@ -1,39 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[brute4s99.blog]]></title><description><![CDATA[Piyush writes here on his blog. Feel free to take a look.]]></description><link>https://journal.piyush.tech</link><generator>RSS for Node</generator><lastBuildDate>Mon, 14 Jan 2019 19:56:21 GMT</lastBuildDate><item><title><![CDATA[Arcanist]]></title><description><![CDATA[INTRODUCTION This post is dedicated to Arcanist, a command-line interface to Phabricator.
-Phabricator is a set of tools that help  KDE…]]></description><link>https://journal.piyush.tech/arcanist/</link><guid isPermaLink="false">https://journal.piyush.tech/arcanist/</guid><content:encoded>&lt;p&gt;
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/cover-51cb6cdfac9c7d4e8d7cc089838f10ce-89d2d.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[brute4s99.blog]]></title><description><![CDATA[Piyush writes here on his blog. Feel free to take a look.]]></description><link>https://journal.piyush.tech</link><generator>RSS for Node</generator><lastBuildDate>Mon, 14 Jan 2019 21:17:51 GMT</lastBuildDate><item><title><![CDATA[Arcanist]]></title><description><![CDATA[INTRODUCTION This post is dedicated to Arcanist, a command-line interface to Phabricator.
+Phabricator is a set of tools that help  KDE…]]></description><link>https://journal.piyush.tech/arcanist/</link><guid isPermaLink="false">https://journal.piyush.tech/arcanist/</guid><content:encoded>&lt;p align=&quot;center&quot;&gt;
+  &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/cover-51cb6cdfac9c7d4e8d7cc089838f10ce-89d2d.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
   
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAAByklEQVQ4y7WVzSuEURTG52NBsfGRjxHZyUIpZWdjwU42PspEhoX8A9gYO9kofwSrISRFloqtjQ0pylBK42OmGOb1nPHccbruO2Pj1q/73nPOfd5zz5z3TiDgGJ7nFeZcLidzkOTXOqbokCAlJgJhR0xYfHa8b1YykEXY8lUIDmF3tvoYJivM9bAvYz4Hb0SeV0AjY0K/RM0Da2XEBsG79z32QBwsImaXtk8w7JuplVmUm45AxFGaBrDPmGlb1CmGTA6UQA/WtUCEupV9h6IxI5ovndSBhgkGZOBoVRvPwBW4hf1E2ZvAk5Vp0NRv1PsZm3T2g2PwCrKs2zM4BL2M2VD7xs2bysC1cizR3g7S4BE0gw6uP5BAJ2MW1L4kqDSCN8oRV0d6APesczVIcd3CmHm17y4vSMeYciRo62PfZfjCJFtJTjPCmHW1LxbQhcQ8RUfaZED7Ke0v4BKUq/ZJ0TdT0LLaZtI0sxIcAF2gDbWLqq8rYYmF/HoxxkBp3jpHY9eAbcbMOhvbITok/c1NWyz+nNRX1Sxa8numqGn0CI61ivmCfZhlDdfUrxzSd4HvparvQa6rsEEI/un6+pcLtki2cpzCX0CprL4A57ZsuqR9MEgAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
-        alt=&quot;Phabricator&quot;
-        title=&quot;&quot;
-        src=&quot;/static/cover-51cb6cdfac9c7d4e8d7cc089838f10ce-48538.png&quot;
-        srcset=&quot;/static/cover-51cb6cdfac9c7d4e8d7cc089838f10ce-bed0f.png 200w,
+  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAAByklEQVQ4y7WVzSuEURTG52NBsfGRjxHZyUIpZWdjwU42PspEhoX8A9gYO9kofwSrISRFloqtjQ0pylBK42OmGOb1nPHccbruO2Pj1q/73nPOfd5zz5z3TiDgGJ7nFeZcLidzkOTXOqbokCAlJgJhR0xYfHa8b1YykEXY8lUIDmF3tvoYJivM9bAvYz4Hb0SeV0AjY0K/RM0Da2XEBsG79z32QBwsImaXtk8w7JuplVmUm45AxFGaBrDPmGlb1CmGTA6UQA/WtUCEupV9h6IxI5ovndSBhgkGZOBoVRvPwBW4hf1E2ZvAk5Vp0NRv1PsZm3T2g2PwCrKs2zM4BL2M2VD7xs2bysC1cizR3g7S4BE0gw6uP5BAJ2MW1L4kqDSCN8oRV0d6APesczVIcd3CmHm17y4vSMeYciRo62PfZfjCJFtJTjPCmHW1LxbQhcQ8RUfaZED7Ke0v4BKUq/ZJ0TdT0LLaZtI0sxIcAF2gDbWLqq8rYYmF/HoxxkBp3jpHY9eAbcbMOhvbITok/c1NWyz+nNRX1Sxa8numqGn0CI61ivmCfZhlDdfUrxzSd4HvparvQa6rsEEI/un6+pcLtki2cpzCX0CprL4A57ZsuqR9MEgAAAAASUVORK5CYII=&amp;apos;); background-size: cover; display: block;&quot;&gt;
+      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot; alt=&quot;Phabricator&quot; title=&quot;&quot; src=&quot;/static/cover-51cb6cdfac9c7d4e8d7cc089838f10ce-48538.png&quot; srcset=&quot;/static/cover-51cb6cdfac9c7d4e8d7cc089838f10ce-bed0f.png 200w,
 /static/cover-51cb6cdfac9c7d4e8d7cc089838f10ce-5fd34.png 400w,
 /static/cover-51cb6cdfac9c7d4e8d7cc089838f10ce-48538.png 800w,
-/static/cover-51cb6cdfac9c7d4e8d7cc089838f10ce-89d2d.png 1024w&quot;
-        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-      /&gt;
+/static/cover-51cb6cdfac9c7d4e8d7cc089838f10ce-89d2d.png 1024w&quot; sizes=&quot;(max-width: 800px) 100vw, 800px&quot;&gt;
     &lt;/span&gt;
   &lt;/span&gt;
   
   &lt;/a&gt;
-    &lt;/p&gt;
-&lt;p align=&apos;center&apos;&gt;&lt;font size=2&gt; Arcanist by Phabricator&lt;/font&gt;&lt;/p&gt;
+    &lt;br&gt;
+&lt;font size=&quot;2&quot;&gt; Phabricator&lt;/font&gt;&lt;/p&gt;
 &lt;h2&gt;INTRODUCTION&lt;/h2&gt;
 &lt;p&gt;This post is dedicated to Arcanist, a command-line interface to Phabricator.
 Phabricator is a set of tools that help &lt;a href=&quot;https://www.kde.org&quot;&gt;KDE&lt;/a&gt; build better software, faster.&lt;/p&gt;
@@ -147,7 +127,7 @@ Other distros’ users may want to look for &lt;strong&gt;Installing Arcanist&lt
 &lt;h2&gt;Tips&lt;/h2&gt;
 &lt;p&gt;The world is not perfect, and many-a-times the reviewers will suggest changes to the patch before flashing the green light. Just revisit the branch, do the changes required, and hit &lt;code class=&quot;language-text&quot;&gt;arc diff&lt;/code&gt; again! &lt;/p&gt;
 &lt;p&gt;If you’re not sure about this, use &lt;code class=&quot;language-text&quot;&gt;arc diff --preview&lt;/code&gt;. I always use it before associating a diff with a submission! 😉&lt;/p&gt;
-&lt;h2&gt;Trying a patch&lt;/h2&gt;
+&lt;h2&gt;&lt;code class=&quot;language-text&quot;&gt;arc patch&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;You can always try out any submitted patch along with the latest &lt;code class=&quot;language-text&quot;&gt;master&lt;/code&gt; by using the &lt;code class=&quot;language-text&quot;&gt;arc patch&lt;/code&gt; command!&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;arc patch D18812&lt;/code&gt;&lt;/pre&gt;
@@ -163,6 +143,14 @@ Other distros’ users may want to look for &lt;strong&gt;Installing Arcanist&lt
 &lt;p&gt;Suppose you were at &lt;code class=&quot;language-text&quot;&gt;master&lt;/code&gt; in your clone, and you do &lt;code class=&quot;language-text&quot;&gt;arc feature some_name&lt;/code&gt;. Now, &lt;code class=&quot;language-text&quot;&gt;some_name&lt;/code&gt; branch will be set to track the local &lt;code class=&quot;language-text&quot;&gt;master&lt;/code&gt;, as in if you commit anything to &lt;em&gt;just&lt;/em&gt; the local copy of &lt;code class=&quot;language-text&quot;&gt;master&lt;/code&gt; that you have, and then &lt;code class=&quot;language-text&quot;&gt;git checkout some_name&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;git&lt;/code&gt; will ask you to &lt;code class=&quot;language-text&quot;&gt;perform &amp;quot;git pull&amp;quot; as your current branch is behind by some commits&lt;/code&gt;.&lt;/p&gt;
 &lt;h3&gt;TL;DR&lt;/h3&gt;
 &lt;p&gt;doing &lt;code class=&quot;language-text&quot;&gt;git pull&lt;/code&gt; in &lt;code class=&quot;language-text&quot;&gt;some_name&lt;/code&gt; will import the changes from the last branch you &lt;code class=&quot;language-text&quot;&gt;checkout&lt;/code&gt;ed, before &lt;code class=&quot;language-text&quot;&gt;arc feature some_name&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;code class=&quot;language-text&quot;&gt;arc land&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Perform &lt;code class=&quot;language-text&quot;&gt;arc land&lt;/code&gt; after you have completed the following checklist:-&lt;/p&gt;
+&lt;ul&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; Your submitted patch has been &lt;strong&gt;accepted by reviewers&lt;/strong&gt;.&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; The reviewer(s) have &lt;strong&gt;EXPLICITLY tasked you to &lt;code class=&quot;language-text&quot;&gt;land the patch&lt;/code&gt;&lt;/strong&gt;.&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; You &lt;strong&gt;do&lt;/strong&gt; have a &lt;a href=&quot;https://community.kde.org/Infrastructure/Get_a_Developer_Account&quot;&gt;Developer Access Account&lt;/a&gt; in order to land the patch.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;arc land&lt;/code&gt; automatically rebases (and errors if that failed), so you don’t have to do that manually, unlike &lt;code class=&quot;language-text&quot;&gt;Git&lt;/code&gt;.&lt;/p&gt;
 &lt;p align=&apos;center&apos;&gt; &lt;font size=3&gt; This quickstart should be enough to get you started on KDE&apos;s Phabricator and setting sail on some binary adventures!&lt;/font&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ABCs of Unix]]></title><description><![CDATA[— THE ABCs OF UNIX]]></description><link>https://journal.piyush.tech/abc_of_unix/</link><guid isPermaLink="false">https://journal.piyush.tech/abc_of_unix/</guid><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -665,7 +653,7 @@ The end result&lt;/p&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/desktop-eae875e368751dbda76f4833087aa52a-48538.png&quot;
+    href=&quot;/static/final-3eb5211a33e1bac8d5daff5b65258191-15296.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -677,17 +665,19 @@ The end result&lt;/p&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 56.12499999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACqklEQVQozwGfAmD9AMTOu+HZvqbN3sXX2bbS2rLQ2LbS2JPD1Z3J1XqwxImnr36irnObrIGirnebqGaLoWCEm1V3lGp/jl94jgD048325szt5tL06tbx6tvz697y6tzj4tnr7uOapJ8/QDxAQD49Pj06PT45PT08QUA5Pz81PD02OTcyRFMA19W739m+//PW//Xa//PZ//bh//Tj+e3d/vjqnp6VCAkGEx0bERwcDAwLFiknJC8vFB4fDRQVAwYHHDZAAIedmam0pdrWvfTs0v/02/js1fbs2PHm1u7r3pKUjQ0NDh8vLR8yMRcWFh0xMC00MyUlJBoeHg0PDilCSABFbH1pjpaTqKHAxLTq3cjw4szRzsDa08jo59t7iYgMExMWKSkYKikYHhwZKCgmMDEwMC8lJyYQEA86SkwAS2l+YISWdI6VhJudlqmqy8a5ubexrrO0xtHOg4qHEB8dEx4fEhsbFSUkGCQlLzIzJyotGR0fExQURVJTAEFgfG6Gln+XoYOUmoqaobS1sauxsJilrK64uoGBfAkNDQ8ODQ0NDAkPDwUKDAYICgUHCQUICgAAAS04OwAzVHVHZoNZeZBigZZZdYt+kqCIm6WMmaK4tbGDg4JBOzpJQz5EQD41NjkwMzYsMzUpMjYZJS4oLCx4cGMAJkNoJkhuPGKCRW+LSXKNYoaeWXuTkZygubexn6io0se2samln5iao5yaiJWdip2hVXGGO1Zsm5yTqKWZADlPbGt6iWt+jlp6j0puiVBvhkdmf11zhoGRm7y8tca+sGV1gm12gICChXWLmHqWomiAjlpve32IiIGJhwBodYJdbHpba3pxfIhFWW86VXA8XHw+YYQ4W31PaIB4gIRrfIdlf49gfI5TdoxVc4Vcb3xofYadpZ+DjY3bJTLloyUoWwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 56.22254758418741%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACqklEQVQozwGfAmD9AMXPu+HavqfN3sXY2rbS2rLP2bTS2JLD1p7K1XuwxYmmsH+ir3ScrYGirnibqGeMomCEnVd3lGiAj2N5jwD15c/3583u5tL16tby6tr07N3z6t3l5Nns7+ScpaA+QDo/Pz09PT06PD05PDw7QD84Pj41Oj01OTgxQU4A19W739m+//PW//ba//PZ//bh//Xj+e3d/vjqn5+WBwgGFB0bEh4dDAwLFSknJTExFB4fDBMVBAgJGS84AIiemqq1ptvXvvTt0//12/js1fbs2fLn1u7r3pOUjQ4ODh8tLB4xMBcWFR0xMC0zMyQjIxkdHA4RESU7QABFbX5pjpeUqKHCxbXr38rx48zTzsDb1Mjp59t8iooNEhIXKSkZKykYHRsaKSkmMDAwMC8mKCcREhE0Q0QAS2p/YISWdI+UhJqdlqmry8a5urixrrS0x9HOhYuIEB8eEx8fExwcFSYkGSUmMDQ1KSwvGR0fFRcXP0pKAEFhfW6HloCYoYSVm4uborS2sqyxsJmmra23uoODfQsPDxAPDw8ODAsQEAYLDQgJCwYICgUICwADBScxNAAzVXZIaYRae5JjgpdadYuAlKGLnaaMmqO5t7KCg4A7NjVFPzpAPDoxMjYsMDIpLzIoLzMYIyslKitvZ1wAJkNpJEdtOWCCRW6MSXKOYoifWXuTk52iu7myn6io1cu5ta6po5yeqKCdipigjaCkVXKIO1dunJ6VsKyeADhOamp6iWuAj1t7kUlvi1Bvh0hmf15zhoOTnMDAtsnAsWZ2gm12gIGDhXaNmXyYpGd/jltwe36JiH+JhwBqd4NicH1ebHtyfYlHW3A7VXE9XHw9YII2WXxOaIB5goVqfIZlfo5gfY5Sdo1Wc4Zhc39rgIicpJ+DjY5isjOSzVHDYwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
         alt=&quot;image&quot;
         title=&quot;&quot;
-        src=&quot;/static/desktop-eae875e368751dbda76f4833087aa52a-48538.png&quot;
-        srcset=&quot;/static/desktop-eae875e368751dbda76f4833087aa52a-bed0f.png 200w,
-/static/desktop-eae875e368751dbda76f4833087aa52a-5fd34.png 400w,
-/static/desktop-eae875e368751dbda76f4833087aa52a-48538.png 800w&quot;
+        src=&quot;/static/final-3eb5211a33e1bac8d5daff5b65258191-48538.png&quot;
+        srcset=&quot;/static/final-3eb5211a33e1bac8d5daff5b65258191-bed0f.png 200w,
+/static/final-3eb5211a33e1bac8d5daff5b65258191-5fd34.png 400w,
+/static/final-3eb5211a33e1bac8d5daff5b65258191-48538.png 800w,
+/static/final-3eb5211a33e1bac8d5daff5b65258191-b70ec.png 1200w,
+/static/final-3eb5211a33e1bac8d5daff5b65258191-15296.png 1366w&quot;
         sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
       /&gt;
     &lt;/span&gt;
@@ -926,7 +916,7 @@ Consider the conventional case of a bank (a conventional central authority).&lt;
 &lt;p&gt;It’s MONEY!&lt;/p&gt;
 &lt;p&gt;There are nodes, there are traders, then there are MINERS.&lt;/p&gt;
 &lt;p&gt;Miners are a subset of nodes as all miners must be running a full node (ie they must have complete ledger with themselves) in order to mine (at least to mine properly). The nodes are what determine consensus as &lt;strong&gt;all nodes must agree to the same rules otherwise the nodes will fork off of the network.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://journal.piyush.tech/my_testimony_about_blockchain_p2&quot;&gt;&lt;p align=&apos;center&apos;&gt;Continue Reading&lt;/p&gt;&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[A real life Hogwarts]]></title><description><![CDATA[Skimming through your seniors’ profile does some good at times! “The programmers of tomorrow are the wizards of the future !” – Gabe, Co…]]></description><link>https://journal.piyush.tech/a_real_life_hogwarts/</link><guid isPermaLink="false">https://journal.piyush.tech/a_real_life_hogwarts/</guid><content:encoded>&lt;p&gt;Skimming through your seniors’ profile does some good at times!&lt;/p&gt;
+&lt;p align=&apos;center&apos;&gt;Continue Reading&lt;/p&gt;</content:encoded></item><item><title><![CDATA[A real life Hogwarts]]></title><description><![CDATA[Skimming through your seniors’ profile does some good at times! “The programmers of tomorrow are the wizards of the future !” – Gabe, Co…]]></description><link>https://journal.piyush.tech/a_real_life_hogwarts/</link><guid isPermaLink="false">https://journal.piyush.tech/a_real_life_hogwarts/</guid><content:encoded>&lt;p&gt;Skimming through your seniors’ profile does some good at times!&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;“The programmers of tomorrow are the wizards of the future !”&lt;br&gt;
 – Gabe, Co-founder-Valve&lt;/p&gt;
