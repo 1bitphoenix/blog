@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[brute4s99.blog]]></title><description><![CDATA[Piyush writes here on his blog. Feel free to take a look.]]></description><link>https://journal.piyush.tech</link><generator>RSS for Node</generator><lastBuildDate>Mon, 14 Jan 2019 21:17:51 GMT</lastBuildDate><item><title><![CDATA[Arcanist]]></title><description><![CDATA[INTRODUCTION This post is dedicated to Arcanist, a command-line interface to Phabricator.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[brute4s99.blog]]></title><description><![CDATA[Piyush writes here on his blog. Feel free to take a look.]]></description><link>https://journal.piyush.tech</link><generator>RSS for Node</generator><lastBuildDate>Mon, 14 Jan 2019 22:07:20 GMT</lastBuildDate><item><title><![CDATA[Arcanist]]></title><description><![CDATA[INTRODUCTION This post is dedicated to Arcanist, a command-line interface to Phabricator.
 Phabricator is a set of tools that help  KDE…]]></description><link>https://journal.piyush.tech/arcanist/</link><guid isPermaLink="false">https://journal.piyush.tech/arcanist/</guid><content:encoded>&lt;p align=&quot;center&quot;&gt;
   &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/cover-51cb6cdfac9c7d4e8d7cc089838f10ce-89d2d.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
   
@@ -139,6 +139,11 @@ Other distros’ users may want to look for &lt;strong&gt;Installing Arcanist&lt
 &lt;li&gt;set local tracking to the local branch &lt;code class=&quot;language-text&quot;&gt;arcpatch-D18812&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;checkout &lt;code class=&quot;language-text&quot;&gt;arcpatch-D18812&lt;/code&gt; feature branch.&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;Don’t worry, even if it’s an old patch, Phabricator remembers the &lt;code class=&quot;language-text&quot;&gt;master&lt;/code&gt; branch commit the current patch was based on!
+As an example:-&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you pull a particularly old patch, say D16553, I get a branch &lt;strong&gt;based on commit 657dec&lt;/strong&gt;, whereas the current HEAD of master is 708bcb !&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2&gt;&lt;code class=&quot;language-text&quot;&gt;arc feature&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;Suppose you were at &lt;code class=&quot;language-text&quot;&gt;master&lt;/code&gt; in your clone, and you do &lt;code class=&quot;language-text&quot;&gt;arc feature some_name&lt;/code&gt;. Now, &lt;code class=&quot;language-text&quot;&gt;some_name&lt;/code&gt; branch will be set to track the local &lt;code class=&quot;language-text&quot;&gt;master&lt;/code&gt;, as in if you commit anything to &lt;em&gt;just&lt;/em&gt; the local copy of &lt;code class=&quot;language-text&quot;&gt;master&lt;/code&gt; that you have, and then &lt;code class=&quot;language-text&quot;&gt;git checkout some_name&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;git&lt;/code&gt; will ask you to &lt;code class=&quot;language-text&quot;&gt;perform &amp;quot;git pull&amp;quot; as your current branch is behind by some commits&lt;/code&gt;.&lt;/p&gt;
 &lt;h3&gt;TL;DR&lt;/h3&gt;
