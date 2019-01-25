@@ -68,6 +68,10 @@ This command will do the following in definite order:-
 3. set local tracking to the local branch `arcpatch-D18812`.
 4. checkout `arcpatch-D18812` feature branch.
 
+Don't worry, even if it's an old patch, Phabricator remembers the `master` branch commit the current patch was based on!
+As an example:-
+>If you pull a particularly old patch, say D16553, I get a branch **based on commit 657dec**, whereas the current HEAD of master is 708bcb !
+
 ## `arc feature`
 
 Suppose you were at `master` in your clone, and you do `arc feature some_name`. Now, `some_name` branch will be set to track the local `master`, as in if you commit anything to *just* the local copy of `master` that you have, and then `git checkout some_name`, `git` will ask you to `perform "git pull" as your current branch is behind by some commits`.
