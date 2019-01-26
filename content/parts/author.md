@@ -2,5 +2,4 @@
 title: author
 ---
 
-Please comment your thoughts below.
-Let them reach him!
+I'm currently learning more about programming practices and AI/ML/DL
