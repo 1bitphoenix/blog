@@ -17,8 +17,8 @@
       "path---recovering-your-arch-from-hell-dca260bebb5e04c0f1e1.js.map"
     ],
     "path---": [
-      "path----3d976240682f6fb3c357.js",
-      "path----3d976240682f6fb3c357.js.map"
+      "path----1263731026fcff71c0d5.js",
+      "path----1263731026fcff71c0d5.js.map"
     ],
     "component---src-pages-contact-js": [
       "component---src-pages-contact-js-c216ff14f94225a1c827.js",
@@ -29,8 +29,12 @@
       "path---abc-of-unix-8ffec6d62b91c04d9f11.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-43ce99e4ace3fd89bac8.js",
-      "component---src-layouts-index-js-43ce99e4ace3fd89bac8.js.map"
+      "component---src-layouts-index-js-d89ed98c03b60183f86a.js",
+      "component---src-layouts-index-js-d89ed98c03b60183f86a.js.map"
+    ],
+    "path---breaking-free": [
+      "path---breaking-free-d0bd66f0d64db4c8bdd7.js",
+      "path---breaking-free-d0bd66f0d64db4c8bdd7.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
@@ -75,9 +79,9 @@
       "path---blurred-lines-4351b833421ce15ddf31.js.map"
     ],
     "app": [
-      "app-085f30a016d1990a56ef.js",
+      "app-18b4f1020c06c03bc1ee.js",
       "build-js-styles.css",
-      "app-085f30a016d1990a56ef.js.map",
+      "app-18b4f1020c06c03bc1ee.js.map",
       "build-js-styles.css.map"
     ],
     "path---links": [

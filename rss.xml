@@ -1,4 +1,203 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[brute4s99.blog]]></title><description><![CDATA[Piyush writes here on his blog. Feel free to take a look.]]></description><link>https://journal.piyush.tech</link><generator>RSS for Node</generator><lastBuildDate>Sat, 26 Jan 2019 12:53:42 GMT</lastBuildDate><item><title><![CDATA[Arcanist]]></title><description><![CDATA[INTRODUCTION This post is dedicated to Arcanist, a command-line interface to Phabricator.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[brute4s99.blog]]></title><description><![CDATA[Piyush writes here on his blog. Feel free to take a look.]]></description><link>https://journal.piyush.tech</link><generator>RSS for Node</generator><lastBuildDate>Sat, 26 Jan 2019 15:53:58 GMT</lastBuildDate><item><title><![CDATA[Breaking Free]]></title><description><![CDATA[INTRODUCTION When I started using this static blog, little did I know of all the trackers that came with the blog. How does browser tracking…]]></description><link>https://journal.piyush.tech/breaking_free/</link><guid isPermaLink="false">https://journal.piyush.tech/breaking_free/</guid><content:encoded>&lt;p align=&quot;center&quot;&gt;
+  &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/cover-ba9e9b140ae6e95402d0753c9e6b26b9-ab4c4.jpg&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+  
+  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAgP/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAABV5L7GgTSX//EABoQAAMBAAMAAAAAAAAAAAAAAAABAgMREyH/2gAIAQEAAQUCcxE+SdONCps5FtcH/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEB/9oACAEDAQE/AauP/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oACAECAQE/AWV//8QAGxABAAICAwAAAAAAAAAAAAAAAQACEBETUZH/2gAIAQEABj8CCtRt2zfGewQSbcaGf//EABoQAQACAwEAAAAAAAAAAAAAAAEAESExQWH/2gAIAQEAAT8hZ7jMUymPYoiCaGI22xtyAaxP/9oADAMBAAIAAwAAABDIP//EABcRAAMBAAAAAAAAAAAAAAAAAAABIWH/2gAIAQMBAT8QdQxP/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAEhYf/aAAgBAgEBPxBKU0P/xAAaEAEAAwEBAQAAAAAAAAAAAAABABEhgVFh/9oACAEBAAE/ELh5tlci1rOiJzzsT3G2I5Y+WykiJ8KIS6n/2Q==&amp;apos;); background-size: cover; display: block;&quot;&gt;
+      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot; alt=&quot;PRIVACY&quot; title=&quot;&quot; src=&quot;/static/cover-ba9e9b140ae6e95402d0753c9e6b26b9-78f2b.jpg&quot; srcset=&quot;/static/cover-ba9e9b140ae6e95402d0753c9e6b26b9-dce19.jpg 200w,
+/static/cover-ba9e9b140ae6e95402d0753c9e6b26b9-c1413.jpg 400w,
+/static/cover-ba9e9b140ae6e95402d0753c9e6b26b9-78f2b.jpg 800w,
+/static/cover-ba9e9b140ae6e95402d0753c9e6b26b9-ab4c4.jpg 1200w&quot; sizes=&quot;(max-width: 800px) 100vw, 800px&quot;&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;br&gt;
+&lt;font size=&quot;2&quot;&gt; Free as in freedom!&lt;/font&gt;&lt;/p&gt;
+&lt;h2&gt;INTRODUCTION&lt;/h2&gt;
+&lt;p&gt;When I started using this static blog, little did I know of all the trackers that came with the blog.&lt;/p&gt;
+&lt;h2&gt;How does browser tracking work?&lt;/h2&gt;
+&lt;p&gt;When you visit a website, third-party trackers (cookies, pixel tags, etc) get stored on your computer.&lt;/p&gt;
+&lt;p&gt;How many trackers exist in any given website depends on how many the website owner has decided to include. Some websites will have well over 60 trackers, belonging to a multitude of companies, while others might have only one - perhaps to track visitor numbers, or see where these visitors are coming from, or to enable a certain functionality. Some might have none at all. &lt;/p&gt;
+&lt;p&gt;Not all trackers are necessarily tied to companies tracking your browsing habits - but when you &lt;strong&gt;accept cookies&lt;/strong&gt;, you’re saying &lt;code class=&quot;language-text&quot;&gt;ok&lt;/code&gt; to &lt;em&gt;all&lt;/em&gt; the trackers that are there - including those feeding information back to companies.&lt;/p&gt;
+&lt;h2&gt;What is being collected and Why?&lt;/h2&gt;
+&lt;p&gt;Trackers collect information about which websites you’re visiting, as well as information about your devices.&lt;/p&gt;
+&lt;p&gt;One tracker might be there to give the website owner insight into her website traffic, but the rest belong to companies whose primary goal is to build up a profile of who you are: how old you are, where you live, what you read, and what you’re interested in. This information can then be packaged and sold to others: advertisers, other companies, or governments.&lt;/p&gt;
+&lt;p&gt;The companies tracking you are unrelated to the website you’re visiting. Called “data brokers”, they tend to have stock-market sounding names like DoubleClick, ComScore, and cXense (though DoubleClick is actually owned by Google). Their entire business is built on the selling of “customer data”.&lt;/p&gt;
+&lt;p&gt;They are also joined by more well-known companies. Some of these are even visible: Google’s red G+ button, for example, is a tracker;  Facebook’s “like” thumb is a tracker; and Twitter’s little blue bird is also a tracker.&lt;/p&gt;
+&lt;h2&gt;Why does it affect me?&lt;/h2&gt;
+&lt;p&gt;Data companies and advertisers also know which articles you read and which ones you skip, which videos you watch, and which ones you stop after 5 seconds; which promotional emails you read, and which ones you send to your Trash folder without opening; what you like on Facebook, what you retweet, what you heart on Instagram. &lt;/p&gt;
+&lt;p&gt;When you put all these things together, as data miners do, you end up with your own unique online fingerprint — which immediately identifies you, with all your likes and dislikes and personal traits&lt;/p&gt;
+&lt;p&gt;And that’s potentially very bad news, because once they know exactly who you are and what makes you tick, companies and advertisers can:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;spam you with finely-tuned, targeted ad campaigns that follow you around the web&lt;/li&gt;
+&lt;li&gt;potentially jack up their prices for you, because &lt;em&gt;nice affluent location you got there, Brenda&lt;/em&gt;. For example. &lt;/li&gt;
+&lt;li&gt;invade your privacy and chip away at your anonymity online, which nobody likes. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/web_trackers-3c7e69129c11c0d236c6e08e774d8875-49019.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 62.47906197654941%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAECAwX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAHu1DRA/8QAGhABAAEFAAAAAAAAAAAAAAAAAQACEBEhMf/aAAgBAQABBQJYNquY0T//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAZEAADAQEBAAAAAAAAAAAAAAAAARExIVH/2gAIAQEAAT8h8Cl0WCpOyFyYP//aAAwDAQACAAMAAAAQMA//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAbEAEAAwEAAwAAAAAAAAAAAAABABEhMUFhgf/aAAgBAQABPxBqRiheOzaKHhe2fIrDAWbVSz4rTDI12q+5/9k=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;web trackers&quot;
+        title=&quot;&quot;
+        src=&quot;/static/web_trackers-3c7e69129c11c0d236c6e08e774d8875-78f2b.jpg&quot;
+        srcset=&quot;/static/web_trackers-3c7e69129c11c0d236c6e08e774d8875-dce19.jpg 200w,
+/static/web_trackers-3c7e69129c11c0d236c6e08e774d8875-c1413.jpg 400w,
+/static/web_trackers-3c7e69129c11c0d236c6e08e774d8875-78f2b.jpg 800w,
+/static/web_trackers-3c7e69129c11c0d236c6e08e774d8875-49019.jpg 1194w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;h2&gt;Tracking mechanisms&lt;/h2&gt;
+&lt;h3&gt;Cookies&lt;/h3&gt;
+&lt;p&gt;Cookies are the most widely known method to identify a user. They use small pieces of data (each limited to 4 KB) placed in a browser storage by the web server. When a user visits a website for the first time, a cookie file with a unique user identifier (could be randomly generated) is stored on the user’s computer.&lt;/p&gt;
+&lt;p&gt;Subsequent visits to the Facebook page do not require you to login, because your details will be remembered by the browser through a cookie stored during your first login.&lt;/p&gt;
+&lt;h3&gt;Browser fingerprinting&lt;/h3&gt;
+&lt;p&gt;Browser fingerprinting is a highly accurate way to identify and track users whenever they go online. The information collected is quite comprehensive, and often includes the browser type and version, operating system and version, screen resolution, supported fonts, plugins, time zone, language and font preferences, and even hardware configurations.&lt;/p&gt;
+&lt;p&gt;These identifiers may seem generic and not at all personally identifying. But, typically only one in several million people have exactly the same specifications as you.&lt;/p&gt;
+&lt;h3&gt;Web beacons&lt;/h3&gt;
+&lt;p&gt;Web beacons are very small, usually invisible objects embedded into a web page or email. Web beacons are also referred to as “web bugs,” which also go by the names “tags,” “page tags,” “tracking bugs,” “pixel trackers,” or “pixel gifs.”&lt;/p&gt;
+&lt;p&gt;In their simplest form, they are tiny clear images, often the size of a single pixel. They download as an image when the web page is loaded, or the email is opened, making a call to a remote server for the image. The server call alerts the company that their email has just been opened or their web page visited.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;This is why you should not display images in emails from senders you do not trust.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Web beacons are also used by online advertisers who embed them into their ads so they can independently track how often their ads are being displayed.&lt;/p&gt;
+&lt;h2&gt;The Anonymization Myth&lt;/h2&gt;
+&lt;p&gt;Most companies claim that they don’t identify you by name when they hand over a profile of you - but what does that really mean, when you can be identified easily through all the other information included?&lt;/p&gt;
+&lt;p&gt;Here’s a &lt;a href=&quot;https://tdwi.org/articles/2018/09/04/dwt-all-anonymization-myth.aspx&quot;&gt;good read on anonymization&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Protecting your-&lt;strong&gt;self&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;While companies (sometimes) allow users to take away their data off the company servers (for eg: &lt;a href=&quot;https://takeout.google.com/settings/takeout&quot;&gt;Google TakeOut&lt;/a&gt; and &lt;a href=&quot;https://www.facebook.com/help/1701730696756992/&quot;&gt;Facebook&lt;/a&gt;), one can never be sure if that is the real deal or not. Companies might be still be retaining derivatives or seemingly “anonymous” attributes from user data. As such, it’s always a better move to restrain giving away information as much as possible. Some ways are discussed below.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Use &lt;strong&gt;browser add-ons&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Many add-ons like &lt;a href=&quot;https://www.eff.org/privacybadger&quot;&gt;Privacy Badger&lt;/a&gt; from &lt;a href=&quot;https://www.eff.org&quot;&gt;EFF&lt;/a&gt; allow for users to take a look at all the third party trackers enabled by the website’s owner, and disable them.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use &lt;a href=&quot;https://www.torproject.org/&quot;&gt;Tor&lt;/a&gt; or a &lt;strong&gt;VPN&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you connect to the Tor anonymizing system, or use Tor’s browser, your ISP will only know that you have connected to Tor; from there it loses the data trail. Of course the downside to this is that your browsing will be slower.&lt;/p&gt;
+&lt;p&gt;Be aware, your unencrypted traffic to websites outside the Tor network passes through a complete stranger’s exit node: the person running the exit node can watch what you’re doing. All you’ve done is move from your ISP snooping on you to an exit node admin watching you. On the other hand, you’ll cycle through different exit nodes, so it’s harder to be identified and tracked by websites outside the Tor network.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A virtual private network is an alternative that will work for lots of people, especially if your work has a VPN service that you can use for free. This again will cut off your ISP’s ability to see what you are doing.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;But&lt;/strong&gt; do some research on your VPN provider. Do NOT use a free VPN provider because they face even stronger financial temptations to sell your information. If you use a VPN, you are effectively giving that company the same level of insight into your online life as your ISP. So pay for one, and check out their policies on what they do with the data they build on you.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use a different &lt;strong&gt;search engine&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Google offers a wonderful service, but everything you type in its search box is logged and connected to you in as many ways as possible. It is then sold on.&lt;/p&gt;
+&lt;p&gt;So why not use a different search engine? &lt;a href=&quot;https://duck.co/help/desktop/adding-duckduckgo-to-your-browser&quot;&gt;DuckDuckGo&lt;/a&gt; is an awesome search engine with NO user data logging.This Qoura answer tells more about &lt;a href=&quot;https://duck.co/help/company/advertising-and-affiliates&quot;&gt;features of DuckDuckGo&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Getting rid of some trackers from your site&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;ajax.cloudflare.com &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;inherent on website’s hosted by Cloudflare’s DNS.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;graph.facebook.com&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;active when Facebook’s developer services (for eg: FB Comments plugin) are loading on a webpage.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;clients6.google.com&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;active when webpages directly call Google servers for Javascript codes.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;fonts.gstatic.com&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;active when Google fonts are called for CSS scripts.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;www.linkedin.com&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;active when there are links to linkedin in the webpage.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Tracking the trackers&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/lightbeam-1fdfb5677533396590d134f0fb556663-437b4.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 74.94824016563147%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsSAAALEgHS3X78AAACoklEQVQoz2NgYWY2MTNbvHK1mqqqto4OMzOzp6enn59fVFSUjIwMIyMjUMTb29vMzIyBgQHIZWJiYkAGvLy86mpqIiIiLCwsTk5OlZWV5eXlra2tYWFh3Nzc/AICkVFRSUlJHBwcQMWioqKcnJwQg0A6dXR0gObx8fEBhUxMTJqamvbu3TtnzhxLSyshAf7+yZNnLFzEyc4OlAW6RUZaWkhICGqtra1tYmJSYUF+dFSUkqIi0CqgCzdsWN/e3i4rI5ORmhoTG6urpwdRrKympmdqyszIyMPDIygoyCAnJycuIZGbnVVRXhERGQ10qoGBQUpKSn5BQUJs7KxJk7Jy87w8PYFOBXqKjZ2dlYNDWICvqrTQw8MT4XMRUTFndy9vL6/s7OyysrLq6uqEhMQdu3fPnTdPX19PVlZWXl5eS1MTqFJcXCzI309DA8Rm4OLiCgwMBAaJtZVVfl5+XV1dVlYWkNvV1TV/3rwjp8/n5hesW78uPj5eTV0NbhkowIBAQUEhPz+vo6Pz+rUr69au9fcPCA4OAgbY8uXLOzs76xubli9Zemz/gdT0NEVFRaB6JjCAahYWFk5MTGxoaIiJiVFXVwcGIdAhN27cmDt3rr6+vr29nZ+vb3RkVHZOjoqKCsJOOAB6yc7OTkpKChiN9vb2QGe3tbV1dHT4+/u7ubkBkwA7O7ukpCQDLgD0OTDOgdr27Nnj4OBgZWXl4eGhpKQEZLi6ukLSAhZtEGcAdfr4+AA9GR0dDfQbMGKAxgFTY0RExIH9+4EJw8jQMDYmBt3ZEA4/P39CQkJpaSkwbcPTsKebW0hwcEVFpYWFhaKCfG11NZCB3eVA/VpaWsBkAwlSIGluZqapqQlMc5BwBnobGLpYwgwrUNfQACVDmAPR9AAA3NCs8gGM4TkAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;image&quot;
+        title=&quot;&quot;
+        src=&quot;/static/lightbeam-1fdfb5677533396590d134f0fb556663-48538.png&quot;
+        srcset=&quot;/static/lightbeam-1fdfb5677533396590d134f0fb556663-bed0f.png 200w,
+/static/lightbeam-1fdfb5677533396590d134f0fb556663-5fd34.png 400w,
+/static/lightbeam-1fdfb5677533396590d134f0fb556663-48538.png 800w,
+/static/lightbeam-1fdfb5677533396590d134f0fb556663-437b4.png 966w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt; Lightbeam from &lt;a href=&quot;https://www.mozilla.org/&quot;&gt;Mozilla&lt;/a&gt; is privacy browser extension helps you discover who’s tracking you online while you browse the web. &lt;/p&gt;
+&lt;p&gt; You can get it &lt;a href=&quot;https://addons.mozilla.org/en-US/firefox/addon/lightbeam/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Some links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.theatlantic.com/technology/archive/2018/12/facebooks-failures-and-also-its-problems-leaking-data/578599/&quot;&gt;Facebook’s data exchange&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;randomwalker.info/publications/webtap-chapter.pdf&quot;&gt;The WebTAP Project&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;www.franziroesner.com/pdf/webtracking-NSDI2012.pdf&quot;&gt;Third-party tracking on the web&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://learning.mozilla.org/en-US/activities/privacy-basics/&quot;&gt;Mozilla Privacy Basics&lt;/a&gt;&lt;/p&gt;
+&lt;p align=&apos;center&apos;&gt; &lt;font size=3&gt; Stay safe and make the internet a healthier place! &lt;/font&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Arcanist]]></title><description><![CDATA[INTRODUCTION This post is dedicated to Arcanist, a command-line interface to Phabricator.
 Phabricator is a set of tools that help  KDE…]]></description><link>https://journal.piyush.tech/arcanist/</link><guid isPermaLink="false">https://journal.piyush.tech/arcanist/</guid><content:encoded>&lt;p align=&quot;center&quot;&gt;
   &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/cover-51cb6cdfac9c7d4e8d7cc089838f10ce-89d2d.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
   
