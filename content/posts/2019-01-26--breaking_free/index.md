@@ -4,8 +4,8 @@ subTitle: no more trackers
 category: "tech"
 cover: cover.png
 ---
-<p align='center'><img src="cover.jpg" alt="PRIVACY"><br>
-<font size=2> Free as in freedom!</font></p>
+<!-- <p align='center'><img src="cover.jpg" alt="PRIVACY"><br>
+<font size=2> Free as in freedom!</font></p> -->
 
 
 ## INTRODUCTION
@@ -24,9 +24,10 @@ Not all trackers are necessarily tied to companies tracking your browsing habits
 
 Trackers collect information about which websites you're visiting, as well as information about your devices.
 
-One tracker might be there to give the website owner insight into her website traffic, but the rest belong to companies whose primary goal is to build up a profile of who you are: how old you are, where you live, what you read, and what you're interested in. This information can then be packaged and sold to others: advertisers, other companies, or governments.
+One tracker might be there to give the website owner insight into her website traffic, but the rest belong to **companies whose primary goal is to build up a profile of who you are**: how old you are, where you live, what you read, and what you're interested in. 
+This information can then be packaged and sold to others: advertisers, other companies, or governments.
 
-The companies tracking you are unrelated to the website you're visiting. Called "data brokers", they tend to have stock-market sounding names like DoubleClick, ComScore, and cXense (though DoubleClick is actually owned by Google). Their entire business is built on the selling of "customer data".
+The companies tracking you are unrelated to the website you're visiting. Called **data brokers**, they tend to have stock-market sounding names like DoubleClick, ComScore, and cXense (though DoubleClick is actually owned by Google). Their entire business is built on the selling of "customer data".
 
 They are also joined by more well-known companies. Some of these are even visible: Google's red G+ button, for example, is a tracker;  Facebook's "like" thumb is a tracker; and Twitter's little blue bird is also a tracker.
 
@@ -39,38 +40,37 @@ When you put all these things together, as data miners do, you end up with your 
 
 And that’s potentially very bad news, because once they know exactly who you are and what makes you tick, companies and advertisers can:
 
-- spam you with finely-tuned, targeted ad campaigns that follow you around the web
-- potentially jack up their prices for you, because *nice affluent location you got there, Brenda*. For example. 
-- invade your privacy and chip away at your anonymity online, which nobody likes. 
+- **spam you with finely-tuned, targeted ad campaigns** that follow you around the web
+- potentially **jack up their prices for you**, because *nice affluent location you got there, Brenda*. For example. 
+- **invade your privacy** and chip away at your anonymity online, which nobody likes. 
 
 
-![web trackers](web_trackers.jpg)
+<!-- ![web trackers](web_trackers.jpg) -->
 
 
 ## Tracking mechanisms
 
 ### Cookies
-Cookies are the most widely known method to identify a user. They use small pieces of data (each limited to 4 KB) placed in a browser storage by the web server. When a user visits a website for the first time, a cookie file with a unique user identifier (could be randomly generated) is stored on the user’s computer.
+Cookies are the most widely known method to identify a user. They use **small pieces of data (each limited to 4 KB) placed in a browser storage by the web server**. When a user visits a website for the first time, a cookie file with a unique user identifier (could be randomly generated) is stored on the user’s computer.
 
 Subsequent visits to the Facebook page do not require you to login, because your details will be remembered by the browser through a cookie stored during your first login.
 
 ### Browser fingerprinting
 Browser fingerprinting is a highly accurate way to identify and track users whenever they go online. The information collected is quite comprehensive, and often includes the browser type and version, operating system and version, screen resolution, supported fonts, plugins, time zone, language and font preferences, and even hardware configurations.
 
-These identifiers may seem generic and not at all personally identifying. But, typically only one in several million people have exactly the same specifications as you.
+These identifiers may seem generic and not at all personally identifying. But, **typically only one in several million people have exactly the same specifications as you**.
 
 ### Web beacons
-Web beacons are very small, usually invisible objects embedded into a web page or email. Web beacons are also referred to as “web bugs,” which also go by the names “tags,” “page tags,” “tracking bugs,” “pixel trackers,” or “pixel gifs.”
+**Web beacons are very small, usually invisible objects embedded into a web page or email.** Web beacons are also referred to as “web bugs,” which also go by the names “tags,” “page tags,” “tracking bugs,” “pixel trackers,” or “pixel gifs.”
 
-In their simplest form, they are tiny clear images, often the size of a single pixel. They download as an image when the web page is loaded, or the email is opened, making a call to a remote server for the image. The server call alerts the company that their email has just been opened or their web page visited.
-
->**This is why you should not display images in emails from senders you do not trust.**
+In their simplest form, they are tiny clear images, often the size of a single pixel. **They download as an image when the web page is loaded, or the email is opened, making a call to a remote server for the image.** The server call alerts the company that their email has just been opened or their web page visited.
+This is why you should not display images in emails from senders you do not trust.
 
 Web beacons are also used by online advertisers who embed them into their ads so they can independently track how often their ads are being displayed.
 
 ## The Anonymization Myth
 
-Most companies claim that they don't identify you by name when they hand over a profile of you - but what does that really mean, when you can be identified easily through all the other information included?
+Most companies claim that they don't identify you by name when they hand over a profile of you - but what does that really mean, when **you can be identified easily through all the other information included**?
 
 Here's a [good read on anonymization](https://tdwi.org/articles/2018/09/04/dwt-all-anonymization-myth.aspx).
 
@@ -81,10 +81,10 @@ While companies (sometimes) allow users to take away their data off the company 
 
 
 
-1. Use **browser add-ons**.
+1. Use browser add-ons.
     >Many add-ons like [Privacy Badger](https://www.eff.org/privacybadger) from [EFF](https://www.eff.org) allow for users to take a look at all the third party trackers enabled by the website's owner, and disable them.
 
-2. Use [Tor](https://www.torproject.org/) or a **VPN**.
+2. Use [Tor](https://www.torproject.org/) or a VPN.
 
     > If you connect to the Tor anonymizing system, or use Tor's browser, your ISP will only know that you have connected to Tor; from there it loses the data trail. Of course the downside to this is that your browsing will be slower.
     >
@@ -94,7 +94,7 @@ While companies (sometimes) allow users to take away their data off the company 
     >
     >**But** do some research on your VPN provider. Do NOT use a free VPN provider because they face even stronger financial temptations to sell your information. If you use a VPN, you are effectively giving that company the same level of insight into your online life as your ISP. So pay for one, and check out their policies on what they do with the data they build on you.
 
-3. Use a different **search engine**.
+3. Use a different search engine.
     > Google offers a wonderful service, but everything you type in its search box is logged and connected to you in as many ways as possible. It is then sold on.
     >
     >So why not use a different search engine? [DuckDuckGo](https://duck.co/help/desktop/adding-duckduckgo-to-your-browser) is an awesome search engine with NO user data logging.This Qoura answer tells more about [features of DuckDuckGo](https://duck.co/help/company/advertising-and-affiliates).
@@ -102,23 +102,23 @@ While companies (sometimes) allow users to take away their data off the company 
     
 ## Getting rid of some trackers from your site
 
-1. ajax.cloudflare.com 
+1. `ajax.cloudflare.com` 
 
     >inherent on website's hosted by Cloudflare's DNS.
 
-2. graph.facebook.com
+2. `graph.facebook.com`
     
     >active when Facebook's developer services (for eg: FB Comments plugin) are loading on a webpage.
 
-3. clients6.google.com
+3. `clients6.google.com`
     
     >active when webpages directly call Google servers for Javascript codes.
 
-4. fonts.gstatic.com
+4. `fonts.gstatic.com`
     
     >active when Google fonts are called for CSS scripts.
 
-5. www.linkedin.com
+5. `www.linkedin.com`
 
     >active when there are links to linkedin in the webpage.
 
