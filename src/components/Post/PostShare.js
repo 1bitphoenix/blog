@@ -1,19 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import injectSheet from "react-jss";
-import {
-  FacebookShareButton,
-  GooglePlusShareButton,
-  LinkedinShareButton,
-  TwitterShareButton,
-  FacebookShareCount,
-  GooglePlusShareCount,
-  LinkedinShareCount,
-  FacebookIcon,
-  TwitterIcon,
-  GooglePlusIcon,
-  LinkedinIcon
-} from "react-share";
+
 
 import config from "../../../content/meta/config";
 
@@ -58,33 +46,6 @@ class PostShare extends React.Component {
     return (
       <div className={classes.share}>
         <span className={classes.label}><a href={url}>SHARE </a> </span>
-        <div className={classes.links}>
-          <TwitterShareButton url={url} title={title}>
-            <TwitterIcon round size={iconSize} />
-          </TwitterShareButton>
-          <GooglePlusShareButton url={url}>
-            <GooglePlusIcon round size={iconSize} />
-            <GooglePlusShareCount url={url}>
-              {count => <div className="share-count">{filter(count)}</div>}
-            </GooglePlusShareCount>
-          </GooglePlusShareButton>
-          <FacebookShareButton
-            url={url}
-            quote={`${title} - ${excerpt}`}
-            aria-label="Facebook share"
-          >
-            <FacebookIcon round size={iconSize} />
-            <FacebookShareCount url={url}>
-              {count => <div className="share-count">{filter(count)}</div>}
-            </FacebookShareCount>
-          </FacebookShareButton>
-          <LinkedinShareButton url={url} title={title} description={excerpt}>
-            <LinkedinIcon round size={iconSize} />
-            <LinkedinShareCount url={url}>
-              {count => <div className="share-count">{filter(count)}</div>}
-            </LinkedinShareCount>
-          </LinkedinShareButton>
-        </div>
       </div>
     );
   }

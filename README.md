@@ -38,12 +38,9 @@ A ready to use, easy to customize [GatsbyJS](https://github.com/gatsbyjs/gatsby)
 - RSS feed
 - Full screen mode
 - User adjustable articles’ body copy font size
-- Social sharing (Twitter, Facebook, Google, LinkedIn)
 - PWA (manifest.json, offline support, favicons)
-- Google Analytics
 - Favicons generator (node script)
 - Components lazy loading with AsyncComponent (social sharing, info box)
-- ESLint (google config)
 - Prettier code styling
 - Custom webpack CommonsChunkPlugin settings
 - Webpack BundleAnalyzerPlugin
@@ -87,7 +84,6 @@ The starter uses external services for some functions: comments, searching, anal
 Create an `.env` file like below in the root folder. Change `...` placeholders with real data.
 
 ```text
-GOOGLE_ANALYTICS_ID=...
 ALGOLIA_APP_ID=...
 ALGOLIA_SEARCH_ONLY_API_KEY=...
 ALGOLIA_ADMIN_API_KEY=...

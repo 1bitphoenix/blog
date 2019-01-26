@@ -144,15 +144,15 @@ You can always try out [AUR helpers](https://wiki.archlinux.org/index.php/AUR_he
 
 So after all this, I successfully set up Arch Linux, WiFi, Desktop Environment, Terminal and Weechat in my laptop! Next was installing basic software packages and fine tuning the GUI to my personal tastes.
 
-Google Chrome DEV – For Web Browsing
+Firefox Developer Edition – For Web Browsing
 
-tor-browser – For extended internet access
+tor-browser – For private internet access
 
 Konsole – Terminal
 
 Deepin Music Player – Music Player
 
-Gwenview – Image editing solution
+Gwenview – Image viewer and editing solution
 
 Steam – for Games
 
