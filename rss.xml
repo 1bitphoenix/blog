@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[brute4s99.blog]]></title><description><![CDATA[Piyush writes here on his blog. Feel free to take a look.]]></description><link>https://journal.piyush.tech</link><generator>RSS for Node</generator><lastBuildDate>Sat, 26 Jan 2019 11:49:54 GMT</lastBuildDate><item><title><![CDATA[Arcanist]]></title><description><![CDATA[INTRODUCTION This post is dedicated to Arcanist, a command-line interface to Phabricator.
+Phabricator is a set of tools that help  KDE…]]></description><link>https://journal.piyush.tech/arcanist/</link><guid isPermaLink="false">https://journal.piyush.tech/arcanist/</guid><content:encoded>&lt;p align=&quot;center&quot;&gt;
+  &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/cover-51cb6cdfac9c7d4e8d7cc089838f10ce-89d2d.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+  
+  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAAByklEQVQ4y7WVzSuEURTG52NBsfGRjxHZyUIpZWdjwU42PspEhoX8A9gYO9kofwSrISRFloqtjQ0pylBK42OmGOb1nPHccbruO2Pj1q/73nPOfd5zz5z3TiDgGJ7nFeZcLidzkOTXOqbokCAlJgJhR0xYfHa8b1YykEXY8lUIDmF3tvoYJivM9bAvYz4Hb0SeV0AjY0K/RM0Da2XEBsG79z32QBwsImaXtk8w7JuplVmUm45AxFGaBrDPmGlb1CmGTA6UQA/WtUCEupV9h6IxI5ovndSBhgkGZOBoVRvPwBW4hf1E2ZvAk5Vp0NRv1PsZm3T2g2PwCrKs2zM4BL2M2VD7xs2bysC1cizR3g7S4BE0gw6uP5BAJ2MW1L4kqDSCN8oRV0d6APesczVIcd3CmHm17y4vSMeYciRo62PfZfjCJFtJTjPCmHW1LxbQhcQ8RUfaZED7Ke0v4BKUq/ZJ0TdT0LLaZtI0sxIcAF2gDbWLqq8rYYmF/HoxxkBp3jpHY9eAbcbMOhvbITok/c1NWyz+nNRX1Sxa8numqGn0CI61ivmCfZhlDdfUrxzSd4HvparvQa6rsEEI/un6+pcLtki2cpzCX0CprL4A57ZsuqR9MEgAAAAASUVORK5CYII=&amp;apos;); background-size: cover; display: block;&quot;&gt;
+      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot; alt=&quot;Phabricator&quot; title=&quot;&quot; src=&quot;/static/cover-51cb6cdfac9c7d4e8d7cc089838f10ce-48538.png&quot; srcset=&quot;/static/cover-51cb6cdfac9c7d4e8d7cc089838f10ce-bed0f.png 200w,
+/static/cover-51cb6cdfac9c7d4e8d7cc089838f10ce-5fd34.png 400w,
+/static/cover-51cb6cdfac9c7d4e8d7cc089838f10ce-48538.png 800w,
+/static/cover-51cb6cdfac9c7d4e8d7cc089838f10ce-89d2d.png 1024w&quot; sizes=&quot;(max-width: 800px) 100vw, 800px&quot;&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;br&gt;
+&lt;font size=&quot;2&quot;&gt; Phabricator&lt;/font&gt;&lt;/p&gt;
+&lt;h2&gt;INTRODUCTION&lt;/h2&gt;
+&lt;p&gt;This post is dedicated to Arcanist, a command-line interface to Phabricator.
+Phabricator is a set of tools that help &lt;a href=&quot;https://www.kde.org&quot;&gt;KDE&lt;/a&gt; build better software, faster.&lt;/p&gt;
+&lt;p&gt;Various command-line based solutions out there help developers to acheive good workflow across features and projects(Git, Mercurial &lt;em&gt;et al&lt;/em&gt;); Arcanist takes the same approach, but feels a lot more practical to me.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://secure.phabricator.com/book/phabricator/article/arcanist/&quot;&gt;Arcanist User Guide&lt;/a&gt; states thus:-&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Arcanist provides command-line access to many Phabricator tools (like Differential, Files, and Paste), integrates with static analysis (“lint”) and unit tests, and manages common workflows like getting changes into Differential for review.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Setting up Arcanist&lt;/h2&gt;
+&lt;p&gt;The two dependencies to Arcanist are - &lt;code class=&quot;language-text&quot;&gt;git&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;php&lt;/code&gt;. Install them using &lt;code class=&quot;language-text&quot;&gt;sudo pacman -S git php&lt;/code&gt; (or equivalent for your distro).&lt;/p&gt;
+&lt;p&gt;Then you can install Arcanist itself.
+It was as simple as &lt;code class=&quot;language-text&quot;&gt;yay -S arcanist&lt;/code&gt; for me.
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/arcanist_install-a24fcdbb78eee41962f66ecd5cc46fc0-4a64c.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 684px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 72.07602339181287%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB40lEQVQoz11SCZKbMBDkE+awBJLQhQ4OGwPreJ2tPCGvyffToNiVpEs1NBI9PTMic8Nj/Pmru3ZDH9dluc3zEKM1Rkmpleq6jlJaFkVVln/WC0VRZGwSJjDpfdN13DmB6D0VIqc01zpnTUlJ1baVlJVSVdP8I5bBdMH5GPtpitNknTPOlcacra2UqVq1r7qpCKko3ePf4s7E74/n8/Pz28d9W7dlWXzwORdnr5qR0VDT2FBHz7Qqi7L8v2zD1DzaMbRWKKPbtjVaW6lMp8Lmw+Lj6vWklVFCCJwiphS7WN9sG6Tp7XgfrLNSSiIEVYrAvGaEiTOpq6I8vwBZeWAXt9bOl8t8va23dRyGfhioc9QHzIwIjkQ1501TE0owdkJIXdcgKWb9rYdCHbciD+yVMcaPJTi3FkN02MMR59wYA6K1xk6morlcgRlYlnUcJ22M9x4aRMY5TJoDicDw/ZpBNx0YxxH+0CAxIgoJIYDABBwEnojpm8SzabrgEWPc3cyOdwtpQuQArMDzPC9eOJ1O2dePL9zt4/FY1xXx+Xw+DmzbhnRIlDpMbb/vOY09Yx3/OICeh2GAZ9/3SIda0BUc4JYuBl+nKpIem5kY2zv+rW2DM9LDBH8CCGMMBLbvLlLDwFv8G7FKdhY22rbVAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;arcanist_install&quot;
+        title=&quot;&quot;
+        src=&quot;/static/arcanist_install-a24fcdbb78eee41962f66ecd5cc46fc0-4a64c.png&quot;
+        srcset=&quot;/static/arcanist_install-a24fcdbb78eee41962f66ecd5cc46fc0-2b3cd.png 200w,
+/static/arcanist_install-a24fcdbb78eee41962f66ecd5cc46fc0-7d2d4.png 400w,
+/static/arcanist_install-a24fcdbb78eee41962f66ecd5cc46fc0-4a64c.png 684w&quot;
+        sizes=&quot;(max-width: 684px) 100vw, 684px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+Other distros’ users may want to look for &lt;strong&gt;Installing Arcanist&lt;/strong&gt; subsection in  &lt;a href=&quot;https://secure.phabricator.com/book/phabricator/article/arcanist_quick_start/&quot;&gt;Arcanist quick start&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Next up, get the source code of the project you wish to work on by &lt;a href=&quot;https://cgit.kde.org/&quot;&gt;cloning it from cgit&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Now then, let’s dive into development! 🤖&lt;/p&gt;
+&lt;h2&gt;Development with Arcanist&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;You may find an interesting &lt;a href=&quot;https://bugs.kde.org/describecomponents.cgi&quot;&gt;bug from KDE’s bug tracker&lt;/a&gt; or &lt;a href=&quot;https://phabricator.kde.org/&quot;&gt;task from your project’s Workboard&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Always create a feature branch/ bookmark&lt;/strong&gt; before touching any file in a clean clone. Use &lt;code class=&quot;language-text&quot;&gt;arc feature&lt;/code&gt; for it.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;arc feature name_of_feature_branch&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Poke around, play with the code, do your thing.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When ready to submit a patch, type in &lt;code class=&quot;language-text&quot;&gt;arc diff&lt;/code&gt;. This will also help you maintain your submitted patches. Complete the following forms, that look like:-
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/arc_diff-6d3b7c36f5401e5eeccf21c6cd9c9584-15296.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.22254758418741%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABY0lEQVQoz3VQ23KCMBDlgYvjaFWSzSYQFFGn4vUz2r60fUXtjKA47f//QDcCtp2phzPLctizm6x1uXwd81NZfhanMi/OlBfFOc/Pu91hv//Isn2WHY7HgsRKJ1INVZaXwgqDoN1ut7yW4zi2bbuO0/II7jV6rltFA881iWM7ru12Op1u98EaJ7MwGnEhARAMBFEIvBFRolQ1UQFIMMWCcW6x8VQ9zsV0wrXmOmSITCBH5A0AftP0pn7k9BmzBqFWkykmCcQxRBHoSAQhBgHeh5SyMfu+Uoq+jSyENKc0JEndB2PMmOkVmDnSXFQaR81/0fylyQO/MdNqfPC54ByhprxDpOXSncGYaSVkpqbVieUPq1HyKtbxdoDa3O/36Q4cOI31aZ8CGGfXaBSTI/yJ9KDo9Qa0LCtN0+FwmKYLHel5muooquJ6s3l6eX59fxuN49V6Tcpmux3F8XK1SibJYrkk9zcWEUycyF8PawAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;arc diff&quot;
+        title=&quot;&quot;
+        src=&quot;/static/arc_diff-6d3b7c36f5401e5eeccf21c6cd9c9584-48538.png&quot;
+        srcset=&quot;/static/arc_diff-6d3b7c36f5401e5eeccf21c6cd9c9584-bed0f.png 200w,
+/static/arc_diff-6d3b7c36f5401e5eeccf21c6cd9c9584-5fd34.png 400w,
+/static/arc_diff-6d3b7c36f5401e5eeccf21c6cd9c9584-48538.png 800w,
+/static/arc_diff-6d3b7c36f5401e5eeccf21c6cd9c9584-b70ec.png 1200w,
+/static/arc_diff-6d3b7c36f5401e5eeccf21c6cd9c9584-15296.png 1366w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;That’s it! Your patch is submitted for review! You also get a link to share with others and see how the submission looks on Phabricator!&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Continue hacking on another bug or Task, and wait for the review on the submiited patch! &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Remember to make a different feature branch beforehand!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Tips&lt;/h2&gt;
+&lt;p&gt;The world is not perfect, and many-a-times the reviewers will suggest changes to the patch before flashing the green light. Just revisit the branch, do the changes required, and hit &lt;code class=&quot;language-text&quot;&gt;arc diff&lt;/code&gt; again! &lt;/p&gt;
+&lt;p&gt;If you’re not sure about this, use &lt;code class=&quot;language-text&quot;&gt;arc diff --preview&lt;/code&gt;. I always use it before associating a diff with a submission! 😉&lt;/p&gt;
+&lt;h2&gt;&lt;code class=&quot;language-text&quot;&gt;arc patch&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;You can always try out any submitted patch along with the latest &lt;code class=&quot;language-text&quot;&gt;master&lt;/code&gt; by using the &lt;code class=&quot;language-text&quot;&gt;arc patch&lt;/code&gt; command!&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;arc patch D18812&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;This command will do the following in definite order:-&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;create a new feature branch with name &lt;code class=&quot;language-text&quot;&gt;arcpatch-D18812&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;apply &lt;a href=&quot;https://phabricator.kde.org/D18812&quot;&gt;patch D18812&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;set local tracking to the local branch &lt;code class=&quot;language-text&quot;&gt;arcpatch-D18812&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;checkout &lt;code class=&quot;language-text&quot;&gt;arcpatch-D18812&lt;/code&gt; feature branch.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Don’t worry, even if it’s an old patch, Phabricator remembers the &lt;code class=&quot;language-text&quot;&gt;master&lt;/code&gt; branch commit the current patch was based on!
+As an example:-&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you pull a particularly old patch, say D16553, I get a branch &lt;strong&gt;based on commit 657dec&lt;/strong&gt;, whereas the current HEAD of master is 708bcb !&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;&lt;code class=&quot;language-text&quot;&gt;arc feature&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Suppose you were at &lt;code class=&quot;language-text&quot;&gt;master&lt;/code&gt; in your clone, and you do &lt;code class=&quot;language-text&quot;&gt;arc feature some_name&lt;/code&gt;. Now, &lt;code class=&quot;language-text&quot;&gt;some_name&lt;/code&gt; branch will be set to track the local &lt;code class=&quot;language-text&quot;&gt;master&lt;/code&gt;, as in if you commit anything to &lt;em&gt;just&lt;/em&gt; the local copy of &lt;code class=&quot;language-text&quot;&gt;master&lt;/code&gt; that you have, and then &lt;code class=&quot;language-text&quot;&gt;git checkout some_name&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;git&lt;/code&gt; will ask you to &lt;code class=&quot;language-text&quot;&gt;perform &amp;quot;git pull&amp;quot; as your current branch is behind by some commits&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;TL;DR&lt;/h3&gt;
+&lt;p&gt;doing &lt;code class=&quot;language-text&quot;&gt;git pull&lt;/code&gt; in &lt;code class=&quot;language-text&quot;&gt;some_name&lt;/code&gt; will import the changes from the last branch you &lt;code class=&quot;language-text&quot;&gt;checkout&lt;/code&gt;ed, before &lt;code class=&quot;language-text&quot;&gt;arc feature some_name&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;code class=&quot;language-text&quot;&gt;arc land&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Perform &lt;code class=&quot;language-text&quot;&gt;arc land&lt;/code&gt; after you have completed the following checklist:-&lt;/p&gt;
+&lt;ul&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; Your submitted patch has been &lt;strong&gt;accepted by reviewers&lt;/strong&gt;.&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; The reviewer(s) have &lt;strong&gt;EXPLICITLY tasked you to &lt;code class=&quot;language-text&quot;&gt;land the patch&lt;/code&gt;&lt;/strong&gt;.&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; You &lt;strong&gt;do&lt;/strong&gt; have a &lt;a href=&quot;https://community.kde.org/Infrastructure/Get_a_Developer_Account&quot;&gt;Developer Access Account&lt;/a&gt; in order to land the patch.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;arc land&lt;/code&gt; automatically rebases (and errors if that failed), so you don’t have to do that manually, unlike &lt;code class=&quot;language-text&quot;&gt;Git&lt;/code&gt;.&lt;/p&gt;
+&lt;p align=&apos;center&apos;&gt; &lt;font size=3&gt; This quickstart should be enough to get you started on KDE&apos;s Phabricator and setting sail on some binary adventures!&lt;/font&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ABCs of Unix]]></title><description><![CDATA[— THE ABCs OF UNIX]]></description><link>https://journal.piyush.tech/abc_of_unix/</link><guid isPermaLink="false">https://journal.piyush.tech/abc_of_unix/</guid><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/Unix-e87325ae57d528519aca61d2a90898f8-c541b.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 62.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsSAAALEgHS3X78AAACnElEQVQoz1VSW2sTQRidndlLNpu9ZG/ZXJqku9kkTUma5mpza0tTY0qTtLG0RVqLpqDWKKIoigqWKogUrA9iffClL9InHxXB/+bsVgXhDMwM35nvfHMOAAgACgAPAF5A8AQUIfJDpEBShZSOMEjN2SMZQonABbgM0MBhQeDsCC8BBYLyI49G8yFWjvKaKQYSfiOpBNOykZJ1W5ImfVyEoXUKP42fIDxuS4IjkIgYheINVo2K0aSeyk5kC1ahmqzUpqqNTKWRKdRS6WI0Mq35TR8bopGKCIEALG4uQFoh+SAbiPutdChfsFv1fGex2u80NvtLW4P29nB5OFhod8qzdTs+E5Qt3hOioQKBD4uXERtglKgQSxq5GavdKl3tLuwOu+O97fHu5vP7oyd39h4f7O5sXWl3Srk5KzSt8jGW1BEQACAVxAU9ekxKZMK5rLnRW371bPzu6NHP72ffzj+dn538+vH188nhznp3tVcvNlPRXECc5CiDBOJf8oXmciW91qsdHR4cv334+sXB6YeXH98//XJ6ePzmwe1Rf2W1VqynYrmAcEGWsGwFeg1Gi4lx2yiW7X6/sjFoXhu2b2yt3Lreu3dzYzxavzta39/vLrWL2aoZdmVjC53O0A8ZjZLCXMhSEulIPms3yvmlWrnbmustNgft+bXLC6vLzfnW7Owl28wF1YTAhvGHQ8BjqwRIOn9GS2Ff0JStqdB0Nj6TtwqFZKmUxoOUqulCJTlViEczumoJXMRD6SQU3bRgn7FbpB/h/j7DI0/welwyTBkLCSfUsO0gaMuqKQoTXtagKZWEEsQswOCEMW4wfX+CSaqI1kicJAYj8A8kpSGcDTyjEw+vyyKBuyj3gBPDAcd6PIzwP3j3nnNrGLfezfZv1BBm1AAv0DwAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;UNIX&quot;
+        title=&quot;&quot;
+        src=&quot;/static/Unix-e87325ae57d528519aca61d2a90898f8-48538.png&quot;
+        srcset=&quot;/static/Unix-e87325ae57d528519aca61d2a90898f8-bed0f.png 200w,
+/static/Unix-e87325ae57d528519aca61d2a90898f8-5fd34.png 400w,
+/static/Unix-e87325ae57d528519aca61d2a90898f8-48538.png 800w,
+/static/Unix-e87325ae57d528519aca61d2a90898f8-b70ec.png 1200w,
+/static/Unix-e87325ae57d528519aca61d2a90898f8-c541b.png 1280w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;A is for awk, which runs like a snail, and
+B is for biff, which reads all your mail.
+C is for cc, as hackers recall, while
+D is for dd, the command that does all.
+E is for emacs, which rebinds your keys, and
+F is for fsck, which rebuilds your trees.
+G is for grep, a clever detective, while
+H is for halt, which may seem defective.
+I is for indent, which rarely amuses, and
+J is for join, which nobody uses.
+K is for kill, which makes you the boss, while
+L is for lex, which is missing from DOS.
+M is for more, from which less was begot, and
+N is for nice, which it really is not.
+O is for od, which prints out things nice, while
+P is for passwd, which reads in strings twice.
+Q is for quota, a Berkeley-type fable, and
+R is for ranlib, for sorting ar table.
+S is for spell, which attempts to belittle, while
+T is for true, which does very little.
+U is for uniq, which is used after sort, and
+V is for vi, which is hard to abort.
+W is for whoami, which tells you your name, while
+X is, well, X, of dubious fame.
+Y is for yes, which makes an impression, and
+Z is for zcat, which handles compression.&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;— THE ABCs OF UNIX&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Recovering your Arch from hell]]></title><description><![CDATA[PROBLEM Not clear, but looks like misconfigured packages after multiple installations, uninstallations and re-installations of packages and…]]></description><link>https://journal.piyush.tech/recovering_your_arch_from_hell/</link><guid isPermaLink="false">https://journal.piyush.tech/recovering_your_arch_from_hell/</guid><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/arch-883766e41cd8922a799fde936a7a4e7d-aafac.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgAD/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAEaB5u0I//EABoQAQACAwEAAAAAAAAAAAAAAAEAAgMRIRL/2gAIAQEAAQUC9sL3AyROa5XEM//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABgQAQEBAQEAAAAAAAAAAAAAAAAhQQER/9oACAEBAAY/AkWI8zV6/8QAGhABAAMBAQEAAAAAAAAAAAAAAQARMSFBUf/aAAgBAQABPyF6/H17cxZGPXVjRYuPu/CDALbaYFajP//aAAwDAQACAAMAAAAQOD//xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAwEBPxCn/8QAFhEAAwAAAAAAAAAAAAAAAAAAARAR/9oACAECAQE/EIV//8QAGxABAQEBAAMBAAAAAAAAAAAAASERADFBgcH/2gAIAQEAAT8QMi02rl3iuxz7+PQddigj2aZOA1QOC1iKy+EPXJUJoG9//9k=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;Rebuilding an Arch&quot;
+        title=&quot;&quot;
+        src=&quot;/static/arch-883766e41cd8922a799fde936a7a4e7d-78f2b.jpg&quot;
+        srcset=&quot;/static/arch-883766e41cd8922a799fde936a7a4e7d-dce19.jpg 200w,
+/static/arch-883766e41cd8922a799fde936a7a4e7d-c1413.jpg 400w,
+/static/arch-883766e41cd8922a799fde936a7a4e7d-78f2b.jpg 800w,
+/static/arch-883766e41cd8922a799fde936a7a4e7d-ab4c4.jpg 1200w,
+/static/arch-883766e41cd8922a799fde936a7a4e7d-bc99b.jpg 1600w,
+/static/arch-883766e41cd8922a799fde936a7a4e7d-34a60.jpg 2400w,
+/static/arch-883766e41cd8922a799fde936a7a4e7d-aafac.jpg 4000w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p align=&apos;center&apos; &gt;&lt;font size=3&gt; easier than it looks&lt;/font&gt;&lt;/p&gt;
+&lt;h2&gt;PROBLEM&lt;/h2&gt;
+&lt;p&gt;Not clear, but looks like misconfigured packages after multiple installations, uninstallations and re-installations of packages and Desktop Environments&lt;/p&gt;
+&lt;h2&gt;PROLOGUE&lt;/h2&gt;
+&lt;p&gt;So today I had problems that caused KDE Plasma to &lt;em&gt;not acknowledge&lt;/em&gt; my laptop as a laptop.
+In other words, my Arch was on the edge of collapse.&lt;/p&gt;
+&lt;h2&gt;BABY STEPS&lt;/h2&gt;
+&lt;p&gt;So, I tried reinstalling all the packages of my installation in one command, like so&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# pacman -Qenq | sudo pacman -S -&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;But as you can see the post hasn’t ended here, it didn’t pan out.&lt;/p&gt;
+&lt;h2&gt;SOLUTION&lt;/h2&gt;
+&lt;p&gt;After hours of help at #archlinux and #kde-plasma, I found &lt;a href=&quot;https://bbs.archlinux.org/viewtopic.php?id=193174&quot;&gt;this Forum page&lt;/a&gt; that gave me just the right instructions!&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;First up, I removed all the orphaned/unused packages rotting away in my system.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# pacman -Rns $(pacman -Qtdq)&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;next, I &lt;strong&gt;force-reinstalled&lt;/strong&gt; all the packages I had in my installation.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# pacman -Qqen &amp;gt; pkglist.txt
+# pacman --force -S $(&amp;lt; pkglist.txt)&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;EPILOGUE&lt;/h2&gt;
+&lt;p&gt;Now my installation is sweet as candy with no loss of any personal configs, and everything is perfect again! &lt;/p&gt;
+&lt;p align=&apos;center&apos;&gt; 😄 🎉 &lt;/p&gt;</content:encoded></item><item><title><![CDATA[A better blog]]></title><description><![CDATA[
+Hi Greg! 
+I saw your Github profile had this starter for a personal blog, so I thought Why not!? After days of scouring the internet, I…]]></description><link>https://journal.piyush.tech/a_better_blog/</link><guid isPermaLink="false">https://journal.piyush.tech/a_better_blog/</guid><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/photo-1490474418585-ba9bad8fd0ea-69657d5d9f9e2a2aa0aa1c3e268ce4a1-f16ff.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAAC/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgAB/9oADAMBAAIQAxAAAAHE42Q40x//xAAaEAACAgMAAAAAAAAAAAAAAAABAgMhBBEi/9oACAEBAAEFAkjYKVYqSN4twz8sxv8A/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEB/9oACAEDAQE/AciP/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEB/9oACAECAQE/Adqv/8QAHhAAAgEDBQAAAAAAAAAAAAAAAAECEBEhEjEyQdH/2gAIAQEABj8C1S4kntY9M9YE1T//xAAdEAADAAEFAQAAAAAAAAAAAAAAARGBITFBYXHB/9oACAEBAAE/IWLQZZGAnEjbk10G9x4E2lavwo8P/9oADAMBAAIAAwAAABCMP//EABYRAQEBAAAAAAAAAAAAAAAAAAEAMf/aAAgBAwEBPxBAyZ//xAAXEQADAQAAAAAAAAAAAAAAAAAAAREh/9oACAECAQE/EFq0WD//xAAcEAEAAgIDAQAAAAAAAAAAAAABESEAUTFBYaH/2gAIAQEAAT8QhoAZWUbDLWMAAyHDTE7zQHaWOKFFBe+0fcoAekfacanJkIJoWc//2Q==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;his image&quot;
+        title=&quot;&quot;
+        src=&quot;/static/photo-1490474418585-ba9bad8fd0ea-69657d5d9f9e2a2aa0aa1c3e268ce4a1-78f2b.jpg&quot;
+        srcset=&quot;/static/photo-1490474418585-ba9bad8fd0ea-69657d5d9f9e2a2aa0aa1c3e268ce4a1-dce19.jpg 200w,
+/static/photo-1490474418585-ba9bad8fd0ea-69657d5d9f9e2a2aa0aa1c3e268ce4a1-c1413.jpg 400w,
+/static/photo-1490474418585-ba9bad8fd0ea-69657d5d9f9e2a2aa0aa1c3e268ce4a1-78f2b.jpg 800w,
+/static/photo-1490474418585-ba9bad8fd0ea-69657d5d9f9e2a2aa0aa1c3e268ce4a1-ab4c4.jpg 1200w,
+/static/photo-1490474418585-ba9bad8fd0ea-69657d5d9f9e2a2aa0aa1c3e268ce4a1-f16ff.jpg 1500w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+Hi Greg!
+I saw your Github profile had this starter for a personal blog, so I thought&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Why not!?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;After days of scouring the internet, I finally landed on GatsbyJS starters, because&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;There were seriously NO good themes for Nikola.&lt;/li&gt;
+&lt;li&gt;I didn’t like the UI provided by Pelican.&lt;/li&gt;
+&lt;li&gt;Gatsby looked good enough to be my blog :tongue:&lt;/li&gt;
+&lt;li&gt;I did &lt;em&gt;not&lt;/em&gt; wish to learn Front-end for the next month to make the Gatsby site out of documentation!&lt;/li&gt;
+&lt;li&gt;Greg has made a masterpiece out of all the techs in the left bottom of the start page!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;When I started looking for themes beforehand in &lt;a href=&quot;https://www.gatsbyjs.org/starters/&quot;&gt;GatsbyJS starters&lt;/a&gt;, and landed on your GitHub, I was elated only to find out you had &lt;a href=&quot;https://github.com/greglobinski/gatsby-starter-personal-blog&quot;&gt;the perfect fit&lt;/a&gt; waiting to be found!&lt;/p&gt;
+&lt;p&gt;Next up, I will be moving all my posts from &lt;a href=&quot;https://mindretfarc.wordpress.com&quot;&gt;Wordpress&lt;/a&gt; over here and publishing some new ones soon.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Blurred Lines]]></title><description><![CDATA[PROLOGUE While setting up Dev environment on my CAIRO-STATION (desktop computer at my home), I realized I could not install Linux on that…]]></description><link>https://journal.piyush.tech/blurred_lines/</link><guid isPermaLink="false">https://journal.piyush.tech/blurred_lines/</guid><content:encoded>&lt;h1&gt;PROLOGUE&lt;/h1&gt;
+&lt;p&gt;While setting up Dev environment on my CAIRO-STATION (desktop computer at my home), I realized I could not install Linux on that, since the system will be used by all family members. My best bet would have been a VM or some sort of Containerization. Then I recalled my early development days, and realized both of these are inferior to &lt;a href=&quot;https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/&quot;&gt;Windows Subsystem For Linux (WSL)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;When I first discovered WSL as an optional feature in Windows 8.1, I was busy jumping between playing Just Cause 2 (a really great Open-World game, you &lt;a href=&quot;https://www.youtube.com/watch?v=oTXqYg_S4Ps&quot;&gt;MUST&lt;/a&gt; check it out!) and studying for XII “Board Exams”. I had a slight taste of Linux back then, enough to perform the most basic functions- ls, cd, and &lt;strong&gt;screenfetch&lt;/strong&gt; (my favorite).&lt;/p&gt;
+&lt;p&gt;Then, last year I saw Microsoft announce 3 more Linux flavors for WSL incoming at &lt;a href=&quot;https://techcrunch.com/2017/05/11/microsofts-bash-on-windows-10-goes-beyond-ubuntu-and-gets-support-for-fedora-and-suse-too/&quot;&gt;Build Developer Conference&lt;/a&gt;, all I understood was more screenfetch outputs to bask in!&lt;/p&gt;
+&lt;h1&gt;Motivation&lt;/h1&gt;
+&lt;p&gt;Today, after an year of experience and two incredibly knowledgeable months at &lt;a href=&quot;https://mindretfarc.wordpress.com/2018/07/10/dgplug/&quot;&gt;DGPLUG&lt;/a&gt;, ideas have become more &lt;strong&gt;achievable&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Today, an idea struck my mind-&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Developers can finally use Ubuntu through command line interface, great! If they could also use &lt;strong&gt;GUI&lt;/strong&gt; apps fired from within the Ubuntu bash CLI, ah that would have been lovely.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Ever since I &lt;a href=&quot;https://notes.piyush.tech/arch_zero_to_one/&quot;&gt;installed Arch Linux&lt;/a&gt; on my system over days of research, I came to appreciate all the nit-bits and procedures involved in installing an OS and everything that a proprietary-software user believes &lt;em&gt;should&lt;/em&gt; come with it.&lt;/p&gt;
+&lt;p&gt;Since now I possessed the knowledge I needed to pull this off, I fired up my home PC and I was ready to hack!&lt;/p&gt;
+&lt;h1&gt;Baby Steps&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Got &lt;a href=&quot;https://www.microsoft.com/en-us/p/ubuntu-1804/9n9tngvndl3q?activetab=pivot%3aoverviewtab&quot;&gt;Ubuntu 18.04&lt;/a&gt; from windows store.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/windows/wsl/install-win10&quot;&gt;Turned ON WSL&lt;/a&gt; for my system.&lt;/li&gt;
+&lt;li&gt;Updated all packages and installed screenfetch.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1&gt;The New Part&lt;/h1&gt;
+&lt;p&gt;The &lt;strong&gt;X Server&lt;/strong&gt; handles outputs to the GUI, and a variable DISPLAY needs to point to the X Server. This was done by the command DISPLAY=:0. To avoid running it manually everytime, I appended it to my shell by the command: &lt;code class=&quot;language-text&quot;&gt;echo &amp;#39;DISPLAY=:0&amp;#39; &amp;gt;&amp;gt; ~/.zshrc&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Now, all that I needed was an X Server that serves well!&lt;/p&gt;
+&lt;p&gt;My first attempt at X-Server for Windows was XMing, but unfortunately it couldn’t be detected by the WSL.
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/xmingnotdetected-f2735741060badc3480ef7ae2705d8d4-cbca2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 487px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 16.427104722792606%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAIAAAAcOLh5AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAUUlEQVQI15XOSw6AIAwAUVoKwViwLX5I6P3P6cK9xrefZAIUyEQC0AkrQvhFp1Rfj1nOJbec6JESIsYYv2Ix2ZWtbWqiNq5hZu6uqswM8PZyAxZRA5OG/feLAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;XMINGnotDetected&quot;
+        title=&quot;&quot;
+        src=&quot;/static/xmingnotdetected-f2735741060badc3480ef7ae2705d8d4-cbca2.png&quot;
+        srcset=&quot;/static/xmingnotdetected-f2735741060badc3480ef7ae2705d8d4-2bbb6.png 200w,
+/static/xmingnotdetected-f2735741060badc3480ef7ae2705d8d4-b5c84.png 400w,
+/static/xmingnotdetected-f2735741060badc3480ef7ae2705d8d4-cbca2.png 487w&quot;
+        sizes=&quot;(max-width: 487px) 100vw, 487px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p align=&apos;center&apos;&gt;X Server could not be found by WSL&lt;/p&gt;
+&lt;p&gt;Next up, I tried another procedure which goes as follows :-&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;WSL opens up a TCP type port 2222 for SSHing.  &lt;/li&gt;
+&lt;li&gt;I SSH through PuTTY and enable X11 Forwarding inside it.&lt;/li&gt;
+&lt;li&gt;The X Server used was still Xming.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The result is in the following photograph.
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/xmingdetected-ea70a90367317e446b9a7b7062339c87-2c531.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 611px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 66.93944353518822%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABJklEQVQoz2Ng5Gbi4WAWYmZkZ2QgGYjJiAvLCAoJ8Qnx8/Pw8vADSR4eLi4uPj4+IMnLyysgIMDNwyPAzw9kMzExoWjm5uRmZmJmZmZhYWUFYhYwAPJZWaFsOAMIGBnJcB6dADs7k7mlsJUtn6UNr7kVr7U9n4goK1CcgJMhXpKS5jt3pebmw7Krd4ou3Sx88qba21cdKM7MjFc3JDDl5eV+/vz+9+//v3///fz5+////+HhwWDNzIQ1y8nJfP36Cajn379/v3+DNIeFBRGrWVZW+suXj0A9u3fvfvbsGZARHOxPrGZ5edmvXz8D9dy9e/fHjx+k2Qx09pev7378+Pbr1w+IE8LCAglrhgA2NlZ9Ax1DQz19fR19fV0TE0MBAX54XCADAHWGZHCsCS60AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;XMingDetected&quot;
+        title=&quot;&quot;
+        src=&quot;/static/xmingdetected-ea70a90367317e446b9a7b7062339c87-2c531.png&quot;
+        srcset=&quot;/static/xmingdetected-ea70a90367317e446b9a7b7062339c87-be3b0.png 200w,
+/static/xmingdetected-ea70a90367317e446b9a7b7062339c87-7724c.png 400w,
+/static/xmingdetected-ea70a90367317e446b9a7b7062339c87-2c531.png 611w&quot;
+        sizes=&quot;(max-width: 611px) 100vw, 611px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p align=&apos;center&apos;&gt;Some Progress!&lt;/p&gt;
+&lt;p&gt;There still were problems with this set up- Latency. It seems obvious that I am SSHing into my own system, which is not wise. So, now I decided to get a better terminal application and get this show on road!&lt;/p&gt;
+&lt;p&gt;So, this time, I installed &lt;a href=&quot;https://conemu.github.io/&quot;&gt;ConEmu&lt;/a&gt;. For those who are having a hard time shifting from Linux to the Command Prompt or Powershell, this is a relief. ConEmu is extremely customizable and rock-solid!&lt;/p&gt;
+&lt;p&gt;Also, I changed my X Server to &lt;a href=&quot;https://mobaxterm.mobatek.net/&quot;&gt;MobaXterm&lt;/a&gt;, which does a far better and simpler job at handling X Server and related tasks(Servers,Tunneling,Packages,File System )&lt;/p&gt;
+&lt;h1&gt;Final Set Up&lt;/h1&gt;
+&lt;p&gt;The MobaXTerm X Server starts at Log In, and firing up ConEmu gives me a Ubuntu CLI.&lt;/p&gt;
+&lt;h1&gt;Testing&lt;/h1&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/xmingdetected1-fb8f884edd935d202a49e12bca2bf064-eaeb9.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.199999999999996%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACGUlEQVQoz31RzW/ScBguTC9m82ZM9A8w6r+gZ09yWEzUqRsDTRa/M+Y8isbRJTvsAHElGvAgX6mkDrbgNsUMB9VsKRllNNSVbRZY8FAKLVA+2vorfi3O+OS5/N68z/s+v+eFbt25/fCBZWxs9C+OWu6Pj1sYKvWtmJfE6upnfH4uvLS48G5p4W0kHHwdQFEfBOmg/dDptGpvb1+ZExoNKRgMvniOvHQ7vB4ngjzz+Txsnt2iKehAz8EzZ4/0XzpuuHDM0H900HRi+MapLk8PmU/GEnBhdw3D5gIBbyjkxzCv3+//EI2qqipLDahHr39suTL/auKNyzqLzRR3SZ5nOH6zLuU3MrEZ5BFBxJrNJsdx29tfc7mtarVaqVSAuNVqa+LFEKaKglzlVUWVZbXT+UlZVkBTrSba7fD09BMYfmqz2axWq8vlAvV2qwXp9bo4HtcmdTSoe6AoiizLQEzTWYpiSHKHojYBgIvu5q44kVgBD6AE3eo+1OtiMrm6vk6k02QmQ5JkimFye8Xx/4gFgbfbbQ7HhNM5hSBTk5Ow2+3+Y/vH5na7DUwqv/DbuSTV8vkiyxZYcB+2UCqVBFEAHwIpaifF8YQWPcjqH9CmcFyZIIhsNkvTXwDLZV7r78jQ4b5D5w3nTNevDRovDxkvDpsGzOarZvPAyIjx7r2b+KdlIokvx96jqCcSwWZDaDgc/LgSTW8QqdTad51H3m6y4/5BAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;XMingDetected&quot;
+        title=&quot;&quot;
+        src=&quot;/static/xmingdetected1-fb8f884edd935d202a49e12bca2bf064-48538.png&quot;
+        srcset=&quot;/static/xmingdetected1-fb8f884edd935d202a49e12bca2bf064-bed0f.png 200w,
+/static/xmingdetected1-fb8f884edd935d202a49e12bca2bf064-5fd34.png 400w,
+/static/xmingdetected1-fb8f884edd935d202a49e12bca2bf064-48538.png 800w,
+/static/xmingdetected1-fb8f884edd935d202a49e12bca2bf064-eaeb9.png 1000w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p align=&apos;center&apos;&gt;Mozilla Firefox&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/xmingdetected2-4443b8ebe546dd77f96b6df47f875273-eaeb9.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.199999999999996%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAB1ElEQVQoz2PIycstKS4uxAD5+QVZWXmtrR093X2dHd1dHd3dXb09PRN6uvqAIr09vb293QwMTAy4ACcXi72jvoOLkbGpor6BrJ6BrLK6iJIyn6ISj5S0oLiYOAMvLxcnCwpgY2MF6jS3UOrqDqird9u8ve7arUXXbsy/dnPB5WtzLlyedfPuwuzcUDExKQZmZiZGVAuZmECO0dTUSE9NCg3y27xm7f/////9+/cfDH7/+vv/3//q6lpBQUEGRkY0vUDNIBF9HdW8jOjoCN+taxb9///n3/+//8Hoz5/fQLKqqpyPjx+LZoiIspJsamJ4ZLjvlnXLgBb+/fvn37+/f//9+/37N5CurCjDrhlis4aGSkFeSnJC+KE928Ca/0Kc/efPHyBZW1uNSzPIzzY2VnPnzpwzZ/r6dav37duzd+9uINqzd//23fsOHNiflBgvKiqKRTPcfk5OTkNDQzV1DSVlFWUVVWVlFQU1HTk1PXkFBWUVFQUFRQY8gIWZWU9bU1NVRUNZSUNZGYjUFBVUFWSV5KSV5WRlpSRA8czNzcbJxcrBxcLJxcTFw8bDC0SsQsI8ElLihkFJqj6J8m4xCm7R8m6R4vZB4naBEg7BUo4hah4RAEY/vgJa9O/gAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;XMingDetected2&quot;
+        title=&quot;&quot;
+        src=&quot;/static/xmingdetected2-4443b8ebe546dd77f96b6df47f875273-48538.png&quot;
+        srcset=&quot;/static/xmingdetected2-4443b8ebe546dd77f96b6df47f875273-bed0f.png 200w,
+/static/xmingdetected2-4443b8ebe546dd77f96b6df47f875273-5fd34.png 400w,
+/static/xmingdetected2-4443b8ebe546dd77f96b6df47f875273-48538.png 800w,
+/static/xmingdetected2-4443b8ebe546dd77f96b6df47f875273-eaeb9.png 1000w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p align=&apos;center&apos;&gt;VS Code&lt;/p&gt;
+&lt;p&gt;I also followed a blog post by Nick Janetakis on &lt;a href=&quot;https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly&quot;&gt;setting up Docker to work with WSL flawlessly&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;The setup he used was my inspiration for the post, and I hope it would serve me well for my oncoming endeavors!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Arch]]></title><description><![CDATA[Simplicity is the ultimate sophistication.   -Leonardo da Vinci After eons of self-doubt and mixed opinion, I finally decided to get Arch…]]></description><link>https://journal.piyush.tech/arch_zero_to_one/</link><guid isPermaLink="false">https://journal.piyush.tech/arch_zero_to_one/</guid><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;Simplicity is the ultimate sophistication.&lt;br&gt;
+-Leonardo da Vinci&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;After eons of self-doubt and mixed opinion, I finally decided to get Arch Linux up and running in my laptop!&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;How it all began?&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;My mentors at IRC insisted upon switching over to latest Linux distros. The reason was implicit: to work with packages having latest features. My IRC friends at &lt;a href=&quot;https://brute4s99.gitlab.io/dgplug/&quot;&gt;#dgplug&lt;/a&gt; suggested me a few flavors to choose from- latest Ubuntu build, latest Fedora build, or a rolling release distribution.&lt;/p&gt;
+&lt;h2&gt;What’s a Rolling Release?&lt;/h2&gt;
+&lt;p&gt;A rolling release is a type of &lt;a href=&quot;https://en.wikipedia.org/wiki/Rolling_distribution&quot;&gt;linux distribution model&lt;/a&gt; in which instead of releasing major updates to the entire operating system after a scheduled period of time, a rolling release operating system can be changed at the application level, whenever a change is pushed by &lt;a href=&quot;https://en.wikipedia.org/wiki/Upstream_(software_development)&quot;&gt;upstream&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;There are a couple of rolling release models – semi-rolling and full rolling – and the difference is in how and what packages are pushed out to users as they become available.&lt;/p&gt;
+&lt;p&gt;A semi-rolling distribution, such as &lt;a href=&quot;https://www.chakralinux.org/&quot;&gt;Chakra Linux&lt;/a&gt; and &lt;a href=&quot;https://www.pclinuxos.com/&quot;&gt;PCLinuxOS&lt;/a&gt;, classifies some packages to be upgraded through a fixed release system (usually the base operating system) in order to maintain stability.&lt;/p&gt;
+&lt;p&gt;A full rolling release, such as Gentoo, Arch, OpenSUSE Tumbleweed, and Microsoft Windows 10, pushes out updates to the base operating system and other applications very frequently – sometimes as often as every few hours!&lt;/p&gt;
+&lt;h2&gt;Why switch?&lt;/h2&gt;
+&lt;p&gt;The main benefit to a rolling release model is the ability for the end user to use the newest features the developer has enabled. For example, one of the newer features of the Linux kernel, introduced with the 4.0 update, was the ability to update the kernel without restarting your computer. In a rolling release distribution, as soon as this update was tested and marked as working by the development team, it could then be pushed out to the user of the distribution, enabling all future updates to the kernel to occur without computer restarts.&lt;/p&gt;
+&lt;h2&gt;What’s new?&lt;/h2&gt;
+&lt;p&gt;For ubuntu users, it’s the same thing as if you come to Linux from Windows; there is a learning curve.&lt;/p&gt;
+&lt;p&gt;An excerpt from the &lt;a href=&quot;https://wiki.archlinux.org/index.php/Arch_Linux#Principles&quot;&gt;Arch Wiki&lt;/a&gt; states thus:-&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Arch Linux is a general-purpose distribution. Upon installation, only a command-line environment is provided: rather than tearing out unneeded and unwanted packages, the user is offered the ability to build a custom system by choosing among thousands of high-quality packages provided in the &lt;a href=&quot;https://wiki.archlinux.org/index.php/Official_repositories&quot;&gt;official repositories&lt;/a&gt; for the &lt;a href=&quot;https://en.wikipedia.org/wiki/x86-64&quot;&gt;x86-64&lt;/a&gt; architecture.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Oh, and one more thing- none of the proprietary softwares/packages/drivers come with the base installation. &lt;a href=&quot;https://en.wikipedia.org/wiki/Proprietary_software&quot;&gt;Read more about them here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you still think you can steer clear off the proprietary softwares , &lt;a href=&quot;https://bbs.archlinux.org/viewtopic.php?id=87170&quot;&gt;think again&lt;/a&gt;, and &lt;a href=&quot;https://www.reddit.com/r/archlinux/comments/56zcuf/what_proprietary_commercial_software_do_you_use/&quot;&gt;one more time&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Theory’s over.&lt;/p&gt;
+&lt;h2&gt;Baby Steps&lt;/h2&gt;
+&lt;p&gt;A few pointers before we start the installation:-&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The installation requires a working internet connection. So, I had a wired ethernet connection ready at my disposal.  A WiFi module that’s NOT with a Broadcomm Chipset would be just as fine. Since I have the Broadcomm Chipset, I switched to wired connection for the time being.&lt;/li&gt;
+&lt;li&gt;Once I’ll get the installation done, all I’ll have is a bare-bones installation with a log-in shell. You must absolutely be comfortable with the terminal, as almost no graphical utility comes out of the box.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I grabbed a USB and prepped it with this &lt;a href=&quot;https://www.archlinux.org/download/&quot;&gt;Arch Linux img&lt;/a&gt;. First thing after booting from the USB – I connected to the internet.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In case you have &lt;strong&gt;Broadcomm chipset in your WiFi&lt;/strong&gt;, follow &lt;a href=&quot;https://wiki.archlinux.org/index.php/Broadcom_wireless&quot;&gt;this&lt;/a&gt;. You need the driver firmware for the Broadcomm chipset to get it working on your laptop, since it’s proprietary.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Connecting to the Internet&lt;/h2&gt;
+&lt;h3&gt;Connecting to internet via Ethernet&lt;/h3&gt;
+&lt;p&gt;Just Plug n Play, you’re good to go!&lt;/p&gt;
+&lt;h3&gt;Connecting to internet via WiFi&lt;/h3&gt;
+&lt;p&gt;1.Create a profile for your wifi in there&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;# wifi-menu&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;2.Connect to the profile you set by&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;# netctl start &amp;lt;profile_name&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;3.If you want to enable it to connect automatically at startup&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;# netctl enable &amp;lt;profile_name&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;Connecting to internet via Android USB tethering&lt;/h3&gt;
+&lt;p&gt;1.List all your DHCP interfaces that are now available&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;$ ls /sys/class/net&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;2.Connect to the new inteface provided by Arch for your USB tethered device!&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;# dhcpcd &amp;lt;enp....something_profile_name&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Check if you’re online :    &lt;code class=&quot;language-text&quot;&gt;$ ping -c3 google.com&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;There are many good tutorials out there, &lt;a href=&quot;https://duckduckgo.com/?q=install+arch+linux+uefi&quot;&gt;follow any one of these&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Now that Arch was installed, I booted up the system and got connected to the internet again.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/tty-66a6207e4eb6f9c44ef9332283c58262-8715f.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 60.264900662251655%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABB0lEQVQoz5VS26qDMBCMJiaaRFFz0aiNl2Of+9b//7QzFUrhcKQ4LMsGMrs7wxJjjNZaSllVVVEU5BLWeQmuA7Oua+Q8zy+QZcVVRROAkPRAgmAs4RzFN3YKFuHWcmNeLyHs4zHd702MOeQURfq1hZrnct9RUCnd8znHCA08y4QQnHPG2CmTKsXXVew7Uwrbmm3rvQ/DUJZllmVw8ZwMtctCsDMixmtuE10S7wmlL5+8T7ROjoZ/cLJzziSjwNu/9MLg5ee23aYQgvPeWuus9d63bYvLgVpkKIdn/5PHcYI3zrlxHIdhaNq27/umadACx4d2XdedXh4+hQP4igwaxiJj5kfLCX4BvcQSOnveAVYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;image&quot;
+        title=&quot;&quot;
+        src=&quot;/static/tty-66a6207e4eb6f9c44ef9332283c58262-48538.png&quot;
+        srcset=&quot;/static/tty-66a6207e4eb6f9c44ef9332283c58262-bed0f.png 200w,
+/static/tty-66a6207e4eb6f9c44ef9332283c58262-5fd34.png 400w,
+/static/tty-66a6207e4eb6f9c44ef9332283c58262-48538.png 800w,
+/static/tty-66a6207e4eb6f9c44ef9332283c58262-8715f.png 1057w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Now that I was online, I set up a GUI !&lt;/p&gt;
+&lt;h2&gt;Installing a GUI&lt;/h2&gt;
+&lt;p&gt;So the first thing I decided to get for the Arch was GUI! It’s a quite simple procedure, you need a display manager, and a Desktop Environment to interact to the X server.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2&gt;X Server&lt;/h2&gt;
+&lt;p&gt;X is an application that manages one or more graphics displays and one or more input devices (keyboard, mouse, etc.) connected to the computer.&lt;br&gt;
+It works as a server and can run on the local computer or on another computer on the network. Services can communicate with the X server to display graphical interfaces and receive input from the user.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;My choice:  &lt;code class=&quot;language-text&quot;&gt;# pacman -S sddm plasma&lt;/code&gt;&lt;/p&gt;
+&lt;h4&gt;IMPO ! Install a terminal before rebooting to GUI !&lt;/h4&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;# pacman -S konsole&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Configuring terminal&lt;/h2&gt;
+&lt;p&gt;Sources + References:-&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;http://jilles.me/badassify-your-terminal-and-shell/&quot;&gt;http://jilles.me/badassify-your-terminal-and-shell/&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Configuring weechat&lt;/h3&gt;
+&lt;p&gt;Sources + References:-&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://alexjj.com/blog/2016/9/setting-up-weechat/&quot;&gt;https://alexjj.com/blog/2016/9/setting-up-weechat/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://wiki.archlinux.org/index.php/WeeChat&quot;&gt;https://wiki.archlinux.org/index.php/WeeChat&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Surfing through some sites also got me through a good command that would be of much help to most!&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;/mouse enable&lt;/code&gt;  # In case you’d like to use the mouse in weechat&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;/redraw&lt;/code&gt;          # A saviour for guys SSH-ing to any &lt;a href=&quot;https://en.wikipedia.org/wiki/ZNC&quot;&gt;ZNC&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;You can’t find the packages through pacman?&lt;/h2&gt;
+&lt;p&gt;Enter AUR : the &lt;a href=&quot;https://wiki.archlinux.org/index.php/Arch_User_Repository&quot;&gt;Arch User Repository&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Suppose I have to get a package that cannot be found by pacman. I will try to find it at &lt;a href=&quot;https://aur.archlinux.org/&quot;&gt;AUR home page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;for eg : &lt;a href=&quot;https://aur.archlinux.org/packages/ngrok/&quot;&gt;ngrok&lt;/a&gt;. Now, after reading description, I know this is the package I was looking for. So, now I will see how I can acquire the package.&lt;/p&gt;
+&lt;p&gt;Here I can see two ways to acquire the package- by git clone (preferred), or by downloading the &lt;strong&gt;tarball&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;It gives me one file : PKGBUILD . These &lt;strong&gt;PKGBUILD&lt;/strong&gt;s can be built into installable packages using makepkg , then installed using pacman .&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2&gt;Fakeroot&lt;/h2&gt;
+&lt;p&gt;Imagine that you are a developer/package maintainer, etc. working on a remote server. You want to update the contents of a package and rebuild it, download and customize a kernel from kernel.org and build it, etc. While trying to do those things, you’ll find out that some steps require you to have &lt;strong&gt;root&lt;/strong&gt; rights (&lt;strong&gt;UID&lt;/strong&gt; and &lt;strong&gt;GID&lt;/strong&gt; 0) for different reasons (security, overlooked permissions, etc). But it is not possible to get &lt;strong&gt;root&lt;/strong&gt; rights, since you are working on a remote machine (and many other users have the same problem as you). This is what exactly &lt;strong&gt;fakeroot&lt;/strong&gt; does: it pretends an effective &lt;strong&gt;UID&lt;/strong&gt; and &lt;strong&gt;GID&lt;/strong&gt; of 0 to the environment which requires them.&lt;br&gt;
+P.S:-&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;UID: User ID&lt;/li&gt;
+&lt;li&gt;GID: Group ID&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The git clone method is preferred since you can then update the package by simply git pull.&lt;/p&gt;
+&lt;h2&gt;Why so much fuss ?&lt;/h2&gt;
+&lt;p&gt;You can always try out &lt;a href=&quot;https://wiki.archlinux.org/index.php/AUR_helpers&quot;&gt;AUR helpers&lt;/a&gt;. I set up &lt;a href=&quot;https://aur.archlinux.org/packages/yay/&quot;&gt;yay&lt;/a&gt; in my configuration, since it also shows DIFFs when installing new/upgrading packages through AURs.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2&gt;Why would you want to read DIFFs?&lt;/h2&gt;
+&lt;p&gt;Essentially, it’s a shell script,(so it can possibly have mailicious / dangerous content, so look before you leap) but since it’s ran as fakeroot, there is some level of security albeit. Still, we shouldn’t try and push our luck.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So after all this, I successfully set up Arch Linux, WiFi, Desktop Environment, Terminal and Weechat in my laptop! Next was installing basic software packages and fine tuning the GUI to my personal tastes.&lt;/p&gt;
+&lt;p&gt;Firefox Developer Edition – For Web Browsing&lt;/p&gt;
+&lt;p&gt;tor-browser – For private internet access&lt;/p&gt;
+&lt;p&gt;Konsole – Terminal&lt;/p&gt;
+&lt;p&gt;Deepin Music Player – Music Player&lt;/p&gt;
+&lt;p&gt;Gwenview – Image viewer and editing solution&lt;/p&gt;
+&lt;p&gt;Steam – for Games&lt;/p&gt;
+&lt;p&gt;Kontact – for updates on calendar events&lt;/p&gt;
+&lt;p&gt;VLC – Video player
+The end result&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/final-3eb5211a33e1bac8d5daff5b65258191-15296.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.22254758418741%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACqklEQVQozwGfAmD9AMXPu+HavqfN3sXY2rbS2rLP2bTS2JLD1p7K1XuwxYmmsH+ir3ScrYGirnibqGeMomCEnVd3lGiAj2N5jwD15c/3583u5tL16tby6tr07N3z6t3l5Nns7+ScpaA+QDo/Pz09PT06PD05PDw7QD84Pj41Oj01OTgxQU4A19W739m+//PW//ba//PZ//bh//Xj+e3d/vjqn5+WBwgGFB0bEh4dDAwLFSknJTExFB4fDBMVBAgJGS84AIiemqq1ptvXvvTt0//12/js1fbs2fLn1u7r3pOUjQ4ODh8tLB4xMBcWFR0xMC0zMyQjIxkdHA4RESU7QABFbX5pjpeUqKHCxbXr38rx48zTzsDb1Mjp59t8iooNEhIXKSkZKykYHRsaKSkmMDAwMC8mKCcREhE0Q0QAS2p/YISWdI+UhJqdlqmry8a5urixrrS0x9HOhYuIEB8eEx8fExwcFSYkGSUmMDQ1KSwvGR0fFRcXP0pKAEFhfW6HloCYoYSVm4uborS2sqyxsJmmra23uoODfQsPDxAPDw8ODAsQEAYLDQgJCwYICgUICwADBScxNAAzVXZIaYRae5JjgpdadYuAlKGLnaaMmqO5t7KCg4A7NjVFPzpAPDoxMjYsMDIpLzIoLzMYIyslKitvZ1wAJkNpJEdtOWCCRW6MSXKOYoifWXuTk52iu7myn6io1cu5ta6po5yeqKCdipigjaCkVXKIO1dunJ6VsKyeADhOamp6iWuAj1t7kUlvi1Bvh0hmf15zhoOTnMDAtsnAsWZ2gm12gIGDhXaNmXyYpGd/jltwe36JiH+JhwBqd4NicH1ebHtyfYlHW3A7VXE9XHw9YII2WXxOaIB5goVqfIZlfo5gfY5Sdo1Wc4Zhc39rgIicpJ+DjY5isjOSzVHDYwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;image&quot;
+        title=&quot;&quot;
+        src=&quot;/static/final-3eb5211a33e1bac8d5daff5b65258191-48538.png&quot;
+        srcset=&quot;/static/final-3eb5211a33e1bac8d5daff5b65258191-bed0f.png 200w,
+/static/final-3eb5211a33e1bac8d5daff5b65258191-5fd34.png 400w,
+/static/final-3eb5211a33e1bac8d5daff5b65258191-48538.png 800w,
+/static/final-3eb5211a33e1bac8d5daff5b65258191-b70ec.png 1200w,
+/static/final-3eb5211a33e1bac8d5daff5b65258191-15296.png 1366w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p align=&apos;center&apos;&gt; beautiful, isn’t it?&lt;/p&gt;
+&lt;p&gt;Setting up a personal Arch Linux machine taught me many things about the core Linux system, how exactly the system is set up during installation and how different utilities orchestrate to form my complete workstation ready to build beautiful code and software!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My Testimony about Blockchain - Part 1]]></title><description><![CDATA[Blockchain is a vast,  global distributed ledger  or database running on millions of devices and open to anyone, where not just information…]]></description><link>https://journal.piyush.tech/my_testimony_about_blockchain_p1/</link><guid isPermaLink="false">https://journal.piyush.tech/my_testimony_about_blockchain_p1/</guid><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;Blockchain is a vast, &lt;strong&gt;global distributed ledger&lt;/strong&gt; or database running on millions of devices and open to anyone, where not just information but anything of &lt;strong&gt;value&lt;/strong&gt; — money, but also titles, deeds, identities, even votes — can be moved, stored and managed securely and privately. Trust is established through mass collaboration and clever code rather than by powerful intermediaries like governments and banks.&lt;br&gt;
+–Wikinomics&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So I’ve been reading all about blockchains (even those 12 point font research papers!). This is a rough gist of what I learnt:-&lt;/p&gt;
+&lt;h2&gt;A distributed ledger&lt;/h2&gt;
+&lt;p&gt;Wikipedia &lt;a href=&quot;https://en.wikipedia.org/wiki/Distributed_ledger&quot;&gt;explains&lt;/a&gt; thus –&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“A distributed ledger is a consensus of replicated, shared, and synchronised digital data geographically spread across multiple sites, countries, or institutions. There is no central administrator or centralised data storage.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This seems too much condensed. Let me break it down for you.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;There is no central authority.&lt;/li&gt;
+&lt;li&gt;Every transaction here occurs in front of an array of guards that maintain order and make sure the transactions are completed in full by both parties.&lt;/li&gt;
+&lt;li&gt;These guards are just some computers that have volunteered to become a ‘node’. Only these nodes can validate the transactions of every user on a blockchain.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Before we go any further, I need to tell you what a transaction means in this context.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A transaction occurs when there is an exchange of data between any two parties. It need not be money only. It can be any data, you can even make a deal involving official papers of properties through some blockchain implementing platform!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And if this sounds scary, don’t worry; no-one, not even those nodes (the ones which supervise the transactions) know what exactly you exchanged! Kudos to privacy! And that’s not even half of it! I’ll explain more later.
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/explain1-4b86149016fc1278353a29434f0739d3-71f92.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 740px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADwAwCdASoUAAoAPm0qkkWkIqGYBABABsSygFp0xeFjKPuYZbMOfsAAAP7zStKzoY6/ZxMizcxRD0vN4XCCD8x0EmWHXWBZ7noe2rLUQ5Hcn6XrZUqb+B1JRgQWzxop9pZF52CAu1P2leAoAXQAAA==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;conventional central authority&quot;
+        title=&quot;&quot;
+        src=&quot;/static/explain1-4b86149016fc1278353a29434f0739d3-71f92.jpg&quot;
+        srcset=&quot;/static/explain1-4b86149016fc1278353a29434f0739d3-bae36.jpg 200w,
+/static/explain1-4b86149016fc1278353a29434f0739d3-845a6.jpg 400w,
+/static/explain1-4b86149016fc1278353a29434f0739d3-71f92.jpg 740w&quot;
+        sizes=&quot;(max-width: 740px) 100vw, 740px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+Consider the conventional case of a bank (a conventional central authority).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NOTE : We are using ‘bank’ as an example just because it comprises a good amount of ‘transactions’. Always remember that these ‘transactions’ can be of data or goods too!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So here, in a bank, all the transactions occurring between accounts would be verified by a single, central authority, and all your possessions currently with the bank would be at the mercy of the whims of the bank, the &lt;strong&gt;single point of security&lt;/strong&gt; in the transaction. If, by any chance, the bank burns down (physical damage to central authority) or gets robbed (or hacked), or seizes your account (unethically or otherwise) , there would be consequences, the likes of which you most probably won’t be comfortable with.&lt;/p&gt;
+&lt;p&gt;Enter blockchain with the power of consensus based distributed ledger! If we consider the case of bitcoin blockchain, there are about 7000 nodes in the network that all work for the security of all those precious bitcoins that keep soaring and falling by the minute. For bitcoin to fail, all these 7000 points of security would have to be attacked at the same time, or at-least half of them. Not only that, with the sky-high pricing of these virtual currencies, more and more people are opting in to become nodes, which adds to security of the users(traders) making transactions over bitcoin blockchain. &lt;em&gt;So that’s security for you and the ‘things’ you love!&lt;/em&gt; If you wish to know more about blockchain that deals with data, check out ethereum. Ethereum is an open-source, public, blockchain-based distributed computing platform and operating system featuring smart contract functionality.&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Block&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;A block is the ‘current’ part of a blockchain, which records some or all of the recent transactions. Once completed, a block goes into the blockchain as a permanent database. Each time a block gets completed, a new one is generated. There are countless such blocks in the blockchain, connected to each other (like links in a chain) in proper linear, chronological order. Every block contains a hash of the previous block. The blockchain has complete information about different user addresses and their balances right from the genesis block to the most recently completed block. Every node on the blockchain has a copy of the ledger with themselves, that gets synced after creation of a new block.&lt;/p&gt;
+&lt;h2&gt;The ‘what’ block ?&lt;/h2&gt;
+&lt;p&gt;Every blockchain has to start somewhere, so there’s what’s called a &lt;strong&gt;genesis block&lt;/strong&gt; at the beginning. This is the first block, and there, at the beginning, the creators of Ethereum (or any other cryptocurrency) were at liberty to say “&lt;em&gt;To start, the following accounts all have X units of my cryptocurrency.&lt;/em&gt;” Any transfer of data on the blockchain will have originated from one of these initial accounts (or from mining).&lt;/p&gt;
+&lt;p&gt;The blockchain was designed so these transactions are immutable, meaning they cannot be deleted. The blocks are added through cryptography (more, later), ensuring that they remain meddle-proof: The data can be distributed, but not copied (a node never knows exactly what’s in these transactions). You can always see a block yourself by using a Blockchain Explorer.&lt;/p&gt;
+&lt;h2&gt;Privacy – how?&lt;/h2&gt;
+&lt;p&gt;The blockchain isn’t just a bunch of computers watching that A sent something to B in return for some data; it’s so much more than that! On-chain transactions refer to those cryptocurrency transactions which occur on the blockchain – that is, on the records of the blockchain – and remain dependent on the state of the blockchain for their validity. All such on-chain transactions occur and are considered to be valid only when the blockchain is modified to reflect these transactions on the public ledger records.&lt;/p&gt;
+&lt;h2&gt;What the crypto?!&lt;/h2&gt;
+&lt;p&gt;So how does &lt;em&gt;cryptography&lt;/em&gt; exactly fit in with this blockchain? It’s simple- the nodes lock the data with a  256 bit number (Hash Sum) that represents the data within a block. A different blockchain may use a different hash function, but the basic idea of its integration in the blockchain remains the same (more or less).&lt;/p&gt;
+&lt;h3&gt;Hashing Functions&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/hash-db92affcc210c26c957a198c90ea6a7f-150d0.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 520px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 67.6923076923077%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsSAAALEgHS3X78AAADSUlEQVQ4y51TWUxTURCdtrSFhLihYMVE8I+Af+ISf1xCmtSFL40YN4KoAdcgIlptAcumaFBQrNXgFhYlIioa18aqpYAtpX1gS9vX0lc2bUAREBJ6nVfpl+KHk5zMzdzlnTlnHkBw8DwQCCJBKBT5c3IyhxACbDCeYq7FksvTaDJ5Ot0J3lRdyAFObAhfGCEI4kfNDAmdEcwXioKDBAuWRcVy2QPRiC2IJMQqmIp9aWs48Jfg83mhmDYjNiBWI5ZMrTcigv64IADgkKk1wxSttVrzUrTarO0uV0GyzXZ2U+BcoAvM3EAtOiySBzAyMgQejwNMJhf8+EEjvgjq6xJwf7adLqAIuUYoSo73lOT7t0sDWJ9VlnQ8xZn/2NucfavHJKvpaTpR2duV97Cnu+BJLcDg4EHo7k6F1ta94PWmwsDAgRDdx0j2i8Z22QWzWabT66WvjcbTWsZdVMnWXxwuW9yZ8+Bw68k7aS0nb6fjw+mfc+rSKVltIkBNTRy0t8eAzRYDL1/GQFtbHLxVh8A0EWh1+hgdJeB2E3A6CVitBCUgPJdzHbvl7itR0bRCiy6/YpjCpv7+86Vs/dWx8gh34VOJWVYrRqZi05kasf3sI3GH/P5SgOFhAno9AZomYLEQmBgnXM071rF5FpvCOzFxhVituWRysoJ4v17sxHpo+bas/UxRI1FnKMdQv5/vM2+MU/LaMYfi0TOAoSEGDIZ2NKUDWZqQoZPT2bmUZfLJnJvY1ibdS1Gy3agjZrnE33ZlC/9zbl0kMhI5FA2ivnMvRKih6H2mKgyguHg+PhYOanU4VFeHg0oVAUcyBGWL4K9zKE/byv23hhbLKIIBiurF1j3Icpjb37ec3bL3lCRgu7vwL0mi6fydDrtC7GfoIVz1MeXcD8dvhj0/dDns9dGr/ly1J38G+A0xGn8bw5oyOEiCPmhYDefYnYW0z1dBTKYz/jn8NlTqYDW8vuNUam/xc58mUzXSkn17tCmrcgxNGqHzGxoBxscJajiGDCfA5foJPh/hGvRr/HNI5VTg/DUbDNI3CJ27u1DJ1lW7pAvtivqNn07dlaDDEuPpqvXossQgvYedOZ0roasrHlnGg9kcjyxXgFYbCv8ZvwC+kcEunw7m2wAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;A basic idea of any hash function.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/hash-db92affcc210c26c957a198c90ea6a7f-150d0.png&quot;
+        srcset=&quot;/static/hash-db92affcc210c26c957a198c90ea6a7f-150c9.png 200w,
+/static/hash-db92affcc210c26c957a198c90ea6a7f-366cf.png 400w,
+/static/hash-db92affcc210c26c957a198c90ea6a7f-150d0.png 520w&quot;
+        sizes=&quot;(max-width: 520px) 100vw, 520px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p align=&apos;center&apos;&gt; &lt;a href=&quot;https://en.wikibooks.org/wiki/File:Hash_function.svg&quot;&gt;source&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you look closely, you’ll notice even a slight change (even just 1 bit) in the data would create a different hash sum altogether. &lt;strong&gt;&lt;em&gt;There is simply no pattern at all!&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;So here comes the answer to a question that might’ve struck you-&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Why would anyone waste her/his own electricity and compute power to validate my transactions? Social service? Repentance out of guilt?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It’s MONEY!&lt;/p&gt;
+&lt;p&gt;There are nodes, there are traders, then there are MINERS.&lt;/p&gt;
+&lt;p&gt;Miners are a subset of nodes as all miners must be running a full node (ie they must have complete ledger with themselves) in order to mine (at least to mine properly). The nodes are what determine consensus as &lt;strong&gt;all nodes must agree to the same rules otherwise the nodes will fork off of the network.&lt;/strong&gt;&lt;/p&gt;
+&lt;p align=&apos;center&apos;&gt;Continue Reading&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My Testimony about Blockchain - Part 2]]></title><description><![CDATA[They’ll what ? They’ll fork off of the network. A byproduct of distributed consensus, forks happen anytime two miners find a block at nearly…]]></description><link>https://journal.piyush.tech/my_testimony_about_blockchain_p2/</link><guid isPermaLink="false">https://journal.piyush.tech/my_testimony_about_blockchain_p2/</guid><content:encoded>&lt;h3&gt;They’ll what ?&lt;/h3&gt;
+&lt;p&gt;They’ll fork off of the network.&lt;/p&gt;
+&lt;p&gt;A byproduct of distributed consensus, forks happen anytime two miners find a block at nearly the same time. The ambiguity is resolved when subsequent blocks are added to one, making it the longest chain, while the other block gets “orphaned” (or abandoned) by the network.&lt;/p&gt;
+&lt;p&gt;But forks also can be willingly introduced to the network. This occurs when developers seek to change the rules the software uses to decide whether a transaction is valid or not. Forks can be classified into two- hard and soft forks; both have different implications for the network and ecosystem.&lt;/p&gt;
+&lt;p&gt;Hard forks are a permanent divergence in the the block chain, commonly occurs when non-upgraded nodes can’t validate blocks created by upgraded nodes that follow newer consensus rules.&lt;/p&gt;
+&lt;p&gt;Soft forks are a temporary divergence in the block chain caused by non-upgraded nodes not following new consensus rules&lt;/p&gt;
+&lt;p&gt;Miners can add blocks to the blockchain so long as every other node on the network agrees that their block fits the consensus rules and accepts it.&lt;/p&gt;
+&lt;h3&gt;The Block Header&lt;/h3&gt;
+&lt;p&gt;So what do these miners do exactly? They hash the block header. It is 80 bytes of data that will ultimately be hashed.&lt;/p&gt;
+&lt;p&gt;The header contains this info:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Byte Size&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Version&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;Block version number&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Previous Hash&lt;/td&gt;
+&lt;td&gt;32&lt;/td&gt;
+&lt;td&gt;This is the previous block header&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Merkle Root&lt;/td&gt;
+&lt;td&gt;32&lt;/td&gt;
+&lt;td&gt;The hash based on all of the transactions in the block&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Time&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;Current time stamp as seconds (unix format)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Bits&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;Target value in compact form&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Nonce&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;User adjusted value starting from 0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/genesis-0bda9e75380eaa14878242e627d8c28c-231f4.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.470588235294116%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACDUlEQVQoz21QzWsTQRTfqxQ/KBQ8FHryoDRpqBgIOfkXGEyy1UoFD4X+DV4kxqgoggWxXksa27QHgyBKkaQBMYrQJBbU0FC1msRudnd2Z/Z7dmec3URR8cePx5v33m/eBzd++e6phcWTC4tjs7eP8jeO8bkj6dzhZHZ05uZIMjty/vqhRGaUz43P3Zm4cu/E/P3j8w8mbj0fyzw9e63AlWofnrzaKVa2i9VGsdpc22quVurMWQ/85c13hXI9X24UtpqMK+X6cqW58vrj2pvWi+1djlLqYQdbOiUuHcDDPinxfdehxLMpZXR+WUwGdYQjhOq6IYqiipBpWo6DJaAI/b7vYyzLQIVI0w2oacinzl7Muq6HMfY7m6YJIXRdFwcAEAlAsGzLDUKuR3Y6cn1fbHyX6x1F0m1K/NYs6YsN0wAADMTMKsH3tm17nucv4ZGNT+KjxkGt1X6/91WB6mDoodgM8LuzwsZAyHEcNxCzzrVv8O2X3st2a7PVagOFBvcYii3rbzEAbC03AMtijzT25Wq7U/rc3djr7araP2IG0w/5yxCIoGkaQcXwrP8FW4qDUBcEqds9ECUgiUAUwY+e0BckUVQYZVn9k0BWNWQYhmUYJkIaN3vpajx+MRpNxGKpeDQxPXXuTISPnU5HIhciIX46lJwMp0JhPjyVDoVS0ehcNrOUz5ceLhVXHz/7CfpwIF9Y0QybAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;genesis&quot;
+        title=&quot;&quot;
+        src=&quot;/static/genesis-0bda9e75380eaa14878242e627d8c28c-48538.png&quot;
+        srcset=&quot;/static/genesis-0bda9e75380eaa14878242e627d8c28c-bed0f.png 200w,
+/static/genesis-0bda9e75380eaa14878242e627d8c28c-5fd34.png 400w,
+/static/genesis-0bda9e75380eaa14878242e627d8c28c-48538.png 800w,
+/static/genesis-0bda9e75380eaa14878242e627d8c28c-b70ec.png 1200w,
+/static/genesis-0bda9e75380eaa14878242e627d8c28c-231f4.png 1360w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p align=&apos;center&apos;&gt;A snap of the latest block at Bitcoin blockchain at the time of writing.&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;How would the consensus deem a mined block as accepted?&lt;/h2&gt;
+&lt;p&gt;See the &lt;strong&gt;Bits&lt;/strong&gt; part ? It is the Integer (Base 10) representation of the &lt;em&gt;target&lt;/em&gt; that is to be achieved by the miners. The &lt;em&gt;target&lt;/em&gt; is the 256 bit hash sum of the block header. It is the MAXIMUM value acceptable by the consensus for the hash.&lt;/p&gt;
+&lt;h3&gt;MAXIMUM value?&lt;/h3&gt;
+&lt;p&gt;I thought you’d never ask! See the &lt;strong&gt;nonce&lt;/strong&gt; part in the block header? Yup, miners need to start all the way from 0 (some may try to skip values, completely up to miner) to the number that when used in the block header, yields a hash sum below the target. See the nonce in the latest block image? The miner who successfully relayed this value to the nodes received the price money ie 12.5 BTC! That’s a lot of work and indeed a lot of bucks!&lt;/p&gt;
+&lt;p&gt;People buy special hardware (recent scarcity of GPUs? Curse those miners) and even computers specially built for this purpose! Ever heard of &lt;a href=&quot;https://www.trymining.com/pages/asic-vs-gpu&quot;&gt;ASICs&lt;/a&gt;?&lt;/p&gt;
+&lt;p&gt;As it stands, mining on your won, on your single PC is almost dead. The process of finding blocks is now so crowded and the difficulty of finding a block so high that it would take over an year to generate any coins on an average high-end gaming system. While you could simply set a machine aside and have it run the algorithms endlessly, the energy cost and equipment degradation and breakdown will eventually cost more than the actual bitcoins are worth.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pooled mining&lt;/strong&gt;, however, is far more lucrative. Using a service  you can split the work among a ground of people. Using this equation:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;(12.5 BTC + block fees – 2% fee) * (shares found by user’s workers) / (total shares in current round)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Putting it simply, it is basically how the system works. You work for shares in a block and when complete you get a percentage of the block reward based on the number of workers alongside you. More the people in pool, higher the chances of rewards.&lt;/p&gt;
+&lt;h2&gt;Types of Blockchains in use&lt;/h2&gt;
+&lt;p&gt;Any blockchain can be classified into any one of these categories-&lt;/p&gt;
+&lt;h3&gt;Public Blockchain&lt;/h3&gt;
+&lt;p&gt;The most basic of all blockchain concepts. This is the blockchain everyone uses out there.&lt;/p&gt;
+&lt;p&gt;The most basic features of this bockchain are –&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Anyone can run a BTC/LTC full node and start mining.&lt;br&gt;
+Anyone can make transactions on the BTC/LTC chain.&lt;br&gt;
+Anyone can review/audit the blockchain in a Blockchain explorer.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Example: &lt;a href=&quot;http://bitcoin.org/&quot;&gt;Bitcoin&lt;/a&gt;, &lt;a href=&quot;https://litecoin.org/&quot;&gt;Litecoin&lt;/a&gt; etc.&lt;/p&gt;
+&lt;h3&gt;Private Blockchain&lt;/h3&gt;
+&lt;p&gt;Private blockchain as its name suggests is a private property of an individual or an organization. Unlike public blockchain, here there is actually someone in charge who looks after important things such as read/write or whom to selectively give access to read or vice versa. Here the consensus is achieved on the whims of the central authority who can give mining rights to anyone or not at all!&lt;/p&gt;
+&lt;p&gt;Example: &lt;a href=&quot;https://www.multichain.com/&quot;&gt;Bankchain&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Consortium Blockchain&lt;/h3&gt;
+&lt;p&gt;This type of blockchain tries to remove the sole autonomy which gets vested in just one entity by using private blockchains.&lt;/p&gt;
+&lt;p&gt;So here you have multiple authorities instead of just one. Basically, you have a group of companies or representative individuals coming together and making decisions for the benefit of the whole network. Such groups are also called consortiums or a federation; ergo the name &lt;strong&gt;consortium&lt;/strong&gt; or &lt;strong&gt;federated blockchain&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;For example, let’s suppose you have a consortium of world’s top 20 financial institutes out of which you could decide that if a transaction or block is voted/verified by more than 15 institutions, only then does it get added to the blockchain.&lt;/p&gt;
+&lt;p&gt;Example: &lt;a href=&quot;https://www.r3.com/&quot;&gt;r3&lt;/a&gt;, &lt;a href=&quot;http://energyweb.org/&quot;&gt;EWF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In fact, the idea that cryptographic keys and shared ledgers can incentivize users to secure and formalize digital relationships has imaginations running wild. Everyone from governments to IT firms to banks is seeking to build this transaction layer.&lt;/p&gt;
+&lt;p&gt;Authentication and authorization, vital to digital transactions, are established as a result of the configuration of blockchain technology. The idea can be applied to any need for a trustworthy system of record.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[A real life Hogwarts]]></title><description><![CDATA[Skimming through your seniors’ profile does some good at times! “The programmers of tomorrow are the wizards of the future !” – Gabe, Co…]]></description><link>https://journal.piyush.tech/a_real_life_hogwarts/</link><guid isPermaLink="false">https://journal.piyush.tech/a_real_life_hogwarts/</guid><content:encoded>&lt;p&gt;Skimming through your seniors’ profile does some good at times!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“The programmers of tomorrow are the wizards of the future !”&lt;br&gt;
+– Gabe, Co-founder-Valve&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/dgplug-89edce2f4baf0c36ad19c66418b8582c-3fe06.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 37.77112939416604%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB6UlEQVQY0w3L2VMScQAA4N+Lw6FRUwuJRJPnGrK4KveywC57wy4su1yFHGNmxKRAgwiEmYklMsYwEvXcVNNT/2J97x9AYWuAonCGCUcFIR4neR7dsiMhzKeIRCYWZJzk9gIGz/pgPeG0EEGUTmcjaoaQFSwqgqfzs+EwhrHcAxMUQNdRh00DQL7JDP+kq7//vri+2pWRtfsAtQKecCYkgRNohqcjkoSLCbACaaB7s/ZNxLpgclju5DLpainX7p60T7uVeq12WPzSP+o1ymUlJNGel8V0IZvIyBwlsAgeAY8MM0YdcK08FAWRxPwMgX9ov/3142f/Xbeyv3fZO54Mel9vzjMSocRC/2ciRilx1rq0CvQmcFc/g8MQHXDFovLOlksLQK2c/j4Zd5qNVr36vtU4O+0cd9rmJ3BWprMKn1P5GE8YzMsa4zKY02n9q1CKcm+4Qo/XNkWOnk6no6v+4NPlt/FoMh6Nhp8/Dm/9dPy5EinvKr1mpfWmiLgDAFoHBr12EdL5NpaIcNjjDx6UC/l8IcmRKksf7h8UUirrsaGIw74TIChClbnRRePipFJ/XfKFSGCY0xn0GqNBY543Yl73M1XdyxecqANetCQZPK9ISYG2bfs5lsK8MEl4bwet67Oj81blVSn1D9lUiiJzEE+jAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;dgplug&quot;
+        title=&quot;&quot;
+        src=&quot;/static/dgplug-89edce2f4baf0c36ad19c66418b8582c-48538.png&quot;
+        srcset=&quot;/static/dgplug-89edce2f4baf0c36ad19c66418b8582c-bed0f.png 200w,
+/static/dgplug-89edce2f4baf0c36ad19c66418b8582c-5fd34.png 400w,
+/static/dgplug-89edce2f4baf0c36ad19c66418b8582c-48538.png 800w,
+/static/dgplug-89edce2f4baf0c36ad19c66418b8582c-b70ec.png 1200w,
+/static/dgplug-89edce2f4baf0c36ad19c66418b8582c-3fe06.png 1337w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+&lt;font size=&quot;6&quot;&gt;LINUX USERS’ GROUP OF DURGAPUR&lt;/font&gt;&lt;br&gt;
+&lt;font size=&quot;4&quot;&gt;Learn and teach others&lt;/font&gt; 
+&lt;/p&gt;
+&lt;p&gt;An excerpt from the &lt;a href=&quot;https://dgplug.org/summertraining18/&quot;&gt;official site&lt;/a&gt; :-&lt;/p&gt;
+&lt;h1&gt;Objectives&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Revisiting programming fundamentals&lt;/li&gt;
+&lt;li&gt;Get acquainted with Free Software technologies&lt;/li&gt;
+&lt;li&gt;Spreading the hacker ethics&lt;/li&gt;
+&lt;li&gt;Gaining technical knowledge
+-Real-world project experience&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What I have learnt within the month at #dgplug online summer training is invaluable to me! We get to talk and learn from the Jedi of F/OSS, attend Guest sessions with international upstream contributors and so much more!&lt;/p&gt;
+&lt;p&gt;An excerpt from a qoura &lt;a href=&quot;https://www.quora.com/How-is-the-summer-training-at-Dgplug&quot;&gt;answer&lt;/a&gt; :-&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;How is the summer training at Dgplug?&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;For me, it was like Hogwarts, a place which normal people don’t know, yet full of surprises, and new learning! It opened a whole new world for me!&lt;br&gt;
+-Avik Mukherjee&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And frankly, that makes the two of us.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[It's a blog !]]></title><description><![CDATA[This is the first post that comes with the blog by default. Let’s see. I made a blog. Let’s try our best to make it useful, yeah ? I don’t…]]></description><link>https://journal.piyush.tech/its_a_blog/</link><guid isPermaLink="false">https://journal.piyush.tech/its_a_blog/</guid><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/cover-4e94a5346ec7f21326424a00563b2222-e4aee.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 33.4375%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAByklEQVQozzWS308SYBSGP+SXgAgUIAwNDJQIYYQSCwHBhMx0CRnquNBmtShWSHaTrBlaW3Hhhblu2uquP/PpIHT7be9znnPeTym9BTXqQI15UY5plDuKJpBGHytjXdrFV31D7OAjubddSu/PKByekXz1icBOG8fKHsbkBiOhPGryLsq7gFIGK8rsQlmnUNdmUJ44I9MZDPFV7MU609st0s0u651zaqeXVD7/oHDUI7J/jPvhS0ypCtqZogDTkk32geMCnEDZ/Kjrt2RKAs0Q6CjUCe0ckm19pdL9SePyL/XeH0rHF8Sen+B51MCceoJ29v4AOJEQoNGGsngEGEA5IwK8Iytn0EfL2LLb+KtNUo0uq50Lat9+s/nlF/kP50T2OrgevMA03zdcHqzsjg8NLf8NwzJFHqfS6MJFzAuPcZefMbt7ROr1Kdl2j0zrO/GDE25U3mHP1THE1uREORGZR7miAtSPoUxOueGklBIcWiYGd7y9gjVdxV3ax7/ZJFhrc3PrEN96A0e+jimxgTa0hGYyJXZzkpcOlM6EMtoHln2oXZp2iqlXyum3HS5gTqwxLmD74lNs97YYE/PRuRK64CIaX/LqZ1zJSP4fY3ra0OAo3XcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;his image&quot;
+        title=&quot;&quot;
+        src=&quot;/static/cover-4e94a5346ec7f21326424a00563b2222-48538.png&quot;
+        srcset=&quot;/static/cover-4e94a5346ec7f21326424a00563b2222-bed0f.png 200w,
+/static/cover-4e94a5346ec7f21326424a00563b2222-5fd34.png 400w,
+/static/cover-4e94a5346ec7f21326424a00563b2222-48538.png 800w,
+/static/cover-4e94a5346ec7f21326424a00563b2222-b70ec.png 1200w,
+/static/cover-4e94a5346ec7f21326424a00563b2222-d134a.png 1600w,
+/static/cover-4e94a5346ec7f21326424a00563b2222-f6ead.png 2400w,
+/static/cover-4e94a5346ec7f21326424a00563b2222-e4aee.png 2560w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;This is the first post that comes with the blog by default.&lt;/p&gt;
+&lt;p&gt;Let’s see.&lt;/p&gt;
+&lt;h3&gt;I made a blog.&lt;/h3&gt;
+&lt;p&gt;Let’s try our best to make it useful, yeah ?&lt;/p&gt;
+&lt;p&gt;I don’t wish you all to be watching ads with my blog, so just wait for a while!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Good company in a journey makes the way seem shorter.&lt;br&gt;
+— Izaak Walton&lt;/p&gt;
+&lt;/blockquote&gt;</content:encoded></item></channel></rss>
