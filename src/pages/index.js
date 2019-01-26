@@ -17,11 +17,9 @@ class Index extends React.Component {
 
   render() {
     const { data } = this.props;
-    const facebook = (((data || {}).site || {}).siteMetadata || {}).facebook;
 
     return (
       <div>
-        <Seo facebook={facebook} />
       </div>
     );
   }
@@ -49,14 +47,4 @@ const mapDispatchToProps = {
 export default connect(mapStateToProps, mapDispatchToProps)(Index);
 
 //eslint-disable-next-line no-undef
-export const pageQuery = graphql`
-  query IndexQuery {
-    site {
-      siteMetadata {
-        facebook {
-          appId
-        }
-      }
-    }
-  }
-`;
+

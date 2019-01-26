@@ -29,7 +29,6 @@ A ready to use, easy to customize [GatsbyJS](https://github.com/gatsbyjs/gatsby)
 - Easy editable content in Markdown files (posts, pages and parts)
 - Easily restyled through theme object
 - Styling with JSS
-- Comments (Facebook)
 - Post categories
 - Post list filtering
 - Full text searching (Algolia)
