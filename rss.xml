@@ -1,18 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[brute4s99.blog]]></title><description><![CDATA[Piyush writes here on his blog. Feel free to take a look.]]></description><link>https://journal.piyush.tech</link><generator>RSS for Node</generator><lastBuildDate>Sat, 26 Jan 2019 15:53:58 GMT</lastBuildDate><item><title><![CDATA[Breaking Free]]></title><description><![CDATA[INTRODUCTION When I started using this static blog, little did I know of all the trackers that came with the blog. How does browser tracking…]]></description><link>https://journal.piyush.tech/breaking_free/</link><guid isPermaLink="false">https://journal.piyush.tech/breaking_free/</guid><content:encoded>&lt;p align=&quot;center&quot;&gt;
-  &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/cover-ba9e9b140ae6e95402d0753c9e6b26b9-ab4c4.jpg&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
-  
-  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;&gt;
-    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAgP/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAABV5L7GgTSX//EABoQAAMBAAMAAAAAAAAAAAAAAAABAgMREyH/2gAIAQEAAQUCcxE+SdONCps5FtcH/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEB/9oACAEDAQE/AauP/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oACAECAQE/AWV//8QAGxABAAICAwAAAAAAAAAAAAAAAQACEBETUZH/2gAIAQEABj8CCtRt2zfGewQSbcaGf//EABoQAQACAwEAAAAAAAAAAAAAAAEAESExQWH/2gAIAQEAAT8hZ7jMUymPYoiCaGI22xtyAaxP/9oADAMBAAIAAwAAABDIP//EABcRAAMBAAAAAAAAAAAAAAAAAAABIWH/2gAIAQMBAT8QdQxP/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAEhYf/aAAgBAgEBPxBKU0P/xAAaEAEAAwEBAQAAAAAAAAAAAAABABEhgVFh/9oACAEBAAE/ELh5tlci1rOiJzzsT3G2I5Y+WykiJ8KIS6n/2Q==&amp;apos;); background-size: cover; display: block;&quot;&gt;
-      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot; alt=&quot;PRIVACY&quot; title=&quot;&quot; src=&quot;/static/cover-ba9e9b140ae6e95402d0753c9e6b26b9-78f2b.jpg&quot; srcset=&quot;/static/cover-ba9e9b140ae6e95402d0753c9e6b26b9-dce19.jpg 200w,
-/static/cover-ba9e9b140ae6e95402d0753c9e6b26b9-c1413.jpg 400w,
-/static/cover-ba9e9b140ae6e95402d0753c9e6b26b9-78f2b.jpg 800w,
-/static/cover-ba9e9b140ae6e95402d0753c9e6b26b9-ab4c4.jpg 1200w&quot; sizes=&quot;(max-width: 800px) 100vw, 800px&quot;&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    &lt;br&gt;
-&lt;font size=&quot;2&quot;&gt; Free as in freedom!&lt;/font&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[brute4s99.blog]]></title><description><![CDATA[Piyush writes here on his blog. Feel free to take a look.]]></description><link>https://journal.piyush.tech</link><generator>RSS for Node</generator><lastBuildDate>Sat, 26 Jan 2019 16:13:39 GMT</lastBuildDate><item><title><![CDATA[Breaking Free]]></title><description><![CDATA[INTRODUCTION When I started using this static blog, little did I know of all the trackers that came with the blog. How does browser tracking…]]></description><link>https://journal.piyush.tech/breaking_free/</link><guid isPermaLink="false">https://journal.piyush.tech/breaking_free/</guid><content:encoded>&lt;!-- &lt;p align=&apos;center&apos;&gt;&lt;img src=&quot;cover.jpg&quot; alt=&quot;PRIVACY&quot;&gt;&lt;br&gt;
+&lt;font size=2&gt; Free as in freedom!&lt;/font&gt;&lt;/p&gt; --&gt;
 &lt;h2&gt;INTRODUCTION&lt;/h2&gt;
 &lt;p&gt;When I started using this static blog, little did I know of all the trackers that came with the blog.&lt;/p&gt;
 &lt;h2&gt;How does browser tracking work?&lt;/h2&gt;
@@ -33,40 +20,7 @@
 &lt;li&gt;potentially jack up their prices for you, because &lt;em&gt;nice affluent location you got there, Brenda&lt;/em&gt;. For example. &lt;/li&gt;
 &lt;li&gt;invade your privacy and chip away at your anonymity online, which nobody likes. &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/web_trackers-3c7e69129c11c0d236c6e08e774d8875-49019.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 62.47906197654941%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAECAwX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAHu1DRA/8QAGhABAAEFAAAAAAAAAAAAAAAAAQACEBEhMf/aAAgBAQABBQJYNquY0T//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAZEAADAQEBAAAAAAAAAAAAAAAAARExIVH/2gAIAQEAAT8h8Cl0WCpOyFyYP//aAAwDAQACAAMAAAAQMA//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAbEAEAAwEAAwAAAAAAAAAAAAABABEhMUFhgf/aAAgBAQABPxBqRiheOzaKHhe2fIrDAWbVSz4rTDI12q+5/9k=&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
-        alt=&quot;web trackers&quot;
-        title=&quot;&quot;
-        src=&quot;/static/web_trackers-3c7e69129c11c0d236c6e08e774d8875-78f2b.jpg&quot;
-        srcset=&quot;/static/web_trackers-3c7e69129c11c0d236c6e08e774d8875-dce19.jpg 200w,
-/static/web_trackers-3c7e69129c11c0d236c6e08e774d8875-c1413.jpg 400w,
-/static/web_trackers-3c7e69129c11c0d236c6e08e774d8875-78f2b.jpg 800w,
-/static/web_trackers-3c7e69129c11c0d236c6e08e774d8875-49019.jpg 1194w&quot;
-        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-      /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    &lt;/p&gt;
+&lt;!-- ![web trackers](web_trackers.jpg) --&gt;
 &lt;h2&gt;Tracking mechanisms&lt;/h2&gt;
 &lt;h3&gt;Cookies&lt;/h3&gt;
 &lt;p&gt;Cookies are the most widely known method to identify a user. They use small pieces of data (each limited to 4 KB) placed in a browser storage by the web server. When a user visits a website for the first time, a cookie file with a unique user identifier (could be randomly generated) is stored on the user’s computer.&lt;/p&gt;
