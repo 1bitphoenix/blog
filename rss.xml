@@ -1,27 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[brute4s99.blog]]></title><description><![CDATA[Piyush writes here on his blog. Feel free to take a look.]]></description><link>https://journal.piyush.tech</link><generator>RSS for Node</generator><lastBuildDate>Sat, 26 Jan 2019 16:44:01 GMT</lastBuildDate><item><title><![CDATA[Breaking Free]]></title><description><![CDATA[INTRODUCTION When I started using this static blog, little did I know of all the trackers that came with the blog. How does browser tracking…]]></description><link>https://journal.piyush.tech/breaking_free/</link><guid isPermaLink="false">https://journal.piyush.tech/breaking_free/</guid><content:encoded>&lt;!-- &lt;p align=&apos;center&apos;&gt;&lt;img src=&quot;cover.jpg&quot; alt=&quot;PRIVACY&quot;&gt;&lt;br&gt;
-&lt;font size=2&gt; Free as in freedom!&lt;/font&gt;&lt;/p&gt; --&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[brute4s99.blog]]></title><description><![CDATA[Piyush writes here on his blog. Feel free to take a look.]]></description><link>https://journal.piyush.tech</link><generator>RSS for Node</generator><lastBuildDate>Sun, 27 Jan 2019 19:47:36 GMT</lastBuildDate><item><title><![CDATA[Breaking Free]]></title><description><![CDATA[INTRODUCTION When I started using this static blog, little did I know of all the trackers that came with the blog. How does browser tracking…]]></description><link>https://journal.piyush.tech/breaking_free/</link><guid isPermaLink="false">https://journal.piyush.tech/breaking_free/</guid><content:encoded>&lt;p align=&quot;center&quot;&gt;
+  &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/privacy-f69c028953a5ee30b3b089844c3b74ed-4ad11.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+  
+  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 45.52845528455284%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsSAAALEgHS3X78AAABHUlEQVQoz3WSPUtDQRBFl/ciGBQhoJXBShLEYBVbsbUTBAkIISiENGJlFQvt7AV/h4XobxBbFQvBL+ztFAxvPSN3wxjIwGFn796dN2+ZEIgYo5EHBfk8LCjP/Zm0quH2eVEUw01gk1nOWoFTtDdoSNsg34UWzOnOknnkrUjLrJb/6pYKWbxLW4cedOEQZqRPwkPywrYvNAVn8X98QBkmYB8uYEf+afHsL9DtuelmaMC39C8YyLCpX77U2RUcwCqsSRvojsUPrKQuF+FmpMsnddmBFwpf651m4XHEewu1oA4y96h9+HTGV9iDZahD271zlPcoTUGq9VfMjwwHx6x3cXzcw4l53b1hsTBmFksUbqqrvrC8iV7yM5hq2Cz+AloS7ZhJUwKAAAAAAElFTkSuQmCC&amp;apos;); background-size: cover; display: block;&quot;&gt;
+      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot; alt=&quot;PRIVACY&quot; title=&quot;&quot; src=&quot;/static/privacy-f69c028953a5ee30b3b089844c3b74ed-48538.png&quot; srcset=&quot;/static/privacy-f69c028953a5ee30b3b089844c3b74ed-bed0f.png 200w,
+/static/privacy-f69c028953a5ee30b3b089844c3b74ed-5fd34.png 400w,
+/static/privacy-f69c028953a5ee30b3b089844c3b74ed-48538.png 800w,
+/static/privacy-f69c028953a5ee30b3b089844c3b74ed-b70ec.png 1200w,
+/static/privacy-f69c028953a5ee30b3b089844c3b74ed-d134a.png 1600w,
+/static/privacy-f69c028953a5ee30b3b089844c3b74ed-f6ead.png 2400w,
+/static/privacy-f69c028953a5ee30b3b089844c3b74ed-4ad11.png 2706w&quot; sizes=&quot;(max-width: 800px) 100vw, 800px&quot;&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;br&gt;
+&lt;font size=&quot;2&quot;&gt; Free as in freedom!&lt;/font&gt;&lt;/p&gt;
 &lt;h2&gt;INTRODUCTION&lt;/h2&gt;
 &lt;p&gt;When I started using this static blog, little did I know of all the trackers that came with the blog.&lt;/p&gt;
 &lt;h2&gt;How does browser tracking work?&lt;/h2&gt;
 &lt;p&gt;When you visit a website, third-party trackers (cookies, pixel tags, etc) get stored on your computer.&lt;/p&gt;
 &lt;p&gt;How many trackers exist in any given website depends on how many the website owner has decided to include. Some websites will have well over 60 trackers, belonging to a multitude of companies, while others might have only one - perhaps to track visitor numbers, or see where these visitors are coming from, or to enable a certain functionality. Some might have none at all. &lt;/p&gt;
-&lt;p&gt;Not all trackers are necessarily tied to companies tracking your browsing habits - but when you &lt;strong&gt;accept cookies&lt;/strong&gt;, you’re saying &lt;code class=&quot;language-text&quot;&gt;ok&lt;/code&gt; to &lt;em&gt;all&lt;/em&gt; the trackers that are there - including those feeding information back to companies.&lt;/p&gt;
+&lt;p&gt;Not all trackers are necessarily tied to companies tracking your browsing habits - but when you &lt;strong&gt;accept cookies&lt;/strong&gt;, you’re saying &lt;code class=&quot;language-text&quot;&gt;ok&lt;/code&gt; to &lt;em&gt;all&lt;/em&gt; the trackers that are there - including those feeding info back to companies.&lt;/p&gt;
 &lt;h2&gt;What is being collected and Why?&lt;/h2&gt;
 &lt;p&gt;Trackers collect information about which websites you’re visiting, as well as information about your devices.&lt;/p&gt;
 &lt;p&gt;One tracker might be there to give the website owner insight into her website traffic, but the rest belong to &lt;strong&gt;companies whose primary goal is to build up a profile of who you are&lt;/strong&gt;: how old you are, where you live, what you read, and what you’re interested in.
 This information can then be packaged and sold to others: advertisers, other companies, or governments.&lt;/p&gt;
-&lt;p&gt;The companies tracking you are unrelated to the website you’re visiting. Called &lt;strong&gt;data brokers&lt;/strong&gt;, they tend to have stock-market sounding names like DoubleClick, ComScore, and cXense (though DoubleClick is actually owned by Google). Their entire business is built on the selling of “customer data”.&lt;/p&gt;
 &lt;p&gt;They are also joined by more well-known companies. Some of these are even visible: Google’s red G+ button, for example, is a tracker;  Facebook’s “like” thumb is a tracker; and Twitter’s little blue bird is also a tracker.&lt;/p&gt;
 &lt;h2&gt;Why does it affect me?&lt;/h2&gt;
 &lt;p&gt;Data companies and advertisers also know which articles you read and which ones you skip, which videos you watch, and which ones you stop after 5 seconds; which promotional emails you read, and which ones you send to your Trash folder without opening; what you like on Facebook, what you retweet, what you heart on Instagram. &lt;/p&gt;
-&lt;p&gt;When you put all these things together, as data miners do, you end up with your own unique online fingerprint — which immediately identifies you, with all your likes and dislikes and personal traits&lt;/p&gt;
+&lt;p&gt;When you put all these things together, you end up with your own unique online fingerprint — which immediately identifies you, with all your likes and dislikes and personal traits&lt;/p&gt;
 &lt;p&gt;And that’s potentially very bad news, because once they know exactly who you are and what makes you tick, companies and advertisers can:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;spam you with finely-tuned, targeted ad campaigns&lt;/strong&gt; that follow you around the web&lt;/li&gt;
-&lt;li&gt;potentially &lt;strong&gt;jack up their prices for you&lt;/strong&gt;, because &lt;em&gt;nice affluent location you got there, Brenda&lt;/em&gt;. For example. &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;spam you with finely-tuned, targeted ad campaigns&lt;/strong&gt; that follow you around the web.&lt;/li&gt;
+&lt;li&gt;potentially &lt;strong&gt;jack up their prices for you&lt;/strong&gt;. &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;invade your privacy&lt;/strong&gt; and chip away at your anonymity online, which nobody likes. &lt;/li&gt;
 &lt;/ul&gt;
-&lt;!-- ![web trackers](web_trackers.jpg) --&gt;
+&lt;p align=&quot;center&quot;&gt;
+  &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/web_trackers-3c7e69129c11c0d236c6e08e774d8875-49019.jpg&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+  
+  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 62.47906197654941%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAECAwX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAHu1DRA/8QAGhABAAEFAAAAAAAAAAAAAAAAAQACEBEhMf/aAAgBAQABBQJYNquY0T//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAZEAADAQEBAAAAAAAAAAAAAAAAARExIVH/2gAIAQEAAT8h8Cl0WCpOyFyYP//aAAwDAQACAAMAAAAQMA//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAbEAEAAwEAAwAAAAAAAAAAAAABABEhMUFhgf/aAAgBAQABPxBqRiheOzaKHhe2fIrDAWbVSz4rTDI12q+5/9k=&amp;apos;); background-size: cover; display: block;&quot;&gt;
+      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot; alt=&quot;Web Trackers&quot; title=&quot;&quot; src=&quot;/static/web_trackers-3c7e69129c11c0d236c6e08e774d8875-78f2b.jpg&quot; srcset=&quot;/static/web_trackers-3c7e69129c11c0d236c6e08e774d8875-dce19.jpg 200w,
+/static/web_trackers-3c7e69129c11c0d236c6e08e774d8875-c1413.jpg 400w,
+/static/web_trackers-3c7e69129c11c0d236c6e08e774d8875-78f2b.jpg 800w,
+/static/web_trackers-3c7e69129c11c0d236c6e08e774d8875-49019.jpg 1194w&quot; sizes=&quot;(max-width: 800px) 100vw, 800px&quot;&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+     &lt;font size=&quot;2&quot;&gt; An illustration from a &lt;a href=&quot;https://medium.freecodecamp.org/what-you-should-know-about-web-tracking-and-how-it-affects-your-online-privacy-42935355525&quot;&gt;post&lt;/a&gt; by &lt;a href=&quot;https://twitter.com/princi_ya&quot;&gt;Princiya&lt;/a&gt;&lt;br&gt;She writes on awesome topics at FreeCodeCamp, you should check out here posts!&lt;/font&gt;
+&lt;/p&gt;
 &lt;h2&gt;Tracking mechanisms&lt;/h2&gt;
 &lt;h3&gt;Cookies&lt;/h3&gt;
 &lt;p&gt;Cookies are the most widely known method to identify a user. They use &lt;strong&gt;small pieces of data (each limited to 4 KB) placed in a browser storage by the web server&lt;/strong&gt;. When a user visits a website for the first time, a cookie file with a unique user identifier (could be randomly generated) is stored on the user’s computer.&lt;/p&gt;
