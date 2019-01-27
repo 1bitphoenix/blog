@@ -4,8 +4,8 @@ subTitle: no more trackers
 category: "tech"
 cover: cover.png
 ---
-<!-- <p align='center'><img src="cover.jpg" alt="PRIVACY"><br>
-<font size=2> Free as in freedom!</font></p> -->
+<p align='center'><img src="privacy.png" alt="PRIVACY"><br>
+<font size=2> Free as in freedom!</font></p>
 
 
 ## INTRODUCTION
@@ -17,7 +17,7 @@ When you visit a website, third-party trackers (cookies, pixel tags, etc) get st
 
 How many trackers exist in any given website depends on how many the website owner has decided to include. Some websites will have well over 60 trackers, belonging to a multitude of companies, while others might have only one - perhaps to track visitor numbers, or see where these visitors are coming from, or to enable a certain functionality. Some might have none at all. 
 
-Not all trackers are necessarily tied to companies tracking your browsing habits - but when you **accept cookies**, you're saying `ok` to *all* the trackers that are there - including those feeding information back to companies.
+Not all trackers are necessarily tied to companies tracking your browsing habits - but when you **accept cookies**, you're saying `ok` to *all* the trackers that are there - including those feeding info back to companies.
 
 
 ## What is being collected and Why?
@@ -27,8 +27,6 @@ Trackers collect information about which websites you're visiting, as well as in
 One tracker might be there to give the website owner insight into her website traffic, but the rest belong to **companies whose primary goal is to build up a profile of who you are**: how old you are, where you live, what you read, and what you're interested in. 
 This information can then be packaged and sold to others: advertisers, other companies, or governments.
 
-The companies tracking you are unrelated to the website you're visiting. Called **data brokers**, they tend to have stock-market sounding names like DoubleClick, ComScore, and cXense (though DoubleClick is actually owned by Google). Their entire business is built on the selling of "customer data".
-
 They are also joined by more well-known companies. Some of these are even visible: Google's red G+ button, for example, is a tracker;  Facebook's "like" thumb is a tracker; and Twitter's little blue bird is also a tracker.
 
 
@@ -36,16 +34,17 @@ They are also joined by more well-known companies. Some of these are even visibl
 
 Data companies and advertisers also know which articles you read and which ones you skip, which videos you watch, and which ones you stop after 5 seconds; which promotional emails you read, and which ones you send to your Trash folder without opening; what you like on Facebook, what you retweet, what you heart on Instagram. 
 
-When you put all these things together, as data miners do, you end up with your own unique online fingerprint — which immediately identifies you, with all your likes and dislikes and personal traits
+When you put all these things together, you end up with your own unique online fingerprint — which immediately identifies you, with all your likes and dislikes and personal traits
 
 And that’s potentially very bad news, because once they know exactly who you are and what makes you tick, companies and advertisers can:
 
-- **spam you with finely-tuned, targeted ad campaigns** that follow you around the web
-- potentially **jack up their prices for you**, because *nice affluent location you got there, Brenda*. For example. 
+- **spam you with finely-tuned, targeted ad campaigns** that follow you around the web.
+- potentially **jack up their prices for you**. 
 - **invade your privacy** and chip away at your anonymity online, which nobody likes. 
 
 
-<!-- ![web trackers](web_trackers.jpg) -->
+<p align='center'><img src="web_trackers.jpg" alt="Web Trackers"> <font size=2> An illustration from a <a href="https://medium.freecodecamp.org/what-you-should-know-about-web-tracking-and-how-it-affects-your-online-privacy-42935355525">post</a> by <a href="https://twitter.com/princi_ya">Princiya</a><br>She writes on awesome topics at FreeCodeCamp, you should check out here posts!</font>
+</p>
 
 
 ## Tracking mechanisms

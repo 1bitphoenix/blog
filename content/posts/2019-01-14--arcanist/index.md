@@ -4,7 +4,7 @@ subTitle: a CLI to Phabricator
 category: "tech"
 cover: cover.png
 ---
-<p align='center'><img src="cover.png" alt="Phabricator" width=500 height=500><br>
+<p align='center'><img src="cover.png" alt="Phabricator"><br>
 <font size=2> Phabricator</font></p>
 
 ## INTRODUCTION
