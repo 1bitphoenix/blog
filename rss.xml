@@ -1,9 +1,45 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[brute4s99.blog]]></title><description><![CDATA[Piyush writes here on his blog. Feel free to take a look.]]></description><link>https://journal.piyush.tech</link><generator>RSS for Node</generator><lastBuildDate>Sat, 02 Feb 2019 07:05:23 GMT</lastBuildDate><item><title><![CDATA[Contributing to pandas]]></title><description><![CDATA[pre-DevSprint reading material:- Overview of pandas Contributing Guidelines Git Workflow Guidelines rebase merge code handling Docstrings…]]></description><link>https://journal.piyush.tech/pandas/</link><guid isPermaLink="false">https://journal.piyush.tech/pandas/</guid><content:encoded>&lt;p align=&quot;center&quot;&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[brute4s99.blog]]></title><description><![CDATA[Piyush writes here on his blog. Feel free to take a look.]]></description><link>https://journal.piyush.tech</link><generator>RSS for Node</generator><lastBuildDate>Sun, 03 Feb 2019 11:01:51 GMT</lastBuildDate><item><title><![CDATA[Arch from Hell 2]]></title><description><![CDATA[So I had a happy system with Arch Linux, until I needed Windows 10 for some Windows development. Then I installed Windows 10 UEFI with Rufus…]]></description><link>https://journal.piyush.tech/arch/</link><guid isPermaLink="false">https://journal.piyush.tech/arch/</guid><content:encoded>&lt;p align=&apos;center&apos;&gt;&lt;img src=&quot;&quot; alt=&quot;Arch&quot;&gt;&lt;br&gt;
+&lt;font size=2&gt;Arch&lt;/font&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p align=&quot;center&quot;&gt;&lt;b&gt;Arching it out &lt;/b&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;So I had a happy system with Arch Linux, until I needed Windows 10 for some Windows development.&lt;/li&gt;
+&lt;li&gt;Then I installed Windows 10 UEFI with Rufus.&lt;/li&gt;
+&lt;li&gt;Then I had a happy system with Arch Linux and Windows 10.&lt;/li&gt;
+&lt;li&gt;Then I needed a ubuntu based OS for some testing puposes. I decided to triple boot.&lt;/li&gt;
+&lt;li&gt;I went for Zorin OS 12.4 CORE, it’s a beautiful distro, you must check it out!&lt;/li&gt;
+&lt;li&gt;I simply installed it on a separate ext4 partition at the end of my HDD (using that &lt;code class=&quot;language-text&quot;&gt;something else&lt;/code&gt; option)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;it &lt;em&gt;might&lt;/em&gt; have did something to my prior GRUB config of Arch Linux.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&quot;7&quot;&gt;
+&lt;li&gt;Arch’s GRUB settings loaded on next boot, which had options for Windows and Arch Linux.(no Zorin OS here)&lt;/li&gt;
+&lt;li&gt;Then I went ahead and booted into Arch to run a &lt;code class=&quot;language-text&quot;&gt;grub-mkconfig -o /boot/grub/grub.cfg&lt;/code&gt;, because it didn’t know about Zorin OS.&lt;/li&gt;
+&lt;li&gt;After I rebooted the sys, Zorin’s GRUB config greeted me. WTH? It didn’t have Arch.&lt;/li&gt;
+&lt;li&gt;Then I tried running the same &lt;code class=&quot;language-text&quot;&gt;grub-mkconfig -o /boot/grub/grub.cfg&lt;/code&gt; in Zorin OS.&lt;/li&gt;
+&lt;li&gt;I got options for Arch then, but they didn’t work (why? I don’t know).&lt;/li&gt;
+&lt;li&gt;I decided I NEED my Arch before anything else!&lt;/li&gt;
+&lt;li&gt;I went ahead and fired off a Live USB.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;SOLUTION&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;re-formatted the /dev/sda1 (EFI) partition.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;arch-chroot&lt;/code&gt;ed into my Arch installation and force-reinstalled all my arch packages by my previous post.(to get linux &lt;code class=&quot;language-text&quot;&gt;img&lt;/code&gt;s in /boot). I could’ve done it by reinstalling just the firmware too, as &lt;Namarggon&gt; on #archlinux (IRC) suggested.&lt;/li&gt;
+&lt;li&gt;ran grub-install and grub-mkconfig commands from my GitHub gist. (ARCH COMMANDS)&lt;/li&gt;
+&lt;li&gt;ran genfstab command from my GitHub gist. (kudos to &lt;GreyShade&gt; and &lt;iovec&gt; for helping me out on this one!)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p align=&apos;center&apos;&gt; Hola! I&apos;m back with my Arch Linux and Zorin.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Now I’m left with putting in some effort to get my Windows 10 back.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p align=&apos;center&apos;&gt; &lt;font size=3&gt; Stay safe and make the internet a healthier place! &lt;/font&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Contributing to pandas]]></title><description><![CDATA[pre-DevSprint reading material:- Overview of pandas Contributing Guidelines Git Workflow Guidelines rebase merge code handling Docstrings…]]></description><link>https://journal.piyush.tech/pandas/</link><guid isPermaLink="false">https://journal.piyush.tech/pandas/</guid><content:encoded>&lt;p align=&quot;center&quot;&gt;
   &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/pandas-343009fe0b1182ae62e99f72f0f5569d-cffac.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
   
   &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; ; max-width: 473px; margin-left: auto; margin-right: auto;&quot;&gt;
     &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 78.4355179704017%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsSAAALEgHS3X78AAAD7UlEQVQ4y61Re0xTdxT+FVpaWp2MMVBhgVJQJLjJFjYSnFsMLSKJIgnI1I01skWZG4LQTmAorAISIvIKOqeUljrmIyFaBx2mEB1KO2m3UqFIFXno5oxUgnSWK5ydexXX/b+TfP3O8zvn10sIGpvLZdHM4fIYXvAXYrYXF2PuyxodP+/h/mcGdV78PBfwYNiL54E+x02YuBuKbcKcAMF2y7E5COI2lIFCcuS1WAxie/Fy0X8HsR5RhLWNyKtweTZyPQ77I0sRydgbjTHdv5L8+xxeEfLryPsQSejnIe/ncL13Ir+L8XZkBYLu+QIRh/gMUYHYgJBjT6z7haU4nIWchoU9yLnI2Z4sksDmcIQcnncS5j5C0AsKMU59sbyYw+Ovxln62n2MGNc/mL5yF/6Ba5j4teV8T0JWcARLBL6b5csFEXFe9E66Ruexz5fxWWQF0iuIRZiLXOhhbEnomz6iWrvojYL2qOAD+tBVp58GhJReXRZYoFsXXPBTWEjxZWGE/KwgQj29NKJx1CdQro2yA7BElX3LROW9SyPPQUDKpRnPZPevt1h2OYbk9wQSObBIBrBYxRYfXs2IN5HqF7ELekTk698Wk5wBnmeOPsCvsCuS5N3kk28cXLJ/UMDP/zmKyMDjpdgnKYlBqZK1obnpEuGOlKQwiVgcHhMTHRQd9rZfZtHB8D3vvRWSkLJdtCn+A9FG6cfC2Gihr3j9+2GJ8etCUzdIQtPi40KkydvCgyNX8hnBC/prF12zFHRbx57Yxv+amadccHt83HBSmtpwT1MHQ4O6memBbueTqYfUiMk80VRbc8rlomanp6edk48dzkdTj5zG4b5Z1XFlPCO4rfpC5wMKoKxjaH7M8TfQVtlmtHSebjhhLEmDS9VfzkNHOcB9G9iLd09qlCdaKJiHp3MuUNxoBMPkIOT2HAF1U0sCI5h3Uqc7a3VApvoGZRqbfDbkeAYZdVqztq3jeFO3GlSNX1H3VIq5m0oZfF9b9fDDihxVjUUNVsfoXH5d7FyZJn2u9jsx5B89JGEEzf0DHb0TTng843LJzltmD+juwC/mflPJ0TPHjtmGIbtV4bpbuZNqkCXCpz/WP2goTW++qtkM2VcOUfaD/hRV9CplKk+CsopSMSM4PGy/Qj8TXw1amwMsUwDmgdtDW4q/bdZP2eEHazuca6+AFm0jnPr9orO1uvZMa1UmqKrXQL1iL7SUSmFLVRt8Xq5MZAS7urrrxicmrCMjd3tv2e8Y/vzjvuXX60bN3sPygms2o9UweL13h7LZoDOPmkZv9XduzT9c4pd9vm9rVqHRP0tl9NmtNq7ObTLtkpfEEjyK/J/2Dw+5tUb9HUdRAAAAAElFTkSuQmCC&amp;apos;); background-size: cover; display: block;&quot;&gt;
-      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot; alt=&quot;PRIVACY&quot; title=&quot;&quot; src=&quot;/static/pandas-343009fe0b1182ae62e99f72f0f5569d-cffac.png&quot; srcset=&quot;/static/pandas-343009fe0b1182ae62e99f72f0f5569d-38cf1.png 200w,
+      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot; alt=&quot;pandas&quot; title=&quot;&quot; src=&quot;/static/pandas-343009fe0b1182ae62e99f72f0f5569d-cffac.png&quot; srcset=&quot;/static/pandas-343009fe0b1182ae62e99f72f0f5569d-38cf1.png 200w,
 /static/pandas-343009fe0b1182ae62e99f72f0f5569d-f7fb0.png 400w,
 /static/pandas-343009fe0b1182ae62e99f72f0f5569d-cffac.png 473w&quot; sizes=&quot;(max-width: 473px) 100vw, 473px&quot;&gt;
     &lt;/span&gt;

@@ -17,28 +17,32 @@
       "path---recovering-your-arch-from-hell-013c7409ea579a104a67.js.map"
     ],
     "path---": [
-      "path----2d3239d97991acc9b027.js",
-      "path----2d3239d97991acc9b027.js.map"
+      "path----b9519ccf26ba80ee50bd.js",
+      "path----b9519ccf26ba80ee50bd.js.map"
     ],
     "component---src-pages-contact-js": [
       "component---src-pages-contact-js-c216ff14f94225a1c827.js",
       "component---src-pages-contact-js-c216ff14f94225a1c827.js.map"
+    ],
+    "path---arch": [
+      "path---arch-3e0e1711a02717efe7f5.js",
+      "path---arch-3e0e1711a02717efe7f5.js.map"
     ],
     "path---abc-of-unix": [
       "path---abc-of-unix-c97b9c53587babb8171c.js",
       "path---abc-of-unix-c97b9c53587babb8171c.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-01b20d42bbf49e09b76f.js",
-      "component---src-layouts-index-js-01b20d42bbf49e09b76f.js.map"
+      "component---src-layouts-index-js-7aa8012e4b2b5b225723.js",
+      "component---src-layouts-index-js-7aa8012e4b2b5b225723.js.map"
     ],
     "path---breaking-free": [
       "path---breaking-free-f344dfca74fea73d872a.js",
       "path---breaking-free-f344dfca74fea73d872a.js.map"
     ],
     "path---pandas": [
-      "path---pandas-d3963f6d81423e48e780.js",
-      "path---pandas-d3963f6d81423e48e780.js.map"
+      "path---pandas-34ef93aec27e058cf98a.js",
+      "path---pandas-34ef93aec27e058cf98a.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
@@ -83,9 +87,9 @@
       "path---blurred-lines-e46bb50208697ed876f4.js.map"
     ],
     "app": [
-      "app-23f1087de5f12a567569.js",
+      "app-b5499c3c4042f1a0afa9.js",
       "build-js-styles.css",
-      "app-23f1087de5f12a567569.js.map",
+      "app-b5499c3c4042f1a0afa9.js.map",
       "build-js-styles.css.map"
     ],
     "path---links": [
