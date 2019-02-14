@@ -4,7 +4,7 @@ subTitle: A comprehensive guide
 category: "tech"
 cover: cover.jpg
 ---
-<p align='center'><img src="pandas.png" alt="PRIVACY"><br>
+<p align='center'><img src="pandas.png" alt="pandas"><br>
 <font size=2>pandas: powerful Python data analysis toolkit</font></p>
 
 > <p align="center"><b>for PyDelhi DevSprint 02/02/19 </b></p>
@@ -28,29 +28,34 @@ cover: cover.jpg
     2. order of sections
     3. syntax
 
+- [PEP-8 Guidelines](https://www.python.org/dev/peps/pep-0008/)
+    
 # Homework
 ### 0. Remove existing `pandas` installation
-```
-pip uninstall pandas
-```
+    ```
+    pip uninstall pandas
+    ```
 ### 1. Fork [me](https://github.com/pandas-dev/pandas)!
 ### 2. Clone the fork to your PC.
 ### 3. Install `pandas` from source.
 
 - `cd` into the clone and install the build dependencies.
-```
-python -m pip install -r requirements-dev.txt
-```
+    ```
+    python -m pip install -r requirements-dev.txt
+    ```
 
 - Build and install pandas. (takes ~20 minutes on an i5 6200U with 8GB RAM)
-```
-python setup.py build_ext --inplace -j 4 
-python -m pip install -e .
-```
+    ```
+    python setup.py build_ext --inplace -j 4 
+    python -m pip install -e .
+    ```
 
 ## Background
 
 Work on `pandas` started at AQR (a quantitative hedge fund) in 2008 and has been under active development since then.
+
+### [Chat with more pandas at Gitter.im!](https://gitter.im/pydata/pandas)
+
 ## Some Tips
 
 - [Documentation for reference purposes.](http://pandas.pydata.org/pandas-docs/stable/)
@@ -64,7 +69,7 @@ I accidentally rebased on `origin/master`. That was **~350 commits behind `upstr
 
 ### Steps taken:-
 >
- >  - reverted `HEAD` to just before rebase
+>  - reverted `HEAD` to just before rebase
 >   - merged `upstream/master` into `origin/is_scalar`
 >   - updated `origin/master` to get NO diffs in `upstream/master` and `origin/master`
 >    - ran git rebase origin/master and fixed a conflict in `doc/source/whatsnew/v0.24.0.rst`
