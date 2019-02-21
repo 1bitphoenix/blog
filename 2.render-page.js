@@ -1,7 +1,7 @@
 exports.ids = [2];
 exports.modules = {
 
-/***/ 518:
+/***/ 523:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12,15 +12,15 @@ exports.modules = {
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _propTypes = __webpack_require__(11);
+	var _propTypes = __webpack_require__(17);
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _reactJss = __webpack_require__(171);
+	var _reactJss = __webpack_require__(174);
 	
 	var _reactJss2 = _interopRequireDefault(_reactJss);
 	
-	var _config = __webpack_require__(443);
+	var _config = __webpack_require__(449);
 	
 	var _config2 = _interopRequireDefault(_config);
 	
