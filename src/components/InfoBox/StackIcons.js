@@ -1,17 +1,17 @@
-import React from "react";
-import PropTypes from "prop-types";
-import injectSheet from "react-jss";
-
 import AlgoliaIcon from "!svg-react-loader!../../images/svg-icons/algolia.svg?name=AlgoliaIcon";
-import ReactIcon from "!svg-react-loader!../../images/svg-icons/react.svg?name=ReactIcon";
+import BabelIcon from "!svg-react-loader!../../images/svg-icons/babel.svg?name=BabelIcon";
+import GatsbyIcon from "!svg-react-loader!../../images/svg-icons/gatsby.svg?name=GatsbyIcon";
 import GraphqlIcon from "!svg-react-loader!../../images/svg-icons/graphql.svg?name=GraphqlIcon";
 import JssIcon from "!svg-react-loader!../../images/svg-icons/jss.svg?name=JssIcon";
 import MaterialUiIcon from "!svg-react-loader!../../images/svg-icons/material-ui.svg?name=MaterialUiIcon";
+import ReactIcon from "!svg-react-loader!../../images/svg-icons/react.svg?name=ReactIcon";
 import ReduxIcon from "!svg-react-loader!../../images/svg-icons/redux.svg?name=ReduxIcon";
-import GatsbyIcon from "!svg-react-loader!../../images/svg-icons/gatsby.svg?name=GatsbyIcon";
 import WebpackIcon from "!svg-react-loader!../../images/svg-icons/webpack.svg?name=WebpackIcon";
-import BabelIcon from "!svg-react-loader!../../images/svg-icons/babel.svg?name=BabelIcon";
-import NetlifyIcon from "!svg-react-loader!../../images/svg-icons/netlify.svg?name=NetlifyIcon";
+import DotTechIcon from "!svg-react-loader!../../images/svg-icons/dottech.svg?name=DotTechIcon";
+import PropTypes from "prop-types";
+import React from "react";
+import injectSheet from "react-jss";
+
 
 const styles = theme => ({
   stack: {
@@ -35,8 +35,8 @@ const styles = theme => ({
     padding: "8px"
   },
   svg: {
-    width: "22px",
-    height: "22px"
+    width: "20px",
+    height: "20px"
   },
   header: {
     textAlign: "center",
@@ -60,12 +60,31 @@ const StackIcons = props => {
     { name: "redux", url: "https://redux.js.org/", comp: ReduxIcon },
     { name: "algolia", url: "https://www.algolia.com/", comp: AlgoliaIcon },
     { name: "webpack", url: "https://webpack.js.org/", comp: WebpackIcon },
-    { name: "babel", url: "https://babeljs.io/", comp: BabelIcon },
-    { name: "netlify", url: "https://www.netlify.com/", comp: NetlifyIcon }
+    { name: "babel", url: "https://babeljs.io/", comp: BabelIcon }
   ];
-
+  const DotTech = [
+    { name: "dotTECH Domains", url: "https://get.tech/", comp: DotTechIcon }
+  ]
   return (
     <div className={classes.stack}>
+     <h5 className={classes.header}>powered by:</h5>
+     <div className={classes.box}>
+        {DotTech.map(item => {
+          const Icon = item.comp;
+          return (
+            <a
+              href={item.url}
+              key={item.name}
+              className={classes.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              title={item.name}
+            >
+              <Icon className={classes.svg} />
+            </a>
+          );
+        })}
+      </div>
       <h5 className={classes.header}>built with:</h5>
       <div className={classes.box}>
         {items.map(item => {
