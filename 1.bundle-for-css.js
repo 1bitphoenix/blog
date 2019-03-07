@@ -832,6 +832,7 @@ webpackJsonp([1],{
 	  return _react4.default.createElement(
 	    "div",
 	    { className: classes.stack },
+	    _react4.default.createElement("br", null),
 	    _react4.default.createElement(
 	      "h5",
 	      { className: classes.header },
@@ -841,30 +842,6 @@ webpackJsonp([1],{
 	      "div",
 	      { className: classes.box },
 	      DotTech.map(function (item) {
-	        var Icon = item.comp;
-	        return _react4.default.createElement(
-	          "a",
-	          {
-	            href: item.url,
-	            key: item.name,
-	            className: classes.link,
-	            target: "_blank",
-	            rel: "noopener noreferrer",
-	            title: item.name
-	          },
-	          _react4.default.createElement(Icon, { className: classes.svg })
-	        );
-	      })
-	    ),
-	    _react4.default.createElement(
-	      "h5",
-	      { className: classes.header },
-	      "built with:"
-	    ),
-	    _react4.default.createElement(
-	      "div",
-	      { className: classes.box },
-	      items.map(function (item) {
 	        var Icon = item.comp;
 	        return _react4.default.createElement(
 	          "a",

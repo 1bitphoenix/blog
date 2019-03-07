@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[brute4s99.blog]]></title><description><![CDATA[Piyush writes here on his blog. Feel free to take a look.]]></description><link>https://journal.piyush.tech</link><generator>RSS for Node</generator><lastBuildDate>Thu, 07 Mar 2019 20:09:02 GMT</lastBuildDate><item><title><![CDATA[Recovering your Arch from hell- again]]></title><description><![CDATA[I had a system with Arch Linux, until I needed Windows 10 for some Windows development. Then I installed Windows 10 UEFI with the help of…]]></description><link>https://journal.piyush.tech/arch/</link><guid isPermaLink="false">https://journal.piyush.tech/arch/</guid><content:encoded>&lt;p align=&quot;center&quot;&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[brute4s99.blog]]></title><description><![CDATA[Piyush writes here on his blog. Feel free to take a look.]]></description><link>https://journal.piyush.tech</link><generator>RSS for Node</generator><lastBuildDate>Thu, 07 Mar 2019 20:50:09 GMT</lastBuildDate><item><title><![CDATA[Setting up a multi boot with GRUB2]]></title><description><![CDATA[I had a system with Arch Linux, until I needed Windows 10 for some Windows development. Then I installed Windows 10 UEFI with the help of…]]></description><link>https://journal.piyush.tech/arch/</link><guid isPermaLink="false">https://journal.piyush.tech/arch/</guid><content:encoded>&lt;p align=&quot;center&quot;&gt;
   &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/arch-6b158701388a39fbbd5733312eef6146-f190c.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
   
   &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;&gt;
@@ -63,8 +63,9 @@
     &lt;br&gt;
 &lt;font size=&quot;2&quot;&gt;pandas: powerful Python data analysis toolkit&lt;/font&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p align=&quot;center&quot;&gt;&lt;b&gt;for PyDelhi DevSprint 02/02/19 &lt;/b&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;&lt;b&gt;for PyDelhi DevSprint 02/02/19 &lt;/b&gt;&lt;br&gt; pandas -&gt; &lt;b&gt;PAN&lt;/b&gt;el &lt;b&gt;D&lt;/b&gt;ata &lt;b&gt;A&lt;/b&gt;nalysi&lt;b&gt;S&lt;/b&gt;
 &lt;/blockquote&gt;
+&lt;/p&gt;
 &lt;h2&gt;pre-DevSprint reading material:-&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
