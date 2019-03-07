@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[brute4s99.blog]]></title><description><![CDATA[Piyush writes here on his blog. Feel free to take a look.]]></description><link>https://journal.piyush.tech</link><generator>RSS for Node</generator><lastBuildDate>Thu, 07 Mar 2019 19:52:50 GMT</lastBuildDate><item><title><![CDATA[Recovering your Arch from hell- again]]></title><description><![CDATA[I had a system with Arch Linux, until I needed Windows 10 for some Windows development. Then I installed Windows 10 UEFI with the help of…]]></description><link>https://journal.piyush.tech/arch/</link><guid isPermaLink="false">https://journal.piyush.tech/arch/</guid><content:encoded>&lt;p align=&quot;center&quot;&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[brute4s99.blog]]></title><description><![CDATA[Piyush writes here on his blog. Feel free to take a look.]]></description><link>https://journal.piyush.tech</link><generator>RSS for Node</generator><lastBuildDate>Thu, 07 Mar 2019 20:09:02 GMT</lastBuildDate><item><title><![CDATA[Recovering your Arch from hell- again]]></title><description><![CDATA[I had a system with Arch Linux, until I needed Windows 10 for some Windows development. Then I installed Windows 10 UEFI with the help of…]]></description><link>https://journal.piyush.tech/arch/</link><guid isPermaLink="false">https://journal.piyush.tech/arch/</guid><content:encoded>&lt;p align=&quot;center&quot;&gt;
   &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/arch-6b158701388a39fbbd5733312eef6146-f190c.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
   
   &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;&gt;
@@ -1246,52 +1246,7 @@ Anyone can review/audit the blockchain in a Blockchain explorer.&lt;/p&gt;
 &lt;p&gt;For example, let’s suppose you have a consortium of world’s top 20 financial institutes out of which you could decide that if a transaction or block is voted/verified by more than 15 institutions, only then does it get added to the blockchain.&lt;/p&gt;
 &lt;p&gt;Example: &lt;a href=&quot;https://www.r3.com/&quot;&gt;r3&lt;/a&gt;, &lt;a href=&quot;http://energyweb.org/&quot;&gt;EWF&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;In fact, the idea that cryptographic keys and shared ledgers can incentivize users to secure and formalize digital relationships has imaginations running wild. Everyone from governments to IT firms to banks is seeking to build this transaction layer.&lt;/p&gt;
-&lt;p&gt;Authentication and authorization, vital to digital transactions, are established as a result of the configuration of blockchain technology. The idea can be applied to any need for a trustworthy system of record.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[It's a blog !]]></title><description><![CDATA[This is the first post that comes with the blog by default. Let’s see. I made a blog. Let’s try our best to make it useful, yeah ? I don’t…]]></description><link>https://journal.piyush.tech/its_a_blog/</link><guid isPermaLink="false">https://journal.piyush.tech/its_a_blog/</guid><content:encoded>&lt;p&gt;
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/cover-4e94a5346ec7f21326424a00563b2222-e4aee.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 33.4375%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAByklEQVQozzWS308SYBSGP+SXgAgUIAwNDJQIYYQSCwHBhMx0CRnquNBmtShWSHaTrBlaW3Hhhblu2uquP/PpIHT7be9znnPeTym9BTXqQI15UY5plDuKJpBGHytjXdrFV31D7OAjubddSu/PKByekXz1icBOG8fKHsbkBiOhPGryLsq7gFIGK8rsQlmnUNdmUJ44I9MZDPFV7MU609st0s0u651zaqeXVD7/oHDUI7J/jPvhS0ypCtqZogDTkk32geMCnEDZ/Kjrt2RKAs0Q6CjUCe0ckm19pdL9SePyL/XeH0rHF8Sen+B51MCceoJ29v4AOJEQoNGGsngEGEA5IwK8Iytn0EfL2LLb+KtNUo0uq50Lat9+s/nlF/kP50T2OrgevMA03zdcHqzsjg8NLf8NwzJFHqfS6MJFzAuPcZefMbt7ROr1Kdl2j0zrO/GDE25U3mHP1THE1uREORGZR7miAtSPoUxOueGklBIcWiYGd7y9gjVdxV3ax7/ZJFhrc3PrEN96A0e+jimxgTa0hGYyJXZzkpcOlM6EMtoHln2oXZp2iqlXyum3HS5gTqwxLmD74lNs97YYE/PRuRK64CIaX/LqZ1zJSP4fY3ra0OAo3XcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
-        alt=&quot;his image&quot;
-        title=&quot;&quot;
-        src=&quot;/static/cover-4e94a5346ec7f21326424a00563b2222-48538.png&quot;
-        srcset=&quot;/static/cover-4e94a5346ec7f21326424a00563b2222-bed0f.png 200w,
-/static/cover-4e94a5346ec7f21326424a00563b2222-5fd34.png 400w,
-/static/cover-4e94a5346ec7f21326424a00563b2222-48538.png 800w,
-/static/cover-4e94a5346ec7f21326424a00563b2222-b70ec.png 1200w,
-/static/cover-4e94a5346ec7f21326424a00563b2222-d134a.png 1600w,
-/static/cover-4e94a5346ec7f21326424a00563b2222-f6ead.png 2400w,
-/static/cover-4e94a5346ec7f21326424a00563b2222-e4aee.png 2560w&quot;
-        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-      /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    &lt;/p&gt;
-&lt;p&gt;This is the first post that comes with the blog by default.&lt;/p&gt;
-&lt;p&gt;Let’s see.&lt;/p&gt;
-&lt;h3&gt;I made a blog.&lt;/h3&gt;
-&lt;p&gt;Let’s try our best to make it useful, yeah ?&lt;/p&gt;
-&lt;p&gt;I don’t wish you all to be watching ads with my blog, so just wait for a while!&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Good company in a journey makes the way seem shorter.&lt;br&gt;
-— Izaak Walton&lt;/p&gt;
-&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[A real life Hogwarts]]></title><description><![CDATA[Skimming through your seniors’ profile does some good at times! “The programmers of tomorrow are the wizards of the future !” – Gabe, Co…]]></description><link>https://journal.piyush.tech/a_real_life_hogwarts/</link><guid isPermaLink="false">https://journal.piyush.tech/a_real_life_hogwarts/</guid><content:encoded>&lt;p&gt;Skimming through your seniors’ profile does some good at times!&lt;/p&gt;
+&lt;p&gt;Authentication and authorization, vital to digital transactions, are established as a result of the configuration of blockchain technology. The idea can be applied to any need for a trustworthy system of record.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[A real life Hogwarts]]></title><description><![CDATA[Skimming through your seniors’ profile does some good at times! “The programmers of tomorrow are the wizards of the future !” – Gabe, Co…]]></description><link>https://journal.piyush.tech/a_real_life_hogwarts/</link><guid isPermaLink="false">https://journal.piyush.tech/a_real_life_hogwarts/</guid><content:encoded>&lt;p&gt;Skimming through your seniors’ profile does some good at times!&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;“The programmers of tomorrow are the wizards of the future !”&lt;br&gt;
 – Gabe, Co-founder-Valve&lt;/p&gt;
@@ -1351,4 +1306,49 @@ Anyone can review/audit the blockchain in a Blockchain explorer.&lt;/p&gt;
 &lt;p&gt;For me, it was like Hogwarts, a place which normal people don’t know, yet full of surprises, and new learning! It opened a whole new world for me!&lt;br&gt;
 -Avik Mukherjee&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;And frankly, that makes the two of us.&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;And frankly, that makes the two of us.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[It's a blog !]]></title><description><![CDATA[This is the first post that comes with the blog by default. Let’s see. I made a blog. Let’s try our best to make it useful, yeah ? I don’t…]]></description><link>https://journal.piyush.tech/its_a_blog/</link><guid isPermaLink="false">https://journal.piyush.tech/its_a_blog/</guid><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/cover-4e94a5346ec7f21326424a00563b2222-e4aee.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 33.4375%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAByklEQVQozzWS308SYBSGP+SXgAgUIAwNDJQIYYQSCwHBhMx0CRnquNBmtShWSHaTrBlaW3Hhhblu2uquP/PpIHT7be9znnPeTym9BTXqQI15UY5plDuKJpBGHytjXdrFV31D7OAjubddSu/PKByekXz1icBOG8fKHsbkBiOhPGryLsq7gFIGK8rsQlmnUNdmUJ44I9MZDPFV7MU609st0s0u651zaqeXVD7/oHDUI7J/jPvhS0ypCtqZogDTkk32geMCnEDZ/Kjrt2RKAs0Q6CjUCe0ckm19pdL9SePyL/XeH0rHF8Sen+B51MCceoJ29v4AOJEQoNGGsngEGEA5IwK8Iytn0EfL2LLb+KtNUo0uq50Lat9+s/nlF/kP50T2OrgevMA03zdcHqzsjg8NLf8NwzJFHqfS6MJFzAuPcZefMbt7ROr1Kdl2j0zrO/GDE25U3mHP1THE1uREORGZR7miAtSPoUxOueGklBIcWiYGd7y9gjVdxV3ax7/ZJFhrc3PrEN96A0e+jimxgTa0hGYyJXZzkpcOlM6EMtoHln2oXZp2iqlXyum3HS5gTqwxLmD74lNs97YYE/PRuRK64CIaX/LqZ1zJSP4fY3ra0OAo3XcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;his image&quot;
+        title=&quot;&quot;
+        src=&quot;/static/cover-4e94a5346ec7f21326424a00563b2222-48538.png&quot;
+        srcset=&quot;/static/cover-4e94a5346ec7f21326424a00563b2222-bed0f.png 200w,
+/static/cover-4e94a5346ec7f21326424a00563b2222-5fd34.png 400w,
+/static/cover-4e94a5346ec7f21326424a00563b2222-48538.png 800w,
+/static/cover-4e94a5346ec7f21326424a00563b2222-b70ec.png 1200w,
+/static/cover-4e94a5346ec7f21326424a00563b2222-d134a.png 1600w,
+/static/cover-4e94a5346ec7f21326424a00563b2222-f6ead.png 2400w,
+/static/cover-4e94a5346ec7f21326424a00563b2222-e4aee.png 2560w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;This is the first post that comes with the blog by default.&lt;/p&gt;
+&lt;p&gt;Let’s see.&lt;/p&gt;
+&lt;h3&gt;I made a blog.&lt;/h3&gt;
+&lt;p&gt;Let’s try our best to make it useful, yeah ?&lt;/p&gt;
+&lt;p&gt;I don’t wish you all to be watching ads with my blog, so just wait for a while!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Good company in a journey makes the way seem shorter.&lt;br&gt;
+— Izaak Walton&lt;/p&gt;
+&lt;/blockquote&gt;</content:encoded></item></channel></rss>
