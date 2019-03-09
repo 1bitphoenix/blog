@@ -1,48 +1,48 @@
 {
   "assetsByChunkName": {
     "path---my-testimony-about-blockchain-p-2": [
-      "path---my-testimony-about-blockchain-p-2-a68beb6e4036c728b6bb.js",
-      "path---my-testimony-about-blockchain-p-2-a68beb6e4036c728b6bb.js.map"
+      "path---my-testimony-about-blockchain-p-2-62d1a1c046c8676e2de9.js",
+      "path---my-testimony-about-blockchain-p-2-62d1a1c046c8676e2de9.js.map"
     ],
     "path---arcanist": [
-      "path---arcanist-3a2ced3615c7b52a8329.js",
-      "path---arcanist-3a2ced3615c7b52a8329.js.map"
+      "path---arcanist-e5f7c20c9cb27aa9f112.js",
+      "path---arcanist-e5f7c20c9cb27aa9f112.js.map"
     ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-0166ed3d50a4be1b1cba.js",
       "component---src-pages-index-js-0166ed3d50a4be1b1cba.js.map"
     ],
     "path---recovering-your-arch-from-hell": [
-      "path---recovering-your-arch-from-hell-d9bbc7332c0b2282b5e8.js",
-      "path---recovering-your-arch-from-hell-d9bbc7332c0b2282b5e8.js.map"
+      "path---recovering-your-arch-from-hell-013c7409ea579a104a67.js",
+      "path---recovering-your-arch-from-hell-013c7409ea579a104a67.js.map"
     ],
     "path---": [
-      "path----bdb815c0e28380cb10e2.js",
-      "path----bdb815c0e28380cb10e2.js.map"
+      "path----93880a37ae1ac9e4daa9.js",
+      "path----93880a37ae1ac9e4daa9.js.map"
     ],
     "component---src-pages-contact-js": [
       "component---src-pages-contact-js-c216ff14f94225a1c827.js",
       "component---src-pages-contact-js-c216ff14f94225a1c827.js.map"
     ],
     "path---arch": [
-      "path---arch-8952279123d64267f986.js",
-      "path---arch-8952279123d64267f986.js.map"
+      "path---arch-7aa18851b4fe7f1af1c7.js",
+      "path---arch-7aa18851b4fe7f1af1c7.js.map"
     ],
     "path---abc-of-unix": [
-      "path---abc-of-unix-07d004b7370799335004.js",
-      "path---abc-of-unix-07d004b7370799335004.js.map"
+      "path---abc-of-unix-c97b9c53587babb8171c.js",
+      "path---abc-of-unix-c97b9c53587babb8171c.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-e560b4ecb3ebbabb73e4.js",
-      "component---src-layouts-index-js-e560b4ecb3ebbabb73e4.js.map"
+      "component---src-layouts-index-js-38e5cfde8826deafcb1f.js",
+      "component---src-layouts-index-js-38e5cfde8826deafcb1f.js.map"
     ],
     "path---breaking-free": [
-      "path---breaking-free-368f96a7f3b51532f0cb.js",
-      "path---breaking-free-368f96a7f3b51532f0cb.js.map"
+      "path---breaking-free-f344dfca74fea73d872a.js",
+      "path---breaking-free-f344dfca74fea73d872a.js.map"
     ],
     "path---pandas": [
-      "path---pandas-f0fbe785e493dc066431.js",
-      "path---pandas-f0fbe785e493dc066431.js.map"
+      "path---pandas-34ef93aec27e058cf98a.js",
+      "path---pandas-34ef93aec27e058cf98a.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
@@ -53,26 +53,26 @@
       "component---src-pages-search-js-a1e6410a6eb49ee038e0.js.map"
     ],
     "path---arch-zero-to-one": [
-      "path---arch-zero-to-one-6ffba363060c65f7cf3a.js",
-      "path---arch-zero-to-one-6ffba363060c65f7cf3a.js.map"
+      "path---arch-zero-to-one-fc9113ad58877be84dfc.js",
+      "path---arch-zero-to-one-fc9113ad58877be84dfc.js.map"
     ],
     "commons": [
-      "commons-f7d6911a95564e9b40ff.js",
+      "commons-7678586d84a772774fc0.js",
       "build-js-styles.css",
-      "commons-f7d6911a95564e9b40ff.js.map",
+      "commons-7678586d84a772774fc0.js.map",
       "build-js-styles.css.map"
     ],
     "path---success": [
-      "path---success-ae6c15ffd8086e890c2b.js",
-      "path---success-ae6c15ffd8086e890c2b.js.map"
+      "path---success-7f97473bcc32e941e6fd.js",
+      "path---success-7f97473bcc32e941e6fd.js.map"
     ],
     "path---its-a-blog": [
-      "path---its-a-blog-081af2ff326615e4bd32.js",
-      "path---its-a-blog-081af2ff326615e4bd32.js.map"
+      "path---its-a-blog-b771c0198536fe13a79d.js",
+      "path---its-a-blog-b771c0198536fe13a79d.js.map"
     ],
     "path---a-real-life-hogwarts": [
-      "path---a-real-life-hogwarts-7359517c877aa387de27.js",
-      "path---a-real-life-hogwarts-7359517c877aa387de27.js.map"
+      "path---a-real-life-hogwarts-2b5819953f42c7d5f295.js",
+      "path---a-real-life-hogwarts-2b5819953f42c7d5f295.js.map"
     ],
     "path---contact": [
       "path---contact-a0e39f21c11f6a62c5ab.js",
@@ -83,8 +83,8 @@
       "component---src-templates-post-template-js-489f2d70d9e793d5cc2b.js.map"
     ],
     "path---blurred-lines": [
-      "path---blurred-lines-9146656146cd7226144d.js",
-      "path---blurred-lines-9146656146cd7226144d.js.map"
+      "path---blurred-lines-e46bb50208697ed876f4.js",
+      "path---blurred-lines-e46bb50208697ed876f4.js.map"
     ],
     "app": [
       "app-f98f50661e03e8788bdb.js",
@@ -93,28 +93,28 @@
       "build-js-styles.css.map"
     ],
     "path---links": [
-      "path---links-f3eb31641e245c4f9095.js",
-      "path---links-f3eb31641e245c4f9095.js.map"
+      "path---links-9b494737574e91d24cca.js",
+      "path---links-9b494737574e91d24cca.js.map"
     ],
     "component---src-templates-page-template-js": [
       "component---src-templates-page-template-js-6f74dfdcdb198cb143f6.js",
       "component---src-templates-page-template-js-6f74dfdcdb198cb143f6.js.map"
     ],
     "path---my-testimony-about-blockchain-p-1": [
-      "path---my-testimony-about-blockchain-p-1-2d28363bd7df437d33da.js",
-      "path---my-testimony-about-blockchain-p-1-2d28363bd7df437d33da.js.map"
+      "path---my-testimony-about-blockchain-p-1-4208dbbaee5262b5f140.js",
+      "path---my-testimony-about-blockchain-p-1-4208dbbaee5262b5f140.js.map"
     ],
     "path---a-better-blog": [
-      "path---a-better-blog-6169dfe4c79f9693e33f.js",
-      "path---a-better-blog-6169dfe4c79f9693e33f.js.map"
+      "path---a-better-blog-45990b131b2bae0ef2ec.js",
+      "path---a-better-blog-45990b131b2bae0ef2ec.js.map"
     ],
     "path---search": [
       "path---search-d8380b7a9a79105929ac.js",
       "path---search-d8380b7a9a79105929ac.js.map"
     ],
     "path---about": [
-      "path---about-4b23f5d9decc6da3a736.js",
-      "path---about-4b23f5d9decc6da3a736.js.map"
+      "path---about-181a960aee443236e06d.js",
+      "path---about-181a960aee443236e06d.js.map"
     ]
   }
 }
