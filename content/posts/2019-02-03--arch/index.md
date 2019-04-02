@@ -1,6 +1,6 @@
 ---
-title: Recovering your Arch from hell- again
-subTitle: multi-boots ahoy!
+title: Multi-booting
+subTitle: at its best
 category: "tech"
 cover: cover.png
 ---
@@ -28,7 +28,7 @@ cover: cover.png
 - re-formatted the /dev/sda1 (EFI) partition.
 - `arch-chroot`ed into my Arch installation and force-reinstalled all my arch packages by my previous post.(to get linux `img`s in /boot). I could've done it by reinstalling just the firmware too, as <Namarggon> on #archlinux (IRC) suggested.
 - ran grub-install and grub-mkconfig commands from my GitHub gist. (ARCH COMMANDS)
-- ran genfstab command from my GitHub gist. (kudos to <GreyShade> and <iovec> for helping me out on this one!)
+- ran genfstab command from my GitHub gist. (kudos to `<GreyShade>` and `<iovec>` for helping me out on this one!)
 
 <p align='center'> Hola! I'm back with my Arch Linux and Zorin.</p>
 
