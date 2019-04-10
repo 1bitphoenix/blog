@@ -73,7 +73,7 @@ const styles = theme => ({
     "& h1": {
       lineHeight: 1.15,
       fontWeight: 600,
-      letterSpacing: "-0.03em",
+      letterSpacing: "-0.04em",
       margin: 0,
       fontSize: `${theme.navigator.sizes.postsListItemH1Font}em`,
       [`@media (min-width: ${theme.mediaQueryTresholds.M}px)`]: {
@@ -84,7 +84,7 @@ const styles = theme => ({
         fontSize: `${theme.navigator.sizes.postsListItemH1Font *
           theme.navigator.sizes.fontIncraseForL}em`,
         ".moving-featured &, .is-aside &": {
-          fontSize: "1em",
+          fontSize: "1.1em",
           fontWeight: 400
         }
       }
@@ -92,7 +92,7 @@ const styles = theme => ({
     "& h2": {
       lineHeight: 1.2,
       display: "block",
-      fontSize: `${theme.navigator.sizes.postsListItemH2Font}em`,
+      fontSize: `${theme.navigator.sizes.postsListItemH2Font+2}em`,
       margin: ".3em 0 0 0",
       [`@media (min-width: ${theme.mediaQueryTresholds.M}px)`]: {
         fontSize: `${theme.navigator.sizes.postsListItemH2Font *
