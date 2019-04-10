@@ -92,7 +92,7 @@ const styles = theme => ({
     "& h2": {
       lineHeight: 1.2,
       display: "block",
-      fontSize: `${theme.navigator.sizes.postsListItemH2Font+2}em`,
+      fontSize: `${theme.navigator.sizes.postsListItemH2Font}em`,
       margin: ".3em 0 0 0",
       [`@media (min-width: ${theme.mediaQueryTresholds.M}px)`]: {
         fontSize: `${theme.navigator.sizes.postsListItemH2Font *
