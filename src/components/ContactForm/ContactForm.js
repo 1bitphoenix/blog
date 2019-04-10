@@ -43,7 +43,7 @@ class ContactForm extends React.Component {
     name: "",
     email: "",
     message: "",
-    From: "My Blog"
+    From: "My Blog",
   };
 
   handleChange = event => {
