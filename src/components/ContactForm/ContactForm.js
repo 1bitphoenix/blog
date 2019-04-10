@@ -43,7 +43,7 @@ class ContactForm extends React.Component {
     name: "",
     email: "",
     message: "",
-    submitError: ""
+    From: "My Blog"
   };
 
   handleChange = event => {
@@ -59,10 +59,11 @@ class ContactForm extends React.Component {
   };
 
   handleSubmit = e => {
-    fetch("/", {
+    fetch("https://script.google.com/macros/s/AKfycby_hOCPRAwMDXfct2NFD15ifNYpl-2ZFZh6lLsk/exec", {
       method: "POST",
+      action:"https://script.google.com/macros/s/AKfycby_hOCPRAwMDXfct2NFD15ifNYpl-2ZFZh6lLsk/exec",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...this.state })
+      body: encode({...this.state })
     })
       .then(() => {
         console.log("Form submission success");
@@ -84,10 +85,11 @@ class ContactForm extends React.Component {
       <ValidatorForm
         onSubmit={this.handleSubmit}
         onError={errors => console.log(errors)}
-        name="contact"
+        method="post" 
+        id="gform" 
+        name="contactform"
         ref={f => (this.form = f)}
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
+        // action="https://script.google.com/macros/s/AKfycby_hOCPRAwMDXfct2NFD15ifNYpl-2ZFZh6lLsk/exec"
       >
         {submitError && <p className={classes.submitError}>{submitError}</p>}
         <TextValidator
