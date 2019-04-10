@@ -1,6 +1,6 @@
 ---
 title: Blurred Lines
-subTitle: Linux? Windows? I'd say, everything at once!
+subTitle: Linux? Windows? I say, everything at once!
 category: tech
 cover: cover.jpg
 ---

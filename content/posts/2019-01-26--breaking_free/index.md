@@ -103,7 +103,7 @@ While companies (sometimes) allow users to take away their data off the company 
 
 1. `ajax.cloudflare.com` 
 
-    >inherent on website's hosted by Cloudflare's DNS.
+    >inherent on websites hosted by Cloudflare's DNS.
 
 2. `graph.facebook.com`
     
