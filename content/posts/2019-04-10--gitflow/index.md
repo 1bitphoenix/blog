@@ -7,7 +7,7 @@ cover: cover.png
 
 The commonly known work flow for git is as follows:-
 
-> 1. Make a fork of the target project. Refer to it as "the fork" from now on this post.
+> 1. Make a fork of the target project.
 > 2. **Clone the fork** to your local dev machine.
 > 3. Set a remote for **upstream**.
 
