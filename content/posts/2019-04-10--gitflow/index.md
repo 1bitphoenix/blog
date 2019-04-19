@@ -4,6 +4,11 @@ subTitle: let's talk collaboration!
 category: "tech"
 cover: cover.png
 ---
+## INTRODUCTION
+
+A common question for anyone stepping foot into the world of FOSS contributions is- How to start? This post aims to be the post I wish I had read an year ago when I started my journey.
+
+## BABY STEPS
 
 The commonly known work flow for git is as follows:-
 
@@ -68,7 +73,10 @@ stash@{2}: WIP on timestamp: 9ec0d04f SVN_SILENT made messages (.desktop file) -
 >           git stash apply stash@\{1\}
 >           *this will apply the set of changes in index 1 i.e stash@{1} to the current working branch
 
-This should be enough to get you going with the adventures of git. Don't fret to play with this great tool!
+## CONCLUSION
+
+This should be enough to get you going with the adventures of git.
+> Git is focussed on freedom by design. You can do a lot of stuff, and you can also undo it as you go, so don't fret to play with this empowering tool!
 
 signing off now; later! :)
 <p align='center'> <font size=3> Stay safe and make the internet a healthier place! </font></p>

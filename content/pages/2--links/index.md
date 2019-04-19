@@ -1,12 +1,21 @@
 ---
-title: Spot me here!
-menuTitle: Links
+title: Catch me here:-
+menuTitle: some links
 ---
 
 
 email : piyush aggarwal 002 [at] gmail [dot] com
 
-
 GitHub : https://github.com/brute4s99
 
-*to be uploaded*
+KDE Identity: https://phabricator.kde.org/p/brute4s99/
+
+Twitter: https://twitter.com/brute4s99
+
+LinkedIn: https://linkedin.com/in/brute4s99
+
+Telegram: @brute4s99
+
+OpenCode-MAIT: https://t.me/opencode_mait
+
+Alternatively, search for [@brute4s99](https://duckduckgo.com/?q=brute4s99) across the internet

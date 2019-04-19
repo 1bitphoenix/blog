@@ -4,12 +4,12 @@ subTitle: no more trackers
 category: "tech"
 cover: cover.png
 ---
-<p align='center'><img src="privacy.png" alt="PRIVACY"><br>
-<font size=2> Free as in freedom!</font></p>
 
+<p align='center'><img src="privacy.svg" height="273" width="600" alt="PRIVACY"><br>
+<font size=2>Free as in freedom</font></p>
 
 ## INTRODUCTION
-When I started using this static blog, little did I know of all the trackers that came with the blog.
+When I started using this static blog, little did I know of all the trackers that came with the supporting resources used in a cool starter like this one. In this post, I explain the various kinds of trackers and also a personal teaspoon of what trackers I dealt with, while sterlising this blog!
 
 ## How does browser tracking work?
 

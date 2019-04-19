@@ -4,8 +4,9 @@ subTitle: a CLI to Phabricator
 category: "tech"
 cover: cover.png
 ---
-<p align='center'><img src="cover.png" alt="Phabricator"><br>
-<font size=2> Phabricator</font></p>
+
+<p align='center'><img src="cover.svg" height="600" width="600" alt="Phabricator"><br>
+<a href="https://phabricator.kde.org/"><font size=2>Phabricator</font></a></p>
 
 ## INTRODUCTION
 This post is dedicated to Arcanist, a command-line interface to Phabricator.

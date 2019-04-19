@@ -4,38 +4,107 @@ subTitle: at its best
 category: "tech"
 cover: cover.png
 ---
-<p align='center'><img src="arch.png" alt="Arch"><br>
-<font size=2>Arch</font></p>
 
-1. I had a system with Arch Linux, until I needed Windows 10 for some Windows development.
-2. Then I installed Windows 10 UEFI with the help of Rufus in creating my installation media.
-3. Then I had a dual-bootable system with Arch Linux and Windows 10.
-4. Later on, I needed a Ubuntu based OS for some testing puposes. I decided to triple boot.
-5. I went for Zorin OS 12.4 CORE, it's a beautiful distro, you must check it out!
-6. I simply installed it on a separate `ext4` partition at the end of my HDD (using that `something else` option).
+## INTRODUCTION
 
-> it *might* have did something to my prior GRUB config of Arch Linux.
+I am an Arch Linux user by day, but recently I needed constant access to Windows 10 OS to develop [KDE Connect](https://duckduckgo.com/?q=kde+connec) - an awesome project by some smart-working developers from across the globe, for Windows.
 
-7. Arch's GRUB settings loaded on next boot, which had options for Windows and Arch Linux.(no Zorin OS here)
-8. Then I went ahead and booted into Arch to run a `grub-mkconfig -o /boot/grub/grub.cfg`, because it didn't know about Zorin OS.
-9. After I rebooted the sys, Zorin's GRUB config greeted me. *WTH? I lost access to Arch Linux now!*.
-10. Then I tried running the same `grub-mkconfig -o /boot/grub/grub.cfg` in Zorin OS.
-11. I got options for Arch then, but they didn't work (poor Arch support in Ubuntu 16.04 maybe?).
-12. I decided I NEED my Arch before anything else!
-13. I went ahead and fired off a Live Arch USB.
+While working with the team, I also had to install Ubuntu to test a new release for the Ubuntu users.
 
-## SOLUTION
-- re-formatted the /dev/sda1 (EFI) partition.
-- `arch-chroot`ed into my Arch installation and force-reinstalled all my arch packages by my previous post.(to get linux `img`s in /boot). I could've done it by reinstalling just the firmware too, as <Namarggon> on #archlinux (IRC) suggested.
-- ran grub-install and grub-mkconfig commands from my GitHub gist. (ARCH COMMANDS)
-- ran genfstab command from my GitHub gist. (kudos to `<GreyShade>` and `<iovec>` for helping me out on this one!)
+> All this boils down to a system that already contains Arch Linux, to house Windows 10 and Ubuntu along, on a 500GB hard disk.
+> 
+> I have also mentioned a rookie mistake in this blog post, so do take it with a pinch of salt.
 
-<p align='center'> Hola! I'm back with my Arch Linux and Zorin.</p>
 
->Now I'm left with putting in some effort to get my Windows 10 back.
+### CHALLENGE 1: One storage device, many partitions
+
+> The thing is, there are many partitions required to have such a system, and legacy partitioning systems allow for just 4 at max. Enter UEFI, that allows any number of partitions on a single storage device.
+
+<p align="center"><font color="green" size="3">STATUS:
+ 
+ Arch Linux `OK`
+ ;<font color="cyan"> Ubuntu `TO_BE_INSTALLED`</font>
+ ;<font color="cyan"> Windows `TO_BE_INSTALLED`</font>
+ </font></p>
+
+### CHALLENGE 2: Getting Windows 10 media to boot in UEFI mode
+
+> For this, I used Rufus to create my installation media, and supplied the latest Windows ISO recieved from the Media Creation Tool provided by Microsoft.
+
+Luckily, Windows installed itself nicely **along** with Arch Linux, and I was able to dual boot just fine after the installation, with GRUB2 from Arch Linux.
+
+<p align="center"><font color="green" size="4">STATUS:
+ 
+ Arch Linux `OK`
+ ;<font color="cyan"> Ubuntu `TO_BE_INSTALLED`</font>
+ ; Windows `OK`
+ </font></p>
+
+## TRIPLE BOOT TIME!
+
+I went for [Ubuntu 18.04 LTS](https://wiki.ubuntu.com/BionicBeaver/ReleaseNotes) here because it was the latest edition with [LTS](https://wiki.ubuntu.com/LTS).
+
+> I simply installed it on a separate `ext4` partition at the end of my HDD (using that `something else` option).
+
+I'm not sure what happened here, but it *might* have did something to my prior GRUB config managed by Arch Linux.
+
+On next boot, the GRUB settings of Arch Linux showed up, which had options for Windows and Arch Linux.(no Ubuntu OS here)
+
+### CHALLENGE 3: Get Ubuntu OS to boot
+
+Then I went ahead and booted into Arch to run a `grub-mkconfig -o /boot/grub/grub.cfg`, because it didn't know about Ubuntu OS.
+After I rebooted the system, Ubuntu's GRUB config greeted me, that did not have Arch Linux as a boot option. 
+
+> I lost access to Arch Linux now. I was not happy, to say the least.
+
+
+<p align="center"><font color="green" size="4">STATUS:
+ 
+ <font color="red">Arch Linux `NOT_BOOTING`</font>
+ ; Ubuntu `OK`
+ ; Windows `OK`
+ </font></p>
+
+### CHALLENGE 4: Get Arch Linux to boot
+
+> Next, I tried running the same `grub-mkconfig -o /boot/grub/grub.cfg` in Ubuntu OS.
+>
+> I got options for Arch Linux then, but they didn't work for me (poor Arch support in Ubuntu 18.04?).
+> 
+> Then I fired off an Arch Linux Live USB and decided to try to get GRUB reinstalled from my Arch Linux installation.
+
+- re-formatted the `/dev/sda1` (EFI) partition.
+- `arch-chroot`ed into my Arch installation and force-reinstalled all my arch linux packages by my previous post.(to get linux firmware images in `/boot`). 
+
+> I could've done it by reinstalling just the firmware too, as `<Namarggon>` on `#archlinux` (IRC) suggested.
+
+- ran `grub-install` and `grub-mkconfig` commands from my GitHub gist - [ARCH COMMANDS](https://gist.github.com/brute4s99/d22508c05868e7eca578580e5ea86829)
+- ran `genfstab` command from that GitHub gist. 
+
+>(kudos to `<GreyShade>` and `<iovec>` for helping me out on this one!)
+
+<p align='center'> I have access to my Arch Linux and Ubuntu now.</p>
+
+
+<p align="center"><font color="green" size="4">STATUS:
+ Arch Linux `OK`
+ ; Ubuntu `OK`
+ ;  <font color="red">Windows `NOT_BOOTING`</font>
+ </font></p>
 
 <p align="center">UPDATE: </p>
 
->took a couple of commands: `bootrec /fixmbr` and `bootrec /rebuildBCD` from a windows installation media. They installed the new EFI files in the EFI partition automagically!
+>took a couple of commands: `bootrec /fixmbr` and `bootrec /rebuildBCD` from a Windows OS Installation Media. They installed the new EFI files in the EFI partition, and I finally had access to all three systems! \o/
+
+<p align="center"><font color="green" size="4">STATUS:
+ Arch Linux `OK`
+ ; Ubuntu `OK`
+ ;  Windows `OK`
+ </font></p>
+
+## CONCLUSION
+
+I obviously should not have removed the EFI partition, since that step increased the work needed to set up other OSes.
+If you happen to find any other weak links or better procedure, please do share it with me over the mail or twitter!
 
 <p align='center'> <font size=3> Stay safe and make the internet a healthier place! </font></p>
