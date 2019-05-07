@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[brute4s99.blog]]></title><description><![CDATA[Piyush ka blog. Feel free to take a look.]]></description><link>https://journal.piyush.tech</link><generator>RSS for Node</generator><lastBuildDate>Tue, 07 May 2019 19:57:56 GMT</lastBuildDate><item><title><![CDATA[the git flow]]></title><description><![CDATA[INTRODUCTION A common question for anyone stepping foot into the world of FOSS contributions is- How to start? This post aims to be the post…]]></description><link>https://journal.piyush.tech/the_git_flow/</link><guid isPermaLink="false">https://journal.piyush.tech/the_git_flow/</guid><content:encoded>&lt;h2&gt;INTRODUCTION&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[brute4s99.blog]]></title><description><![CDATA[Piyush ka blog. Feel free to take a look.]]></description><link>https://journal.piyush.tech</link><generator>RSS for Node</generator><lastBuildDate>Tue, 07 May 2019 20:06:25 GMT</lastBuildDate><item><title><![CDATA[the git flow]]></title><description><![CDATA[INTRODUCTION A common question for anyone stepping foot into the world of FOSS contributions is- How to start? This post aims to be the post…]]></description><link>https://journal.piyush.tech/the_git_flow/</link><guid isPermaLink="false">https://journal.piyush.tech/the_git_flow/</guid><content:encoded>&lt;h2&gt;INTRODUCTION&lt;/h2&gt;
 &lt;p&gt;A common question for anyone stepping foot into the world of FOSS contributions is- How to start? This post aims to be the post I wish I had read an year ago when I started my journey.&lt;/p&gt;
 &lt;h2&gt;BABY STEPS&lt;/h2&gt;
 &lt;p&gt;The commonly known work flow for git is as follows:-&lt;/p&gt;
@@ -102,7 +102,7 @@ stash@{2}: WIP on timestamp: 9ec0d04f SVN_SILENT made messages (.desktop file) -
 &lt;p&gt;Git is focussed on freedom by design. You can do a lot of stuff, and you can also undo it as you go, so don’t fret to play with this empowering tool!&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;signing off now; later! :)&lt;/p&gt;
-&lt;p align=&apos;center&apos;&gt; &lt;font size=3&gt; Stay safe and make the internet a healthier place! &lt;/font&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Multi-booting]]></title><description><![CDATA[INTRODUCTION I am an Arch Linux user by day, but recently I needed constant access to Windows 10 OS to develop  KDE Connect  - an awesome…]]></description><link>https://journal.piyush.tech/muli_booting/</link><guid isPermaLink="false">https://journal.piyush.tech/muli_booting/</guid><content:encoded>&lt;h2&gt;INTRODUCTION&lt;/h2&gt;
+&lt;p align=&apos;center&apos;&gt; &lt;font size=3&gt; Stay safe and make the internet a healthier place! &lt;/font&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[multi-booting]]></title><description><![CDATA[INTRODUCTION I am an Arch Linux user by day, but recently I needed constant access to Windows 10 OS to develop  KDE Connect  - an awesome…]]></description><link>https://journal.piyush.tech/muli_booting/</link><guid isPermaLink="false">https://journal.piyush.tech/muli_booting/</guid><content:encoded>&lt;h2&gt;INTRODUCTION&lt;/h2&gt;
 &lt;p&gt;I am an Arch Linux user by day, but recently I needed constant access to Windows 10 OS to develop &lt;a href=&quot;https://duckduckgo.com/?q=kde+connec&quot;&gt;KDE Connect&lt;/a&gt; - an awesome project by some smart-working developers from across the globe, for Windows.&lt;/p&gt;
 &lt;p&gt;While working with the team, I also had to install Ubuntu to test a new release for the Ubuntu users.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -187,7 +187,7 @@ After I rebooted the system, Ubuntu’s GRUB config greeted me, that did not hav
 &lt;h2&gt;CONCLUSION&lt;/h2&gt;
 &lt;p&gt;I obviously should not have removed the EFI partition, since that step increased the work needed to set up other OSes.
 If you happen to find any other weak links or better procedure, please do share it with me over the mail or twitter!&lt;/p&gt;
-&lt;p align=&apos;center&apos;&gt; &lt;font size=3&gt; Stay safe and make the internet a healthier place! &lt;/font&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Contributing to pandas]]></title><description><![CDATA[pre-DevSprint reading material:- Overview of pandas Contributing Guidelines Git Workflow Guidelines rebase merge code handling Docstrings…]]></description><link>https://journal.piyush.tech/contributing_to_pandas/</link><guid isPermaLink="false">https://journal.piyush.tech/contributing_to_pandas/</guid><content:encoded>&lt;p align=&quot;center&quot;&gt;
+&lt;p align=&apos;center&apos;&gt; &lt;font size=3&gt; Stay safe and make the internet a healthier place! &lt;/font&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[contributing to pandas]]></title><description><![CDATA[pre-DevSprint reading material:- Overview of pandas Contributing Guidelines Git Workflow Guidelines rebase merge code handling Docstrings…]]></description><link>https://journal.piyush.tech/contributing_to_pandas/</link><guid isPermaLink="false">https://journal.piyush.tech/contributing_to_pandas/</guid><content:encoded>&lt;p align=&quot;center&quot;&gt;
   &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/pandas-343009fe0b1182ae62e99f72f0f5569d-cffac.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
   
   &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; ; max-width: 473px; margin-left: auto; margin-right: auto;&quot;&gt;
@@ -281,7 +281,7 @@ python -m pip install -e .&lt;/code&gt;&lt;/pre&gt;
 &lt;li&gt;pushed to &lt;code class=&quot;language-text&quot;&gt;origin/is_scalar&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;p align=&apos;center&apos;&gt; &lt;font size=3&gt; Stay safe and make the internet a healthier place! &lt;/font&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Breaking Free]]></title><description><![CDATA[INTRODUCTION When I started using this static blog, little did I know of all the trackers that came with the supporting resources used in a…]]></description><link>https://journal.piyush.tech/breaking_free/</link><guid isPermaLink="false">https://journal.piyush.tech/breaking_free/</guid><content:encoded>&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;/privacy-1fff2abd02080151a34c96e4ffb1c8c7.svg&quot; height=&quot;273&quot; width=&quot;600&quot; alt=&quot;PRIVACY&quot;&gt;&lt;br&gt;
+&lt;p align=&apos;center&apos;&gt; &lt;font size=3&gt; Stay safe and make the internet a healthier place! &lt;/font&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[breaking free]]></title><description><![CDATA[INTRODUCTION When I started using this static blog, little did I know of all the trackers that came with the supporting resources used in a…]]></description><link>https://journal.piyush.tech/breaking_free/</link><guid isPermaLink="false">https://journal.piyush.tech/breaking_free/</guid><content:encoded>&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;/privacy-1fff2abd02080151a34c96e4ffb1c8c7.svg&quot; height=&quot;273&quot; width=&quot;600&quot; alt=&quot;PRIVACY&quot;&gt;&lt;br&gt;
 &lt;font size=&quot;2&quot;&gt;Free as in freedom&lt;/font&gt;&lt;/p&gt;
 &lt;h2&gt;INTRODUCTION&lt;/h2&gt;
 &lt;p&gt;When I started using this static blog, little did I know of all the trackers that came with the supporting resources used in a cool starter like this one. In this post, I explain the various kinds of trackers and also a personal teaspoon of what trackers I dealt with, while sterlising this blog!&lt;/p&gt;
@@ -446,7 +446,7 @@ This is why you should not display images in emails from senders you do not trus
 &lt;p&gt;&lt;a href=&quot;https://learning.mozilla.org/en-US/activities/privacy-basics/&quot;&gt;Mozilla Privacy Basics&lt;/a&gt;&lt;/p&gt;
 &lt;p align=&apos;center&apos;&gt; &lt;font size=3&gt; Stay safe and make the internet a healthier place! &lt;/font&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Arcanist]]></title><description><![CDATA[INTRODUCTION This post is dedicated to Arcanist, a command-line interface to Phabricator.
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[arcanist]]></title><description><![CDATA[INTRODUCTION This post is dedicated to Arcanist, a command-line interface to Phabricator.
 Phabricator is a set of tools that help  KDE…]]></description><link>https://journal.piyush.tech/arcanist/</link><guid isPermaLink="false">https://journal.piyush.tech/arcanist/</guid><content:encoded>&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;/cover-0346424267eb59d0b7ab5eb796c84d35.svg&quot; height=&quot;600&quot; width=&quot;600&quot; alt=&quot;Phabricator&quot;&gt;&lt;br&gt;
 &lt;a href=&quot;https://phabricator.kde.org/&quot;&gt;&lt;font size=&quot;2&quot;&gt;Phabricator&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;INTRODUCTION&lt;/h2&gt;
@@ -591,7 +591,7 @@ As an example:-&lt;/p&gt;
 &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; You &lt;strong&gt;do&lt;/strong&gt; have a &lt;a href=&quot;https://community.kde.org/Infrastructure/Get_a_Developer_Account&quot;&gt;Developer Access Account&lt;/a&gt; in order to land the patch.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;arc land&lt;/code&gt; automatically rebases (and errors if that failed), so you don’t have to do that manually, unlike &lt;code class=&quot;language-text&quot;&gt;Git&lt;/code&gt;.&lt;/p&gt;
-&lt;p align=&apos;center&apos;&gt; &lt;font size=3&gt; This quickstart should be enough to get you started on KDE&apos;s Phabricator and setting sail on some binary adventures!&lt;/font&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ABCs of Unix]]></title><description><![CDATA[— THE ABCs OF UNIX]]></description><link>https://journal.piyush.tech/abcs_of_unix/</link><guid isPermaLink="false">https://journal.piyush.tech/abcs_of_unix/</guid><content:encoded>&lt;p&gt;
+&lt;p align=&apos;center&apos;&gt; &lt;font size=3&gt; This quickstart should be enough to get you started on KDE&apos;s Phabricator and setting sail on some binary adventures!&lt;/font&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[abc of unix]]></title><description><![CDATA[— THE ABCs OF UNIX]]></description><link>https://journal.piyush.tech/abc_of_unix/</link><guid isPermaLink="false">https://journal.piyush.tech/abc_of_unix/</guid><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/Unix-e87325ae57d528519aca61d2a90898f8-c541b.png&quot;
@@ -654,7 +654,7 @@ X is, well, X, of dubious fame.
 Y is for yes, which makes an impression, and
 Z is for zcat, which handles compression.&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;— THE ABCs OF UNIX&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Recovering your Arch from hell]]></title><description><![CDATA[PROBLEM Not clear, but looks like misconfigured packages after multiple installations, uninstallations and re-installations of packages and…]]></description><link>https://journal.piyush.tech/recovering_your_arch_from_hell/</link><guid isPermaLink="false">https://journal.piyush.tech/recovering_your_arch_from_hell/</guid><content:encoded>&lt;p&gt;
+&lt;p&gt;— THE ABCs OF UNIX&lt;/p&gt;</content:encoded></item><item><title><![CDATA[recovering Arch from hell]]></title><description><![CDATA[PROBLEM Not clear, but looks like misconfigured packages after multiple installations, uninstallations and re-installations of packages and…]]></description><link>https://journal.piyush.tech/recovering_your_arch_from_hell/</link><guid isPermaLink="false">https://journal.piyush.tech/recovering_your_arch_from_hell/</guid><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/arch-883766e41cd8922a799fde936a7a4e7d-aafac.jpg&quot;
@@ -722,7 +722,7 @@ In other words, my Arch was on the edge of collapse.&lt;/p&gt;
 &lt;/ol&gt;
 &lt;h2&gt;EPILOGUE&lt;/h2&gt;
 &lt;p&gt;Now my installation is sweet as candy with no loss of any personal configs, and everything is perfect again! &lt;/p&gt;
-&lt;p align=&apos;center&apos;&gt; 😄 🎉 &lt;/p&gt;</content:encoded></item><item><title><![CDATA[A better blog]]></title><description><![CDATA[
+&lt;p align=&apos;center&apos;&gt; 😄 🎉 &lt;/p&gt;</content:encoded></item><item><title><![CDATA[a better blog]]></title><description><![CDATA[
 Hi Greg! 
 I saw your Github profile had this starter for a personal blog, so I thought Why not!? After days of scouring the internet, I…]]></description><link>https://journal.piyush.tech/a_better_blog/</link><guid isPermaLink="false">https://journal.piyush.tech/a_better_blog/</guid><content:encoded>&lt;p&gt;
   &lt;a
