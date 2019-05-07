@@ -168,8 +168,10 @@ exports.modules = {
 	        "div",
 	        { className: classes.wrapper },
 	        info && _react2.default.createElement(_InfoText2.default, { info: info }),
-	        _react2.default.createElement(_SocialIcons2.default, null),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement("br", null),
 	        pages && _react2.default.createElement(_InfoMenu2.default, { pages: pages, linkOnClick: this.menulinkOnClick }),
+	        _react2.default.createElement(_SocialIcons2.default, null),
 	        _react2.default.createElement(_StackIcons2.default, null)
 	      )
 	    );
@@ -260,8 +262,8 @@ exports.modules = {
 	      }
 	    },
 	    svg: {
-	      width: "40px",
-	      height: "40px",
+	      width: "30px",
+	      height: "30px",
 	      fill: theme.info.colors.socialIcons,
 	      transition: "all .5s"
 	    }
@@ -393,18 +395,20 @@ exports.modules = {
 	    infoMenu: {
 	      display: "flex",
 	      flexDirection: "column",
+	      fontSize: "1.15em",
+	      letterSpacing: "1px",
 	      alignItems: "center",
 	      listStyle: "none",
 	      margin: 0,
 	      width: "100%"
 	    },
 	    link: {
-	      padding: ".5em",
-	      fontWeight: 300,
-	      textTransform: "lowercase",
-	      color: theme.info.colors.menuLink,
+	      padding: "1em",
+	      fontWeight: 500,
+	      textTransform: "uppercase",
+	      color: theme.info.colors.menuLinkHover,
 	      "&:hover": {
-	        color: theme.info.colors.menuLinkHover
+	        color: theme.info.colors.menuLink
 	      }
 	    }
 	  };
@@ -693,7 +697,7 @@ exports.modules = {
 	      display: "block",
 	      fontWeight: 300,
 	      lineHeight: 1.5,
-	      fontSize: ".95em",
+	      fontSize: "1.1em",
 	      textAlign: "left",
 	      marginBottom: ".8em",
 	      "& p:first-child": {
