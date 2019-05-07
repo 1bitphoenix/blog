@@ -3,21 +3,21 @@ const colors = require("../../src/styles/colors");
 module.exports = {
   siteTitle: "brute4s99.blog", // <title>
   shortSiteTitle: "brute4s99.blog", // <title> ending for posts and pages
-  siteDescription: "Piyush writes here on his blog. Feel free to take a look.",
+  siteDescription: "Piyush ka blog. Feel free to take a look.",
   siteUrl: "https://journal.piyush.tech",
   pathPrefix: "/",
-  siteImage: "./preview.jpg",
+  siteImage: "preview.jpg",
   siteLanguage: "en",
   // author
   authorName: "piyush aggarwal",
   authorTwitterAccount: "brute4s99",
   // info
-  infoTitle: "piyush aggarwal",
-  infoTitleNote: "brute4s99.blog",
+  infoTitle: "piyush | brute4s99",
+  infoTitleNote: "GSoC'19 @ KDE",
   // manifest.json
   manifestName: "brute4s99 ka blog",
   manifestShortName: "brute4s99.blog", // max 12 characters
-  manifestStartUrl: "/",
+  manifestStartUrl: "https://journal.piyush.tech",
   manifestBackgroundColor: colors.background,
   manifestThemeColor: colors.background,
   manifestDisplay: "standalone",
