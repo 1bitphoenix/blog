@@ -1,48 +1,48 @@
 {
   "assetsByChunkName": {
+    "path---contributing-to-pandas": [
+      "path---contributing-to-pandas-dc59b60d679f05f5debf.js",
+      "path---contributing-to-pandas-dc59b60d679f05f5debf.js.map"
+    ],
     "path---my-testimony-about-blockchain-p-2": [
-      "path---my-testimony-about-blockchain-p-2-b92d9aeb46c8edf9fd2e.js",
-      "path---my-testimony-about-blockchain-p-2-b92d9aeb46c8edf9fd2e.js.map"
+      "path---my-testimony-about-blockchain-p-2-ca85c7ebbaaae4a57566.js",
+      "path---my-testimony-about-blockchain-p-2-ca85c7ebbaaae4a57566.js.map"
     ],
     "path---arcanist": [
-      "path---arcanist-35971be1f476f5408b37.js",
-      "path---arcanist-35971be1f476f5408b37.js.map"
+      "path---arcanist-792aded03d85ed04cbce.js",
+      "path---arcanist-792aded03d85ed04cbce.js.map"
     ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-0166ed3d50a4be1b1cba.js",
       "component---src-pages-index-js-0166ed3d50a4be1b1cba.js.map"
     ],
     "path---recovering-your-arch-from-hell": [
-      "path---recovering-your-arch-from-hell-1f56be7c05b84b6e0082.js",
-      "path---recovering-your-arch-from-hell-1f56be7c05b84b6e0082.js.map"
+      "path---recovering-your-arch-from-hell-33ebd769dec712ebff93.js",
+      "path---recovering-your-arch-from-hell-33ebd769dec712ebff93.js.map"
     ],
     "path---": [
-      "path----e333a0c5578688304275.js",
-      "path----e333a0c5578688304275.js.map"
+      "path----55495ba7ae21e66de92b.js",
+      "path----55495ba7ae21e66de92b.js.map"
     ],
     "component---src-pages-contact-js": [
       "component---src-pages-contact-js-8410105b5c3d0adb77bc.js",
       "component---src-pages-contact-js-8410105b5c3d0adb77bc.js.map"
     ],
     "path---arch": [
-      "path---arch-5c731538491de899d08f.js",
-      "path---arch-5c731538491de899d08f.js.map"
+      "path---arch-d1bb608f33dd40dfc31a.js",
+      "path---arch-d1bb608f33dd40dfc31a.js.map"
     ],
-    "path---abc-of-unix": [
-      "path---abc-of-unix-0b725fd2eed288853f7b.js",
-      "path---abc-of-unix-0b725fd2eed288853f7b.js.map"
+    "path---abcs-of-unix": [
+      "path---abcs-of-unix-0ec7ca21ac1d3403e138.js",
+      "path---abcs-of-unix-0ec7ca21ac1d3403e138.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-50d64fff579920b3c05a.js",
-      "component---src-layouts-index-js-50d64fff579920b3c05a.js.map"
+      "component---src-layouts-index-js-a57d35c874d3d526e058.js",
+      "component---src-layouts-index-js-a57d35c874d3d526e058.js.map"
     ],
     "path---breaking-free": [
-      "path---breaking-free-eb9d85d8c838d5480468.js",
-      "path---breaking-free-eb9d85d8c838d5480468.js.map"
-    ],
-    "path---pandas": [
-      "path---pandas-8342e3090702bd3f8428.js",
-      "path---pandas-8342e3090702bd3f8428.js.map"
+      "path---breaking-free-9be524f6274f452abc49.js",
+      "path---breaking-free-9be524f6274f452abc49.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
@@ -52,27 +52,27 @@
       "component---src-pages-search-js-a1e6410a6eb49ee038e0.js",
       "component---src-pages-search-js-a1e6410a6eb49ee038e0.js.map"
     ],
-    "path---arch-zero-to-one": [
-      "path---arch-zero-to-one-1cf5cefce6e553ac4779.js",
-      "path---arch-zero-to-one-1cf5cefce6e553ac4779.js.map"
-    ],
     "commons": [
-      "commons-27fa2b47515dc7d1e15f.js",
+      "commons-40a18bce7656dcd506a4.js",
       "build-js-styles.css",
-      "commons-27fa2b47515dc7d1e15f.js.map",
+      "commons-40a18bce7656dcd506a4.js.map",
       "build-js-styles.css.map"
     ],
     "path---success": [
-      "path---success-631df5c1c0d20de464c9.js",
-      "path---success-631df5c1c0d20de464c9.js.map"
+      "path---success-3a9a65441595994fd4d3.js",
+      "path---success-3a9a65441595994fd4d3.js.map"
     ],
     "path---its-a-blog": [
-      "path---its-a-blog-5cd470846db65418934e.js",
-      "path---its-a-blog-5cd470846db65418934e.js.map"
+      "path---its-a-blog-b40d7349d3b7b2b8e737.js",
+      "path---its-a-blog-b40d7349d3b7b2b8e737.js.map"
     ],
     "path---a-real-life-hogwarts": [
-      "path---a-real-life-hogwarts-9d3bad06646c82762d9f.js",
-      "path---a-real-life-hogwarts-9d3bad06646c82762d9f.js.map"
+      "path---a-real-life-hogwarts-82f5520890806e5343ae.js",
+      "path---a-real-life-hogwarts-82f5520890806e5343ae.js.map"
+    ],
+    "path---the-git-flow": [
+      "path---the-git-flow-a83fda097ee5ec59612c.js",
+      "path---the-git-flow-a83fda097ee5ec59612c.js.map"
     ],
     "path---contact": [
       "path---contact-a0e39f21c11f6a62c5ab.js",
@@ -82,43 +82,43 @@
       "component---src-templates-post-template-js-489f2d70d9e793d5cc2b.js",
       "component---src-templates-post-template-js-489f2d70d9e793d5cc2b.js.map"
     ],
+    "path---muli-booting": [
+      "path---muli-booting-7b7a188645b6afefe445.js",
+      "path---muli-booting-7b7a188645b6afefe445.js.map"
+    ],
     "path---blurred-lines": [
-      "path---blurred-lines-0a6e2014539c4fbc7171.js",
-      "path---blurred-lines-0a6e2014539c4fbc7171.js.map"
+      "path---blurred-lines-748f84584b3cc1e1b1a4.js",
+      "path---blurred-lines-748f84584b3cc1e1b1a4.js.map"
     ],
     "app": [
-      "app-33828f1099d9d91208d6.js",
+      "app-005a5ea0e3bca96ad3fd.js",
       "build-js-styles.css",
-      "app-33828f1099d9d91208d6.js.map",
+      "app-005a5ea0e3bca96ad3fd.js.map",
       "build-js-styles.css.map"
     ],
     "path---links": [
-      "path---links-624c12bfde26a9e4ee2e.js",
-      "path---links-624c12bfde26a9e4ee2e.js.map"
+      "path---links-b0238993d6821bfd330a.js",
+      "path---links-b0238993d6821bfd330a.js.map"
     ],
     "component---src-templates-page-template-js": [
       "component---src-templates-page-template-js-6f74dfdcdb198cb143f6.js",
       "component---src-templates-page-template-js-6f74dfdcdb198cb143f6.js.map"
     ],
     "path---my-testimony-about-blockchain-p-1": [
-      "path---my-testimony-about-blockchain-p-1-bf59ca2e2d375f3043d7.js",
-      "path---my-testimony-about-blockchain-p-1-bf59ca2e2d375f3043d7.js.map"
+      "path---my-testimony-about-blockchain-p-1-e811784d84d471c86dfb.js",
+      "path---my-testimony-about-blockchain-p-1-e811784d84d471c86dfb.js.map"
     ],
     "path---a-better-blog": [
-      "path---a-better-blog-1b9e26bcbefe8a33cd3b.js",
-      "path---a-better-blog-1b9e26bcbefe8a33cd3b.js.map"
+      "path---a-better-blog-df211ca628feabd0cd51.js",
+      "path---a-better-blog-df211ca628feabd0cd51.js.map"
     ],
     "path---search": [
       "path---search-d8380b7a9a79105929ac.js",
       "path---search-d8380b7a9a79105929ac.js.map"
     ],
-    "path---gitflow": [
-      "path---gitflow-3d105c8824d24e7d5070.js",
-      "path---gitflow-3d105c8824d24e7d5070.js.map"
-    ],
     "path---about": [
-      "path---about-9feab73800aec60db69b.js",
-      "path---about-9feab73800aec60db69b.js.map"
+      "path---about-86d88be8924a66451453.js",
+      "path---about-86d88be8924a66451453.js.map"
     ]
   }
 }

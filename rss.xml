@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[brute4s99.blog]]></title><description><![CDATA[Piyush ka blog. Feel free to take a look.]]></description><link>https://journal.piyush.tech</link><generator>RSS for Node</generator><lastBuildDate>Sat, 20 Apr 2019 11:40:01 GMT</lastBuildDate><item><title><![CDATA[the git flow]]></title><description><![CDATA[INTRODUCTION A common question for anyone stepping foot into the world of FOSS contributions is- How to start? This post aims to be the post…]]></description><link>https://journal.piyush.tech/gitflow/</link><guid isPermaLink="false">https://journal.piyush.tech/gitflow/</guid><content:encoded>&lt;h2&gt;INTRODUCTION&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[brute4s99.blog]]></title><description><![CDATA[Piyush ka blog. Feel free to take a look.]]></description><link>https://journal.piyush.tech</link><generator>RSS for Node</generator><lastBuildDate>Tue, 07 May 2019 19:57:56 GMT</lastBuildDate><item><title><![CDATA[the git flow]]></title><description><![CDATA[INTRODUCTION A common question for anyone stepping foot into the world of FOSS contributions is- How to start? This post aims to be the post…]]></description><link>https://journal.piyush.tech/the_git_flow/</link><guid isPermaLink="false">https://journal.piyush.tech/the_git_flow/</guid><content:encoded>&lt;h2&gt;INTRODUCTION&lt;/h2&gt;
 &lt;p&gt;A common question for anyone stepping foot into the world of FOSS contributions is- How to start? This post aims to be the post I wish I had read an year ago when I started my journey.&lt;/p&gt;
 &lt;h2&gt;BABY STEPS&lt;/h2&gt;
 &lt;p&gt;The commonly known work flow for git is as follows:-&lt;/p&gt;
@@ -102,7 +102,7 @@ stash@{2}: WIP on timestamp: 9ec0d04f SVN_SILENT made messages (.desktop file) -
 &lt;p&gt;Git is focussed on freedom by design. You can do a lot of stuff, and you can also undo it as you go, so don’t fret to play with this empowering tool!&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;signing off now; later! :)&lt;/p&gt;
-&lt;p align=&apos;center&apos;&gt; &lt;font size=3&gt; Stay safe and make the internet a healthier place! &lt;/font&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Multi-booting]]></title><description><![CDATA[INTRODUCTION I am an Arch Linux user by day, but recently I needed constant access to Windows 10 OS to develop  KDE Connect  - an awesome…]]></description><link>https://journal.piyush.tech/arch/</link><guid isPermaLink="false">https://journal.piyush.tech/arch/</guid><content:encoded>&lt;h2&gt;INTRODUCTION&lt;/h2&gt;
+&lt;p align=&apos;center&apos;&gt; &lt;font size=3&gt; Stay safe and make the internet a healthier place! &lt;/font&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Multi-booting]]></title><description><![CDATA[INTRODUCTION I am an Arch Linux user by day, but recently I needed constant access to Windows 10 OS to develop  KDE Connect  - an awesome…]]></description><link>https://journal.piyush.tech/muli_booting/</link><guid isPermaLink="false">https://journal.piyush.tech/muli_booting/</guid><content:encoded>&lt;h2&gt;INTRODUCTION&lt;/h2&gt;
 &lt;p&gt;I am an Arch Linux user by day, but recently I needed constant access to Windows 10 OS to develop &lt;a href=&quot;https://duckduckgo.com/?q=kde+connec&quot;&gt;KDE Connect&lt;/a&gt; - an awesome project by some smart-working developers from across the globe, for Windows.&lt;/p&gt;
 &lt;p&gt;While working with the team, I also had to install Ubuntu to test a new release for the Ubuntu users.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -187,7 +187,7 @@ After I rebooted the system, Ubuntu’s GRUB config greeted me, that did not hav
 &lt;h2&gt;CONCLUSION&lt;/h2&gt;
 &lt;p&gt;I obviously should not have removed the EFI partition, since that step increased the work needed to set up other OSes.
 If you happen to find any other weak links or better procedure, please do share it with me over the mail or twitter!&lt;/p&gt;
-&lt;p align=&apos;center&apos;&gt; &lt;font size=3&gt; Stay safe and make the internet a healthier place! &lt;/font&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Contributing to pandas]]></title><description><![CDATA[pre-DevSprint reading material:- Overview of pandas Contributing Guidelines Git Workflow Guidelines rebase merge code handling Docstrings…]]></description><link>https://journal.piyush.tech/pandas/</link><guid isPermaLink="false">https://journal.piyush.tech/pandas/</guid><content:encoded>&lt;p align=&quot;center&quot;&gt;
+&lt;p align=&apos;center&apos;&gt; &lt;font size=3&gt; Stay safe and make the internet a healthier place! &lt;/font&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Contributing to pandas]]></title><description><![CDATA[pre-DevSprint reading material:- Overview of pandas Contributing Guidelines Git Workflow Guidelines rebase merge code handling Docstrings…]]></description><link>https://journal.piyush.tech/contributing_to_pandas/</link><guid isPermaLink="false">https://journal.piyush.tech/contributing_to_pandas/</guid><content:encoded>&lt;p align=&quot;center&quot;&gt;
   &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/pandas-343009fe0b1182ae62e99f72f0f5569d-cffac.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
   
   &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; ; max-width: 473px; margin-left: auto; margin-right: auto;&quot;&gt;
@@ -591,7 +591,7 @@ As an example:-&lt;/p&gt;
 &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; You &lt;strong&gt;do&lt;/strong&gt; have a &lt;a href=&quot;https://community.kde.org/Infrastructure/Get_a_Developer_Account&quot;&gt;Developer Access Account&lt;/a&gt; in order to land the patch.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;arc land&lt;/code&gt; automatically rebases (and errors if that failed), so you don’t have to do that manually, unlike &lt;code class=&quot;language-text&quot;&gt;Git&lt;/code&gt;.&lt;/p&gt;
-&lt;p align=&apos;center&apos;&gt; &lt;font size=3&gt; This quickstart should be enough to get you started on KDE&apos;s Phabricator and setting sail on some binary adventures!&lt;/font&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ABCs of Unix]]></title><description><![CDATA[— THE ABCs OF UNIX]]></description><link>https://journal.piyush.tech/abc_of_unix/</link><guid isPermaLink="false">https://journal.piyush.tech/abc_of_unix/</guid><content:encoded>&lt;p&gt;
+&lt;p align=&apos;center&apos;&gt; &lt;font size=3&gt; This quickstart should be enough to get you started on KDE&apos;s Phabricator and setting sail on some binary adventures!&lt;/font&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ABCs of Unix]]></title><description><![CDATA[— THE ABCs OF UNIX]]></description><link>https://journal.piyush.tech/abcs_of_unix/</link><guid isPermaLink="false">https://journal.piyush.tech/abcs_of_unix/</guid><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/Unix-e87325ae57d528519aca61d2a90898f8-c541b.png&quot;
@@ -947,7 +947,7 @@ I saw your Github profile had this starter for a personal blog, so I thought&lt;
     &lt;/p&gt;
 &lt;p align=&apos;center&apos;&gt;VS Code&lt;/p&gt;
 &lt;p&gt;I also followed a blog post by Nick Janetakis on &lt;a href=&quot;https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly&quot;&gt;setting up Docker to work with WSL flawlessly&lt;/a&gt;!&lt;/p&gt;
-&lt;p&gt;The setup he used was my inspiration for the post, and I hope it would serve me well for my oncoming endeavors!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Arch]]></title><description><![CDATA[Simplicity is the ultimate sophistication.   -Leonardo da Vinci After eons of self-doubt and mixed opinion, I finally decided to get Arch…]]></description><link>https://journal.piyush.tech/arch_zero_to_one/</link><guid isPermaLink="false">https://journal.piyush.tech/arch_zero_to_one/</guid><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;The setup he used was my inspiration for the post, and I hope it would serve me well for my oncoming endeavors!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Arch]]></title><description><![CDATA[Simplicity is the ultimate sophistication.   -Leonardo da Vinci After eons of self-doubt and mixed opinion, I finally decided to get Arch…]]></description><link>https://journal.piyush.tech/arch/</link><guid isPermaLink="false">https://journal.piyush.tech/arch/</guid><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;Simplicity is the ultimate sophistication.&lt;br&gt;
 -Leonardo da Vinci&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1090,41 +1090,7 @@ P.S:-&lt;/p&gt;
 &lt;p&gt;Kontact – for updates on calendar events&lt;/p&gt;
 &lt;p&gt;VLC – Video player
 The end result&lt;/p&gt;
-&lt;p&gt;
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/final-3eb5211a33e1bac8d5daff5b65258191-15296.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 56.22254758418741%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACqklEQVQozwGfAmD9AMXPu+HavqfN3sXY2rbS2rLP2bTS2JLD1p7K1XuwxYmmsH+ir3ScrYGirnibqGeMomCEnVd3lGiAj2N5jwD15c/3583u5tL16tby6tr07N3z6t3l5Nns7+ScpaA+QDo/Pz09PT06PD05PDw7QD84Pj41Oj01OTgxQU4A19W739m+//PW//ba//PZ//bh//Xj+e3d/vjqn5+WBwgGFB0bEh4dDAwLFSknJTExFB4fDBMVBAgJGS84AIiemqq1ptvXvvTt0//12/js1fbs2fLn1u7r3pOUjQ4ODh8tLB4xMBcWFR0xMC0zMyQjIxkdHA4RESU7QABFbX5pjpeUqKHCxbXr38rx48zTzsDb1Mjp59t8iooNEhIXKSkZKykYHRsaKSkmMDAwMC8mKCcREhE0Q0QAS2p/YISWdI+UhJqdlqmry8a5urixrrS0x9HOhYuIEB8eEx8fExwcFSYkGSUmMDQ1KSwvGR0fFRcXP0pKAEFhfW6HloCYoYSVm4uborS2sqyxsJmmra23uoODfQsPDxAPDw8ODAsQEAYLDQgJCwYICgUICwADBScxNAAzVXZIaYRae5JjgpdadYuAlKGLnaaMmqO5t7KCg4A7NjVFPzpAPDoxMjYsMDIpLzIoLzMYIyslKitvZ1wAJkNpJEdtOWCCRW6MSXKOYoifWXuTk52iu7myn6io1cu5ta6po5yeqKCdipigjaCkVXKIO1dunJ6VsKyeADhOamp6iWuAj1t7kUlvi1Bvh0hmf15zhoOTnMDAtsnAsWZ2gm12gIGDhXaNmXyYpGd/jltwe36JiH+JhwBqd4NicH1ebHtyfYlHW3A7VXE9XHw9YII2WXxOaIB5goVqfIZlfo5gfY5Sdo1Wc4Zhc39rgIicpJ+DjY5isjOSzVHDYwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
-        alt=&quot;image&quot;
-        title=&quot;&quot;
-        src=&quot;/static/final-3eb5211a33e1bac8d5daff5b65258191-48538.png&quot;
-        srcset=&quot;/static/final-3eb5211a33e1bac8d5daff5b65258191-bed0f.png 200w,
-/static/final-3eb5211a33e1bac8d5daff5b65258191-5fd34.png 400w,
-/static/final-3eb5211a33e1bac8d5daff5b65258191-48538.png 800w,
-/static/final-3eb5211a33e1bac8d5daff5b65258191-b70ec.png 1200w,
-/static/final-3eb5211a33e1bac8d5daff5b65258191-15296.png 1366w&quot;
-        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-      /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;final.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
 &lt;p align=&apos;center&apos;&gt; beautiful, isn’t it?&lt;/p&gt;
 &lt;p&gt;Setting up a personal Arch Linux machine taught me many things about the core Linux system, how exactly the system is set up during installation and how different utilities orchestrate to form my complete workstation ready to build beautiful code and software!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My Testimony about Blockchain - Part 2]]></title><description><![CDATA[They’ll what ? They’ll fork off of the network. A byproduct of distributed consensus, forks happen anytime two miners find a block at nearly…]]></description><link>https://journal.piyush.tech/my_testimony_about_blockchain_p2/</link><guid isPermaLink="false">https://journal.piyush.tech/my_testimony_about_blockchain_p2/</guid><content:encoded>&lt;h3&gt;They’ll what ?&lt;/h3&gt;
 &lt;p&gt;They’ll fork off of the network.&lt;/p&gt;
