@@ -1,5 +1,5 @@
 ---
-title: Multi-booting
+title: multi-booting
 subTitle: at its best
 category: "tech"
 cover: cover.png

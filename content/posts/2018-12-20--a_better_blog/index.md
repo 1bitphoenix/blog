@@ -1,5 +1,5 @@
 ---
-title: A better blog
+title: a better blog
 subTitle: And I'm sure Greg would be proud.
 category: "life"
 cover: photo-1490474418585-ba9bad8fd0ea-cover.jpg

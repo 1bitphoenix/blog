@@ -1,5 +1,5 @@
 ---
-title: Arcanist
+title: arcanist
 subTitle: a CLI to Phabricator
 category: "tech"
 cover: cover.png

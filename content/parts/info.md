@@ -3,6 +3,6 @@ title: info
 ---
 
 <p align='center'> 
-This blog is my journal. <br>
-Any suggestions are highly valued.
+This is my blog. <br>
+Any suggestions are welcome.
 <br></p>

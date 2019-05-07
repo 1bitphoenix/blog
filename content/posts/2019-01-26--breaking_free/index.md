@@ -1,5 +1,5 @@
 ---
-title: Breaking Free
+title: breaking free
 subTitle: no more trackers
 category: "tech"
 cover: cover.png

@@ -1,5 +1,5 @@
 ---
-title: ABCs of Unix
+title: abc of unix
 subTitle: Learn alphabet the right way!
 category: "tech"
 cover: Unix.png

@@ -1,5 +1,5 @@
 ---
-title: Contributing to pandas
+title: contributing to pandas
 subTitle: A comprehensive guide
 category: "tech"
 cover: cover.jpg

@@ -1,5 +1,5 @@
 ---
-title: "Message sent!"
+title: "message sent!"
 ---
 
 Thank you. I will answer to the message as soon as possible.<br>

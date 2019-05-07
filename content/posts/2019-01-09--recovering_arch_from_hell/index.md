@@ -1,5 +1,5 @@
 ---
-title: Recovering your Arch from hell
+title: recovering arch from hell
 subTitle: Keep playing around with those packages!
 category: "tech"
 cover: arch.jpg

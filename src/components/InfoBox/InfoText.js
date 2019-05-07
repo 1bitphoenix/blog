@@ -7,7 +7,7 @@ const styles = theme => ({
     display: "block",
     fontWeight: 300,
     lineHeight: 1.5,
-    fontSize: ".95em",
+    fontSize: "1.1em",
     textAlign: "left",
     marginBottom: ".8em",
     "& p:first-child": {

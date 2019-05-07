@@ -1,5 +1,5 @@
 ---
-title: About piyush | brute4s99
+title: about piyush | brute4s99
 menuTitle: about
 ---
 

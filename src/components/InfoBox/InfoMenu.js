@@ -7,21 +7,24 @@ const styles = theme => ({
   infoMenu: {
     display: "flex",
     flexDirection: "column",
+    fontSize: "1.15em",
+    letterSpacing: "1px",
     alignItems: "center",
     listStyle: "none",
     margin: 0,
     width: "100%"
   },
   link: {
-    padding: ".5em",
-    fontWeight: 300,
-    textTransform: "lowercase",
-    color: theme.info.colors.menuLink,
+    padding: "1em",
+    fontWeight: 500,
+    textTransform: "uppercase",
+    color: theme.info.colors.menuLinkHover,
     "&:hover": {
-      color: theme.info.colors.menuLinkHover
-    }
+      color: theme.info.colors.menuLink
+    },
   }
 });
+
 
 const InfoMenu = props => {
   const { classes, pages, linkOnClick } = props;
