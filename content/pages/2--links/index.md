@@ -1,6 +1,6 @@
 ---
-title: Catch me here:-
-menuTitle: some links
+title: catch me here
+menuTitle: links
 ---
 
 
@@ -14,7 +14,7 @@ Twitter: https://twitter.com/brute4s99
 
 LinkedIn: https://linkedin.com/in/brute4s99
 
-Telegram: @brute4s99
+Telegram: [@brute4s99](https://t.me/brute4s99)
 
 OpenCode-MAIT: https://t.me/opencode_mait
 

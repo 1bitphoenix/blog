@@ -1,6 +1,6 @@
 ---
-title: About brute4s99
-menuTitle: About me
+title: About piyush | brute4s99
+menuTitle: about
 ---
 
 > Hi there!
