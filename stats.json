@@ -1,124 +1,72 @@
 {
   "assetsByChunkName": {
-    "path---contributing-to-pandas": [
-      "path---contributing-to-pandas-0d417fbc664776e1785d.js",
-      "path---contributing-to-pandas-0d417fbc664776e1785d.js.map"
-    ],
-    "path---my-testimony-about-blockchain-p-2": [
-      "path---my-testimony-about-blockchain-p-2-24fa2378c10ed7a46738.js",
-      "path---my-testimony-about-blockchain-p-2-24fa2378c10ed7a46738.js.map"
-    ],
-    "path---arcanist": [
-      "path---arcanist-d026f6a03266f2b43676.js",
-      "path---arcanist-d026f6a03266f2b43676.js.map"
-    ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-0166ed3d50a4be1b1cba.js",
       "component---src-pages-index-js-0166ed3d50a4be1b1cba.js.map"
     ],
     "path---": [
-      "path----4de7b3c3b9db5f612bbd.js",
-      "path----4de7b3c3b9db5f612bbd.js.map"
+      "path----cfa0acb66eaa12de0baa.js",
+      "path----cfa0acb66eaa12de0baa.js.map"
     ],
     "component---src-pages-contact-js": [
-      "component---src-pages-contact-js-8410105b5c3d0adb77bc.js",
-      "component---src-pages-contact-js-8410105b5c3d0adb77bc.js.map"
-    ],
-    "path---arch": [
-      "path---arch-71b56d2925c7785e6002.js",
-      "path---arch-71b56d2925c7785e6002.js.map"
-    ],
-    "path---abc-of-unix": [
-      "path---abc-of-unix-b06d475e0617a9217530.js",
-      "path---abc-of-unix-b06d475e0617a9217530.js.map"
+      "component---src-pages-contact-js-85cf5be0f783aa420af9.js",
+      "component---src-pages-contact-js-85cf5be0f783aa420af9.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-2e1539e10ca4d65f8737.js",
-      "component---src-layouts-index-js-2e1539e10ca4d65f8737.js.map"
-    ],
-    "path---breaking-free": [
-      "path---breaking-free-1caf70d997476d313ba1.js",
-      "path---breaking-free-1caf70d997476d313ba1.js.map"
+      "component---src-layouts-index-js-7ad05dec870b618d7f0d.js",
+      "component---src-layouts-index-js-7ad05dec870b618d7f0d.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
       "path---index-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-search-js": [
-      "component---src-pages-search-js-a1e6410a6eb49ee038e0.js",
-      "component---src-pages-search-js-a1e6410a6eb49ee038e0.js.map"
-    ],
-    "path---recovering-arch-from-hell": [
-      "path---recovering-arch-from-hell-8f71f42414dd103edcd6.js",
-      "path---recovering-arch-from-hell-8f71f42414dd103edcd6.js.map"
+      "component---src-pages-search-js-fc0a6023897f93f0acce.js",
+      "component---src-pages-search-js-fc0a6023897f93f0acce.js.map"
     ],
     "commons": [
-      "commons-40a18bce7656dcd506a4.js",
+      "commons-0dfad25da4c8e504f412.js",
       "build-js-styles.css",
-      "commons-40a18bce7656dcd506a4.js.map",
+      "commons-0dfad25da4c8e504f412.js.map",
       "build-js-styles.css.map"
     ],
     "path---success": [
-      "path---success-9c10eb52d6f89ee2c436.js",
-      "path---success-9c10eb52d6f89ee2c436.js.map"
-    ],
-    "path---its-a-blog": [
-      "path---its-a-blog-0206051623c8f03e239a.js",
-      "path---its-a-blog-0206051623c8f03e239a.js.map"
-    ],
-    "path---a-real-life-hogwarts": [
-      "path---a-real-life-hogwarts-7a4e6434480e0a3b2ee9.js",
-      "path---a-real-life-hogwarts-7a4e6434480e0a3b2ee9.js.map"
-    ],
-    "path---the-git-flow": [
-      "path---the-git-flow-1fcc7040044ce5bdee50.js",
-      "path---the-git-flow-1fcc7040044ce5bdee50.js.map"
+      "path---success-4ef9fc88486284f1dcb5.js",
+      "path---success-4ef9fc88486284f1dcb5.js.map"
     ],
     "path---contact": [
       "path---contact-a0e39f21c11f6a62c5ab.js",
       "path---contact-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-templates-post-template-js": [
-      "component---src-templates-post-template-js-489f2d70d9e793d5cc2b.js",
-      "component---src-templates-post-template-js-489f2d70d9e793d5cc2b.js.map"
-    ],
-    "path---muli-booting": [
-      "path---muli-booting-13f3311a7825c4ee37fd.js",
-      "path---muli-booting-13f3311a7825c4ee37fd.js.map"
-    ],
-    "path---blurred-lines": [
-      "path---blurred-lines-4ab6f28ebc3eb6874848.js",
-      "path---blurred-lines-4ab6f28ebc3eb6874848.js.map"
+      "component---src-templates-post-template-js-455c7c1a43fca99672a7.js",
+      "component---src-templates-post-template-js-455c7c1a43fca99672a7.js.map"
     ],
     "app": [
-      "app-4e860bd8e055644cac6a.js",
+      "app-f3ade80cd1f0ae478a8d.js",
       "build-js-styles.css",
-      "app-4e860bd8e055644cac6a.js.map",
+      "app-f3ade80cd1f0ae478a8d.js.map",
       "build-js-styles.css.map"
     ],
     "path---links": [
-      "path---links-b0238993d6821bfd330a.js",
-      "path---links-b0238993d6821bfd330a.js.map"
+      "path---links-73dadcf68ec649c74299.js",
+      "path---links-73dadcf68ec649c74299.js.map"
     ],
     "component---src-templates-page-template-js": [
       "component---src-templates-page-template-js-6f74dfdcdb198cb143f6.js",
       "component---src-templates-page-template-js-6f74dfdcdb198cb143f6.js.map"
     ],
-    "path---my-testimony-about-blockchain-p-1": [
-      "path---my-testimony-about-blockchain-p-1-ff32a3065534b7b2649d.js",
-      "path---my-testimony-about-blockchain-p-1-ff32a3065534b7b2649d.js.map"
-    ],
-    "path---a-better-blog": [
-      "path---a-better-blog-ea168d52ae681788b908.js",
-      "path---a-better-blog-ea168d52ae681788b908.js.map"
+    "path---plamo-on-the-bullhead": [
+      "path---plamo-on-the-bullhead-677fe840983fcdd4b955.js",
+      "path---plamo-on-the-bullhead-677fe840983fcdd4b955.js.map"
     ],
     "path---search": [
-      "path---search-d8380b7a9a79105929ac.js",
-      "path---search-d8380b7a9a79105929ac.js.map"
+      "path---search-941b272bca79bd1f45bd.js",
+      "path---search-941b272bca79bd1f45bd.js.map"
     ],
     "path---about": [
-      "path---about-c76407f4f37e88626164.js",
-      "path---about-c76407f4f37e88626164.js.map"
+      "path---about-8a5a21b39c14a0afead5.js",
+      "path---about-8a5a21b39c14a0afead5.js.map"
     ]
   }
 }
