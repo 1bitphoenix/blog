@@ -15,7 +15,7 @@
     "lint-errors": "eslint src/**/*.{js,jsx} --quiet",
     "lint": "eslint src/**/*.{js,jsx}",
     "generate-app-icons": "sh ./scripts/generate-app-icons.sh",
-    "deploy": "gatsby build --prefix-paths && echo \"journal.piyush.tech\" > public/CNAME && gh-pages -d public",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "dev": "gatsby develop -o"
   },
   "devDependencies": {
@@ -67,6 +67,7 @@
     "gatsby-transformer-sharp": "^1.6.27",
     "hoek": "^5.0.3",
     "instantsearch.css": "^7.1.0",
+    "npx": "^10.2.0",
     "package.json": "^2.0.1",
     "prismjs": "^1.15.0",
     "react-custom-scrollbars": "^4.2.1",

@@ -1,8 +1,4 @@
-# brute4s99.blog
-
-## Description
-
-Piyush | brute4s99's blog.
+# Rituka | ORePoala's blog.
 
 ## Prerequisites
 
@@ -54,12 +50,5 @@ ALGOLIA_INDEX_NAME=...
 
 See also the list of [contributors](https://github.com/greglobinski/gatsby-starter-personal-blog/graphs/contributors) who participated in this project.
 
-
-<p align="center"> personalised with 💙 by 
-<a href="https://github.com/brute4s99">
-Piyush Aggarwal
-</a>
- | based on a GatsbyJS starter by 
-<a href="https://github.com/greglobinski">
- Greg Lobinski
-</a>.</p>
+# With Help of
+- Piyush Aggarwal [@brute4s99](https://github.com/brute4s99)

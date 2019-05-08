@@ -86,7 +86,6 @@ class InfoBox extends React.Component {
           <br/><br/>
           {pages && <InfoMenu pages={pages} linkOnClick={this.menulinkOnClick} />}
           <SocialIcons />
-          <StackIcons />
         </div>
       </aside>
     );

@@ -1,32 +1,32 @@
 const colors = require("../../src/styles/colors");
 
 module.exports = {
-  siteTitle: "brute4s99.blog", // <title>
-  shortSiteTitle: "brute4s99.blog", // <title> ending for posts and pages
-  siteDescription: "Piyush ka blog. Feel free to take a look.",
-  siteUrl: "https://journal.piyush.tech",
+  siteTitle: "ORePoala.blog", // <title>
+  shortSiteTitle: "ORePoalablog", // <title> ending for posts and pages
+  siteDescription: "ORePoala's blog.",
+  siteUrl: "https://orepoala.github.io",
   pathPrefix: "/",
   siteImage: "preview.jpg",
   siteLanguage: "en",
   // author
-  authorName: "piyush aggarwal",
-  authorTwitterAccount: "brute4s99",
+  authorName: "Rituka Patwal",
+  authorTwitterAccount: "ORePoala",
   // info
-  infoTitle: "piyush | brute4s99",
-  infoTitleNote: "GSoC'19 @ KDE",
+  infoTitle: "ORePoala",
+  infoTitleNote: "I am Human and I develop",
   // manifest.json
-  manifestName: "brute4s99 ka blog",
-  manifestShortName: "brute4s99.blog", // max 12 characters
-  manifestStartUrl: "https://journal.piyush.tech",
+  manifestName: "ORePoala's blog",
+  manifestShortName: "ORePoala.blog", // max 12 characters
+  manifestStartUrl: "https://orepoala.github.io",
   manifestBackgroundColor: colors.background,
   manifestThemeColor: colors.background,
   manifestDisplay: "standalone",
   // contact
-  contactEmail: "piyushaggarwal002@gmail.com",
+  contactEmail: "ritukapatwal21@gmail.com",
   // social
   authorSocialLinks: [
-    { name: "github", url: "https://github.com/brute4s99" },
-    { name: "twitter", url: "https://twitter.com/brute4s99" },
-    { name: "linkedin", url: "https://linkedin.com/in/brute4s99" }
+    { name: "github", url: "https://github.com/ORePoala" },
+    { name: "twitter", url: "https://twitter.com/ORePoala" },
+    { name: "linkedin", url: "https://linkedin.com/in/ORePoala" }
   ]
 };

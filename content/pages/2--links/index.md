@@ -4,20 +4,16 @@ menuTitle: links
 ---
 
 
-email : piyush aggarwal 002 [at] gmail [dot] com
+email : rituka patwal 21 [at] gmail [dot] com
 
-GitHub : https://github.com/brute4s99/
+GitHub : https://github.com/ORePoala/
 
-My KDE Identity: https://phabricator.kde.org/p/brute4s99/
+My KDE Identity: https://phabricator.kde.org/p/rpatwal/
 
-Twitter: https://twitter.com/brute4s99/
+Twitter: https://twitter.com/ORePoala/
 
-LinkedIn: https://linkedin.com/in/brute4s99/
+LinkedIn: https://linkedin.com/in/ORePoala/
 
-Telegram: [@brute4s99](https://t.me/brute4s99/)
+Telegram: [@ORePoala](https://t.me/ORePoala/)
 
 OpenCode-MAIT: https://t.me/opencode_mait/
-
-My slides : https://slides.com/brute4s99/
-
-Alternatively, search for [@brute4s99](https://duckduckgo.com/?q=brute4s99) across the internet.
