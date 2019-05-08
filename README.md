@@ -55,10 +55,11 @@ ALGOLIA_INDEX_NAME=...
 See also the list of [contributors](https://github.com/greglobinski/gatsby-starter-personal-blog/graphs/contributors) who participated in this project.
 
 
-<center> personalised with 💙 by 
+<p align="center"> personalised with 💙 by 
 <a href="https://github.com/brute4s99">
 Piyush Aggarwal
 </a>
  | based on a GatsbyJS starter by 
 <a href="https://github.com/greglobinski">
- Greg Lobinski</a>.</center>
+ Greg Lobinski
+</a>.</p>
